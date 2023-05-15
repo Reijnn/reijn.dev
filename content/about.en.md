@@ -6,7 +6,7 @@ Experienced Software Engineer with a demonstrated history of working in the info
 __Download my [resume](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
 __Work History__  
-2022 - present | Data Engineer / Scrum Master @ Douane Nederland
+2022 - present | Data Engineer / Scrum Master @ Douane Nederland  
 2019 - present | Software Engineer @ ilionx  
 2019 - 2022 | Technical Integrator @ Info Support  
 2017 - 2019 | Software Engineer @ QNH  
