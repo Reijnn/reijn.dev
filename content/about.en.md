@@ -2,15 +2,16 @@
 title: "About"
 ---
 
-Experienced Software Engineer with a demonstrated history of working in the information technology and services industry.    Strong engineering professional with a Bachelor's degree focused on Software Engineer from Amsterdam University of Applied Sciences. 
+Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Strong engineering professional with a Bachelor's degree focused on Software Engineer from Amsterdam University of Applied Sciences. 
 __Download my [resume](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
 __Work History__  
-2019 - present | Technical Integrator @ Info Support  
+2022 - present | Data Engineer / Scrum Master @ Douane Nederland
 2019 - present | Software Engineer @ ilionx  
+2019 - 2022 | Technical Integrator @ Info Support  
 2017 - 2019 | Software Engineer @ QNH  
 2014 - 2017 | Hiker @ Easyway  
-2016 - 2017 | Teaching assistant @ Hogeschool van Amsterdam   
+2016 - 2017 | Teaching assistant @ Hogeschool van Amsterdam  
 
 __Languages__   
 Javascript, HTML, CSS, Typescript, Java, Kotlin, C# and SQL.
