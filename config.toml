@@ -212,9 +212,3 @@ identifier = "projects"
 name = "Projects"
 url = "projects/"
 weight = "3"
-
-[server]
-[[server.headers]]
-for = '/**.html'
-[server.headers.values]
-Cache-Control = 'max-age=31536000'
