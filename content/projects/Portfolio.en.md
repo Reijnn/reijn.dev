@@ -13,4 +13,4 @@ Hugo is one of the most popular open-source static site generators. With its ama
 
 __Applied Technologies__
 
-JavaScript, Firebase, CSS, Hugo, Markdown, Git
+JavaScript, Firebase, SCSS, Hugo, Markdown, Git, Github Actions
