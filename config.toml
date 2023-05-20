@@ -5,6 +5,8 @@ theme = "hello-friend-ng"
 
 sectionPagesMenu = 'main'
 
+
+
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
@@ -66,6 +68,8 @@ keywords = "homepage, blog, science, informatics, development, programming"
 # Home subtitle of the index page.
 #
 homeSubtitle = "Software Engineer"
+
+themeColor = "#1b1c1d"
 
 # Set a background for the homepage
 # backgroundImage = "assets/images/background.jpg"
