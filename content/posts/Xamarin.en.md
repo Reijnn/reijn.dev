@@ -1,10 +1,11 @@
 ---
-title: "Blockchain"
+title: "Xamarin"
 date: 2018-12-07T14:04:09+01:00
 draft: false
 tags: 
   - Web
-  - Angular
+  - React Native
+  - Xamarin
 ---
 
 
