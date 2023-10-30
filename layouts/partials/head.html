@@ -37,7 +37,6 @@
 {{- partial "favicons.html" . }}
 
 {{ template "_internal/schema.html" . }}
-<!--{{ template "_internal/twitter_cards.html" . }}-->
 
 {{ if isset .Site.Taxonomies "series" }}
     {{ template "_internal/opengraph.html" . }}
@@ -56,11 +55,6 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<!--&lt;!&ndash; JSON Feed &ndash;&gt;
-{{ if .OutputFormats.Get "json" }}
-<link href="{{ if .OutputFormats.Get "json" }}{{ .Site.BaseURL }}feed.json{{ end }}" rel="alternate"
-    type="application/json" title="{{ .Site.Title }}" />
-{{ end }}-->
 
 <!-- Custom head tags -->
 {{- if templates.Exists "partials/extra-head.html" -}}
