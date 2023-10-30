@@ -124,7 +124,7 @@ relativeURLs=true
 # If you want, you can easily override the default footer with your own content. 
 #
 [params.footer]
-trademark = true
+trademark = 2023
 rss = false
 copyright = false
 author = false
