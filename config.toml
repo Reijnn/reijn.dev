@@ -15,7 +15,7 @@ rssLimit = 10                                                                   
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 googleAnalytics = "G-YHYHH5YJDE"
-# disqusShortname = ""
+disqusShortname = "reijn-dev"
 
 archetypeDir = "archetypes"
 contentDir = "content"
@@ -152,16 +152,6 @@ logoCursorColor = "#dcdcdc"
 # Append the current url pathname to logoText 
 # logoCursorPathname = true
 
-# Commento is more than just a comments widget you can embed — 
-# it’s a return to the roots of the internet. 
-# An internet without the tracking and invasions of privacy. 
-# An internet that is simple and lightweight. 
-# An internet that is focused on interesting discussions, not ads. 
-# A better internet.
-# Uncomment this to enable Commento.
-#
-[params.commento]
-url = "Reijn.dev"
 
 # Uncomment this if you want a portrait on your start page
 
