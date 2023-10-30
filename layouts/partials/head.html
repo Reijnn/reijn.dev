@@ -38,9 +38,6 @@
 
 {{ template "_internal/schema.html" . }}
 
-{{ if isset .Site.Taxonomies "series" }}
-    {{ template "_internal/opengraph.html" . }}
-{{ end }}
 
 {{ range .Params.categories }}
     <meta property="article:section" content="{{ . }}" />
