@@ -14,7 +14,7 @@ paginate = 10
 rssLimit = 10                                                                                                     # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-# googleAnalytics = ""
+googleAnalytics = "G-YHYHH5YJDE"
 # disqusShortname = ""
 
 archetypeDir = "archetypes"
@@ -160,8 +160,8 @@ logoCursorColor = "#dcdcdc"
 # A better internet.
 # Uncomment this to enable Commento.
 #
-# [params.commento]
-#   url = ""
+[params.commento]
+url = "Reijn.dev"
 
 # Uncomment this if you want a portrait on your start page
 
