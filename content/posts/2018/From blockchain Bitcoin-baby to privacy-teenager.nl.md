@@ -2,7 +2,6 @@
 title: "Van blockchain Bitcoin-baby naar privacy-puber"
 date: 2018-06-25T16:15:09+08:00
 draft: false
-toc: false
 images:
 tags:
   - Blockchain

@@ -2,7 +2,6 @@
 title: "#Consultancy - InfoSupport"
 date: 2019-11-05T12:27:34+01:00
 draft: false
-toc: false
 images:
 tags:
   - Consultancy

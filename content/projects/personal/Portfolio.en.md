@@ -2,7 +2,6 @@
 title: "#Development - Portfolio Website"
 date: 2019-10-07T14:04:09+01:00
 draft: false
-toc: false
 tags: 
   - Web
   - Hugo
