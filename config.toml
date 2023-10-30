@@ -1,4 +1,4 @@
-baseURL = "https://reijn.dev"
+baseURL = ""
 title = "Niels Reijn"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -113,6 +113,8 @@ customJS = []
 # Toggle this option need to rebuild SCSS, requires extended version of Hugo
 #
 justifyContent = false # Set "text-align: justify" to .post-content.
+
+relativeURLs=true
 
 # Integrate Plausible.io
 # plausibleDataDomain = 'test.com'
