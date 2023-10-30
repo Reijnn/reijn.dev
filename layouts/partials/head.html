@@ -56,11 +56,11 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<!-- JSON Feed -->
+<!--&lt;!&ndash; JSON Feed &ndash;&gt;
 {{ if .OutputFormats.Get "json" }}
 <link href="{{ if .OutputFormats.Get "json" }}{{ .Site.BaseURL }}feed.json{{ end }}" rel="alternate"
     type="application/json" title="{{ .Site.Title }}" />
-{{ end }}
+{{ end }}-->
 
 <!-- Custom head tags -->
 {{- if templates.Exists "partials/extra-head.html" -}}
