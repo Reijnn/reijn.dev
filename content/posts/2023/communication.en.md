@@ -4,7 +4,7 @@ date: 2023-11-14T20:05:27+01:00
 draft: false
 tags:
   - Communication
-  - EPACexexex
+  - EPAC
 ---
 
 Today, I want to dive into a topic that affects us all, whether we're at work, with friends, or just trying to make a good impression at that awkward family gathering: How to interact with other people effectively? Let's talk about it.
