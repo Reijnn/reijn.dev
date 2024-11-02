@@ -12,7 +12,12 @@ subwriter
   .deleteAll()
 
   .pauseFor(100)
-  .typeString('Scrum Master')
+  .typeString('Product Owner')
+  .pauseFor(300)
+  .deleteAll()
+
+  .pauseFor(100)
+  .typeString('Data Engineer')
   .pauseFor(300)
   .deleteAll()
 
