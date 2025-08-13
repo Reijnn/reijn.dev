@@ -11,12 +11,9 @@
     "deploy": "npm run build && firebase deploy",
     "deploy:preview": "npm run build:preview && firebase deploy",
     "lint": "echo 'No linting configured'",
-    "test": "echo 'No tests configured'",
-    "postinstall": "hugo-installer --version latest --extended"
+    "test": "echo 'No tests configured'"
   },
-  "devDependencies": {
-    "hugo-installer": "^4.0.1"
-  },
+  "devDependencies": {},
   "keywords": ["hugo", "blog", "personal-website", "static-site"],
   "author": "Niels Reijn <reijnn@gmail.com>",
   "license": "MIT"
