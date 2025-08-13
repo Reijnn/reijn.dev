@@ -1,5 +1,23 @@
 {
+  "name": "reijn.dev",
+  "version": "1.0.0",
+  "description": "Personal website and blog by Niels Reijn",
+  "scripts": {
+    "dev": "hugo serve --buildDrafts --buildFuture --disableFastRender",
+    "start": "hugo serve",
+    "build": "hugo --minify",
+    "build:preview": "hugo --buildDrafts --buildFuture --minify",
+    "clean": "rm -rf public resources",
+    "deploy": "npm run build && firebase deploy",
+    "deploy:preview": "npm run build:preview && firebase deploy",
+    "lint": "echo 'No linting configured'",
+    "test": "echo 'No tests configured'",
+    "postinstall": "hugo-installer --version latest --extended"
+  },
   "devDependencies": {
     "hugo-installer": "^4.0.1"
-  }
+  },
+  "keywords": ["hugo", "blog", "personal-website", "static-site"],
+  "author": "Niels Reijn <reijnn@gmail.com>",
+  "license": "MIT"
 }
