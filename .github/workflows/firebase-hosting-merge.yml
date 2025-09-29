@@ -6,6 +6,14 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
+
+concurrency:
+  group: firebase-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -35,7 +43,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: resources
-          key: hugo-resources-${{ runner.os }}-${{ hashFiles('**/config.toml') }}-${{ hashFiles('content/**') }}
+          key: hugo-resources-${{ runner.os }}-${{ hashFiles('**/config.toml', 'themes/**', 'content/**') }}
           restore-keys: |
             hugo-resources-${{ runner.os }}-${{ hashFiles('**/config.toml') }}-
             hugo-resources-${{ runner.os }}-
@@ -43,8 +51,15 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-build
+          path: public/
+          retention-days: 7
+
       - name: Deploy
-        uses: FirebaseExtended/action-hosting-deploy@v0.9.0
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_REIJN_DEV }}"

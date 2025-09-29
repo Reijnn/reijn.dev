@@ -3,6 +3,15 @@
 
 name: Deploy to Firebase Hosting on PR
 "on": pull_request
+
+concurrency:
+  group: firebase-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
@@ -32,7 +41,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: resources
-          key: hugo-resources-${{ runner.os }}-${{ hashFiles('**/config.toml') }}-${{ hashFiles('content/**') }}
+          key: hugo-resources-${{ runner.os }}-${{ hashFiles('**/config.toml', 'themes/**', 'content/**') }}
           restore-keys: |
             hugo-resources-${{ runner.os }}-${{ hashFiles('**/config.toml') }}-
             hugo-resources-${{ runner.os }}-
@@ -41,8 +50,9 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: FirebaseExtended/action-hosting-deploy@v0.9.0
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_REIJN_DEV }}"
           projectId: reijn-dev
+          expires: 7d
