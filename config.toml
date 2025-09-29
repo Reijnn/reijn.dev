@@ -62,9 +62,9 @@ dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 
 # Metadata mostly used in document's head
-# 
+#
 description = "Homepage and blog by Niels Reijn"
-images = [""]
+images = ["/android-chrome-512x512.png"]
 keywords = "homepage, blog, science, informatics, development, programming"
 
 # Home subtitle of the index page.

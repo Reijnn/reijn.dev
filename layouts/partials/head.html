@@ -4,6 +4,16 @@
 <meta name="robots" content="noindex" />
 {{ end }}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Preconnect to external resources -->
+{{- if .Site.Config.Services.GoogleAnalytics.ID }}
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+{{- end }}
+{{- if .Site.DisqusShortname }}
+<link rel="preconnect" href="https://{{ .Site.DisqusShortname }}.disqus.com">
+<link rel="dns-prefetch" href="https://{{ .Site.DisqusShortname }}.disqus.com">
+{{- end }}
 <meta name="author" content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ range .Site.Params.Author }}{{ . }} {{ end }}{{ end }}">
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.homeSubtitle }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
 <meta name="keywords" content="{{ .Site.Params.keywords }}{{ if .Params.tags }}{{ range .Params.tags }}, {{ . }}{{ end }}{{ end }}" />
