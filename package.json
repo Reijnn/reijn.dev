@@ -15,7 +15,7 @@
     "test": "echo 'No tests configured'"
   },
   "devDependencies": {
-    "hugo-extended": "^0.140.2"
+    "hugo-extended": "^0.150.1"
   },
   "keywords": ["hugo", "blog", "personal-website", "static-site"],
   "author": "Niels Reijn <reijnn@gmail.com>",
