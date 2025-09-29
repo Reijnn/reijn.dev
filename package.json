@@ -10,10 +10,13 @@
     "clean": "rm -rf public resources",
     "deploy": "npm run build && firebase deploy",
     "deploy:preview": "npm run build:preview && firebase deploy",
+    "check": "hugo version && hugo version | grep -q extended || (echo 'Error: Hugo extended is required' && exit 1)",
     "lint": "echo 'No linting configured'",
     "test": "echo 'No tests configured'"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "hugo-extended": "^0.140.2"
+  },
   "keywords": ["hugo", "blog", "personal-website", "static-site"],
   "author": "Niels Reijn <reijnn@gmail.com>",
   "license": "MIT"

@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://reijn.dev"
 title = "Niels Reijn"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -43,8 +43,12 @@ posts = "/posts/:year/:month/:title/"
 [author]
 name = "Niels Reijn"
 
-[blackfriday]
-hrefTargetBlank = true
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions]
+linkify = true
 
 [taxonomies]
 tag = "tags"
@@ -122,7 +126,7 @@ relativeURLs=true
 # If you want, you can easily override the default footer with your own content. 
 #
 [params.footer]
-trademark = 2023
+trademark = 2025
 rss = false
 copyright = false
 author = false
