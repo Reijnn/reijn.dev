@@ -16,9 +16,9 @@
     "test:headed": "playwright test --headed",
     "lint": "echo 'No linting configured'"
   },
-  "dependencies": {},
   "devDependencies": {
     "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
     "hugo-extended": "^0.158.0"
   },
   "keywords": [
