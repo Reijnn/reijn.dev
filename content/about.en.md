@@ -2,16 +2,18 @@
 title: "About"
 ---
 
-__Software Engineer & Assistant Squad Leader__
+__Software Engineer & Infantry Squad Leader__
 
 A dedicated Software Engineer with a Bachelor's degree in Software Engineering, I specialize in web development and am well-versed in cloud technologies, particularly Microsoft Azure. Certified in Scrum methodologies, I bring agility and efficiency to every project, ensuring robust and scalable solutions. Alongside my technical role, I serve with commitment in the military reserve, an experience that has instilled in me discipline, leadership, and the ability to thrive under pressure. Balancing both the tech and defense sectors, I bring a unique blend of skills, ensuring innovation, resilience, and steadfast dedication to any team or project I undertake.
 
 __Download my [resume](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
-__Work History__
-2024 - present | Product Owner @ Douane Nederland
-2023 - present | Management Consultant @ ilionx
-2023 - present | Assistant Squad Leader(Corporal) @ Koninklijke Landmacht  
+__Work History__   
+2026 - present | Technical Business Analyst @ Douane Nederland  
+2025 - present | Infantry Squad Leader(Sergeant) @ Koninklijke Landmacht  
+2023 - present | Management Consultant @ ilionx  
+2024 - 2025 | Product Owner @ Douane Nederland  
+2023 - 2025 | Assistant Squad Leader(Corporal) @ Koninklijke Landmacht  
 2022 - 2024 | Senior Data Engineer / Scrum Master @ Douane Nederland  
 2021 - 2023 | Riflemen(Private) @ Koninklijke Landmacht  
 2019 - 2023 | Software Engineer @ ilionx  

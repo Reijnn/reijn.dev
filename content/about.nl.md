@@ -2,7 +2,7 @@
 title: "Over"
 ---
 
-__Software Engineer & Plaatsvervanged Groepscommandant__
+__Software Engineer & Infanterie Groepscommandant__
 
 Een toegewijde Software Engineer met een Bachelor-diploma in Software Engineering. Ik ben gespecialiseerd in webontwikkeling en heb ruime kennis van cloudtechnologieën, met name Microsoft Azure. Gecertificeerd in Scrum-methodologieën breng ik wendbaarheid en efficiëntie naar elk project, waarmee ik robuuste en schaalbare oplossingen waarborg.
 
@@ -10,10 +10,12 @@ Naast mijn technische rol dien ik met veel toewijding als plaatsvervanged groeps
 
 __Download mijn [cv](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
-__Werk Historie__
-2024 - heden | Product Owner @ Douane Nederland
-2023 - heden | Management Consultant @ ilionx
-2023 - heden | Plaatsvervanged Groepscommandant(Korporaal) @ Koninklijke Landmacht 
+__Werk Historie__  
+2026 - heden | Technical Business Analyst @ Douane Nederland  
+2025 - heden | Infanterie Groepscommandant(Sergeant) @ Koninklijke Landmacht  
+2023 - heden | Management Consultant @ ilionx  
+2024 - 2025 | Product Owner @ Douane Nederland  
+2024 - 2025 | Plaatsvervanged Groepscommandant(Korporaal) @ Koninklijke Landmacht  
 2022 - 2024 | Senior Data Engineer / Scrum Master @ Douane Nederland  
 2021 - 2023 | Geweerschutter(Soldaat) @ Koninklijke Landmacht  
 2019 - 2023 | Software Engineer @ ilionx  
