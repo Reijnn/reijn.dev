@@ -11,7 +11,9 @@
 {{ end }}
 
 <!-- Vite-built bundles for npm packages (ES modules) -->
+{{ if .IsHome }}
 <script type="module" src="/js/typewriter.bundle.js"></script>
+{{ end }}
 
 {{ if .Page.Store.Get "hasMermaid" }}
 <script type="module" src="/js/mermaid.bundle.js"></script>

@@ -1,31 +1,15 @@
 import Typewriter from 'typewriter-effect/dist/core';
 
-// Initialize typewriter animation on homepage subtitle
+const roles = ['Software Engineer', 'Product Owner', 'Data Engineer', 'Management Consultant'];
+
 const subtitle = document.querySelector('h1 + p');
 
 if (subtitle) {
-  const typewriter = new Typewriter(subtitle, {
-    loop: true,
-    delay: 100,
-  });
+  const typewriter = new Typewriter(subtitle, { loop: true, delay: 100 });
 
-  typewriter
-    .pauseFor(100)
-    .typeString('Software Engineer')
-    .pauseFor(300)
-    .deleteAll()
-    .pauseFor(100)
-    .typeString('Product Owner')
-    .pauseFor(300)
-    .deleteAll()
-    .pauseFor(100)
-    .typeString('Data Engineer')
-    .pauseFor(300)
-    .deleteAll()
-    .pauseFor(100)
-    .typeString('Management Consultant')
-    .pauseFor(300)
-    .deleteAll()
-    .changeDelay(30)
-    .start();
+  typewriter.pauseFor(100);
+  for (const role of roles) {
+    typewriter.typeString(role).pauseFor(300).deleteAll().pauseFor(100);
+  }
+  typewriter.changeDelay(30).start();
 }
