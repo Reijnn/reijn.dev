@@ -21,8 +21,8 @@ CLAUDE.md
 hugo_stats.json
 
 ### Vite ###
-# Vite-built bundles
-static/js/*.bundle.js
+# Vite-built bundles and chunks (all build artifacts)
+public/js/
 
 # Executable may be added to repository
 hugo.exe

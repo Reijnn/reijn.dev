@@ -7,7 +7,7 @@
     "start": "vite build && hugo serve",
     "build": "vite build && hugo --minify",
     "build:preview": "vite build && hugo --buildDrafts --buildFuture --minify",
-    "clean": "rm -rf public resources static/js/*.bundle.js",
+    "clean": "rm -rf public resources",
     "deploy": "npm run build && firebase deploy",
     "deploy:preview": "npm run build:preview && firebase deploy",
     "check": "hugo version && hugo version | grep -q extended || (echo 'Error: Hugo extended is required' && exit 1)",

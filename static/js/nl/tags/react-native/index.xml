@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React Native on Niels Reijn</title><link>https://reijn.dev/nl/tags/react-native/</link><description>Recent content in React Native on Niels Reijn</description><generator>Hugo</generator><language>nl-NL</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener"&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><lastBuildDate>Mon, 30 Oct 2023 20:54:27 +0100</lastBuildDate><atom:link href="https://reijn.dev/nl/tags/react-native/index.xml" rel="self" type="application/rss+xml"/><item><title>Xamarin</title><link>https://reijn.dev/nl/posts/2018/12/xamarin/</link><pubDate>Fri, 07 Dec 2018 14:04:09 +0100</pubDate><guid>https://reijn.dev/nl/posts/2018/12/xamarin/</guid><description>&lt;p&gt;Veel bedrijven houden zich tegenwoordig bezig met het ontwikkelen van mobiele applicaties.
-Om zo veel mogelijk gebruikers te bereiken zal er ondersteuning moeten zijn voor meerdere
-platformen. Hiervan zijn Android en iOS de grootste. Om voor elk platform een applicatie te
-ontwikkelen en te onderhouden, kunnen de kosten hoog oplopen. Vandaar dat veel bedrijven
-onderzoek doen naar een manier, hoe deze kosten kunnen worden verlaagd.&lt;/p&gt;
-&lt;p&gt;Het doel van dit onderzoek is te achterhalen of Xamarin een geschikte oplossing is voor QNH
-Consulting om hierin cross-platform applicaties te gaan ontwikkelen. Hierbij is de volgende
-hoofdvraag opgesteld: ‘In hoeverre is Xamarin geschikt voor QNH Consulting om native cross-
-platform applicaties te ontwikkelen die draaien op Android, iOS en Windows?’&lt;/p&gt;</description></item></channel></rss>

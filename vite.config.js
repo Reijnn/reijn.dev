@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
-    outDir: 'static/js',
+    outDir: 'public/js',
     emptyOutDir: false,
     minify: true,
     rollupOptions: {
