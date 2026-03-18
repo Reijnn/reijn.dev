@@ -10,10 +10,10 @@ Naast mijn technische rol dien ik met veel toewijding als plaatsvervanged groeps
 
 __Download mijn [cv](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
-__Werk Historie__  
-2024 - huidig | Product Owner @ Douane Nederland  
-2023 - huidig | Management Consultant @ ilionx  
-2023 - huidig | Plaatsvervanged Groepscommandant(Korporaal) @ Koninklijke Landmacht 
+__Werk Historie__
+2024 - heden | Product Owner @ Douane Nederland
+2023 - heden | Management Consultant @ ilionx
+2023 - heden | Plaatsvervanged Groepscommandant(Korporaal) @ Koninklijke Landmacht 
 2022 - 2024 | Senior Data Engineer / Scrum Master @ Douane Nederland  
 2021 - 2023 | Geweerschutter(Soldaat) @ Koninklijke Landmacht  
 2019 - 2023 | Software Engineer @ ilionx  
@@ -26,7 +26,7 @@ __Talen__
 Javascript, HTML, CSS, Typescript, Java, Kotlin, C#, SQL en nog veel meer...
 
 __Diensten__    
-[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn), [Azure Portal](https://portal.asure.com), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
+[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn), [Azure Portal](https://portal.azure.com), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
 __Frameworks__  
 * Data: [Azure Synapse](https://azure.microsoft.com/nl-nl/products/synapse-analytics), [Jupyter Notebooks](https://jupyter.org/)

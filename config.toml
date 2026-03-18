@@ -4,11 +4,7 @@ theme = "hello-friend-ng"
 
 sectionPagesMenu = 'main'
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
-
-googleAnalytics = "G-YHYHH5YJDE"
 disqusShortname = "reijn-dev"
 
 archetypeDir = "archetypes"
@@ -16,8 +12,6 @@ contentDir = "content"
 dataDir = "data"
 layoutDir = "layouts"
 publishDir = "public"
-
-enableServiceWorker = true
 
 buildDrafts = false
 buildFuture = false
@@ -31,7 +25,7 @@ enableMissingTranslationPlaceholders = false
 disableRSS = false
 disableSitemap = false
 disable404 = false
-disableHugoGeneratorInject = false
+disableHugoGeneratorInject = true
 
 [permalinks]
 posts = "/posts/:year/:month/:title/"
@@ -46,6 +40,14 @@ unsafe = true
 [markup.goldmark.extensions]
 linkify = true
 
+[markup.highlight]
+style = "monokai"
+codeFences = true
+
+[services]
+[services.googleAnalytics]
+id = "G-YHYHH5YJDE"
+
 [taxonomies]
 tag = "tags"
 category = "categories"
@@ -59,7 +61,7 @@ dateformNumTime = "2006-01-02 15:04"
 
 # Metadata mostly used in document's head
 #
-description = "Homepage and blog by Niels Reijn"
+description = "Niels Reijn — Software Engineer, Management Consultant, and Product Owner. Writing about technology, privacy, and development."
 images = ["/android-chrome-512x512.png"]
 keywords = "homepage, blog, science, informatics, development, programming"
 

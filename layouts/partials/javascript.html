@@ -1,9 +1,11 @@
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
+<!-- Load library dependencies first -->
+<script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.21.0/dist/core.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js" defer></script>
+
 {{ $main := resources.Get "js/main.js" }}
 {{ $menu := resources.Get "js/menu.js" }}
 {{ $prism := resources.Get "js/prism.js" }}
-{{ $typewriter := resources.Get "js/typewriter.js" }}
-{{ $secureJS := slice $main $menu $prism $typewriter | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $secureJS := slice $main $menu $prism | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
 
 {{ range $val := $.Site.Params.customJS }}
@@ -12,39 +14,11 @@
     {{ end }}
 {{ end }}
 
-{{- if .Site.Params.enableServiceWorker }}
-    <script>
-    if("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker.register("/sw.js").catch(err => {
-                console.error('Service Worker registration failed:', err);
-            });
-        });
-    }
-    </script>
-{{ end }}
+<!-- Load typewriter effect initialization -->
+{{ $typewriterEffect := resources.Get "js/typewriter-effect.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $typewriterEffect.RelPermalink }}" integrity="{{ $typewriterEffect.Data.Integrity }}" defer></script>
+
 {{ if .Page.Store.Get "hasMermaid" }}
-<script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
-    const settings = localStorage.getItem("theme") === "dark" ?
-        {
-            startOnLoad: true,
-            theme: "dark",
-            darkMode: true,
-            themeVariables: {
-                tertiaryColor: "#dee3ed"
-            }
-        }
-        :
-        {
-            startOnLoad: true,
-            theme: "base",
-            darkMode: false,
-            themeVariables: {
-                tertiaryColor: "#dee3ed"
-            }
-        }
-    ;
-    mermaid.initialize(settings);
-</script>
+{{ $mermaidJS := resources.Get "js/mermaid.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $mermaidJS.RelPermalink }}" integrity="{{ $mermaidJS.Data.Integrity }}" defer></script>
 {{ end }}

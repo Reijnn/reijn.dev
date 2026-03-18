@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/hugo,intellij,node,macos,firebase
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo,intellij,node,macos,firebase
 
+# Claude Code configuration
+CLAUDE.md
+
 ### Firebase ###
 .idea
 **/node_modules/*

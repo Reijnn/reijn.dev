@@ -8,10 +8,10 @@ A dedicated Software Engineer with a Bachelor's degree in Software Engineering, 
 
 __Download my [resume](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
-__Work History__  
-2024 - huidig | Product Owner @ Douane Nederland  
-2023 - huidig | Management Consultant @ ilionx  
-2023 - huidig | Assistant Squad Leader(Corporal) @ Koninklijke Landmacht  
+__Work History__
+2024 - present | Product Owner @ Douane Nederland
+2023 - present | Management Consultant @ ilionx
+2023 - present | Assistant Squad Leader(Corporal) @ Koninklijke Landmacht  
 2022 - 2024 | Senior Data Engineer / Scrum Master @ Douane Nederland  
 2021 - 2023 | Riflemen(Private) @ Koninklijke Landmacht  
 2019 - 2023 | Software Engineer @ ilionx  
@@ -24,7 +24,7 @@ __Languages__
 Javascript, HTML, CSS, Typescript, Java, Kotlin, C#, SQL and many more...
 
 __Services__    
-[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn?nav_source=navbar), [Azure Portal](https://portal.asure.com) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
+[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn?nav_source=navbar), [Azure Portal](https://portal.azure.com) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
 __Frameworks__  
 * Data: [Azure Synapse](https://azure.microsoft.com/nl-nl/products/synapse-analytics), [Jupyter Notebooks](https://jupyter.org/)
