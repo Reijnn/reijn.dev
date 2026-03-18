@@ -154,7 +154,7 @@ logoCursorColor = "#dcdcdc"
 # Uncomment this if you want a portrait on your start page
 
 [params.portrait]
-path = "profile.webp"
+path = "/profile.webp"
 alt = "Portrait"
 maxWidth = "50"
 maxHeight = "100"
