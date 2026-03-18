@@ -1,5 +1,5 @@
 ---
-title: "#Development - Whitepapers"
+title: "Web Developer - Whitepapers"
 date: 2018-12-07T14:04:09+01:00
 draft: false
 toc: false
@@ -10,7 +10,6 @@ tags:
   - Development
   - QNH
 ---
-
 
 QNH Consulting asked me to develop a web application that makes it easier to distribute whitepapers and store client data. I developed an mobile-friendly application using React and in a later version Angular. Both use a Firebase back-end.
 

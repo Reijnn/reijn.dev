@@ -1,17 +1,17 @@
 ---
-title: "#Development - Stichting veilig werken op hoogte (SVWOH)"
+title: "Rapid Application Developer - SVWOH"
 date: 2018-02-03T14:05:57+01:00
 draft: false
 toc: false
-tags: 
+tags:
   - Web
   - Angular
   - BettyBlocks
   - Development
   - QNH
 ---
-Registratie en controle Aspirant Hulpmonteur Steigerbouw
 
+I developed a certification and registration management system for SVWOH (Stichting veilig werken op hoogte), a Dutch organization focused on safe working at heights in the construction industry. The application tracks trainee progress and manages certifications for aspiring equipment operators.
 
 __Responsibilities__
 

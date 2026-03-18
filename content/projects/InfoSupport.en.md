@@ -1,6 +1,6 @@
 ---
-title: "#Consultancy - InfoSupport"
-date: 2019-11-05T12:27:34+01:00
+title: "Technical Integrator - InfoSupport"
+date: 2020-11-05T12:27:34+01:00
 draft: false
 images:
 tags:
