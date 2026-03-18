@@ -20,6 +20,10 @@ CLAUDE.md
 /assets/jsconfig.json
 hugo_stats.json
 
+### Vite ###
+# Vite-built bundles
+static/js/*.bundle.js
+
 # Executable may be added to repository
 hugo.exe
 hugo.darwin

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xamarin on Niels Reijn</title>
+    <link>http://localhost:1313/tags/xamarin/</link>
+    <description>Recent content in Xamarin on Niels Reijn</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 30 Oct 2023 20:54:27 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/xamarin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xamarin</title>
+      <link>http://localhost:1313/posts/2018/12/xamarin/</link>
+      <pubDate>Fri, 07 Dec 2018 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/posts/2018/12/xamarin/</guid>
+      <description>&lt;p&gt;Many companies are currently involved in the development of mobile applications.&#xA;To reach as many users as possible, there must be support for several&#xA;platforms. Android and iOS are the largest of these. To create an application for every platform&#xA;develop and maintain, costs can run high. That is why many companies&#xA;do research into how these costs can be reduced.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this study is to find out if Xamarin is a suitable solution for QNH&#xA;Consulting to develop cross-platform applications. Here is the following&#xA;main question: &amp;ldquo;To what extent is Xamarin suitable for QNH Consulting to&#xA;develop platform applications that run on Android, iOS and Windows?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

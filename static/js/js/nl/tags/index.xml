@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Niels Reijn</title>
+    <link>http://localhost:1313/nl/tags/</link>
+    <description>Recent content in Tags on Niels Reijn</description>
+    <generator>Hugo</generator>
+    <language>nl-NL</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 30 Oct 2023 22:15:10 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/nl/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/nl/tags/hugo/</link>
+      <pubDate>Mon, 30 Oct 2023 20:05:27 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IPFS</title>
+      <link>http://localhost:1313/nl/tags/ipfs/</link>
+      <pubDate>Mon, 30 Oct 2023 20:05:27 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/ipfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Consultancy</title>
+      <link>http://localhost:1313/nl/tags/consultancy/</link>
+      <pubDate>Tue, 05 Nov 2019 12:27:34 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/consultancy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Datarotonde</title>
+      <link>http://localhost:1313/nl/tags/datarotonde/</link>
+      <pubDate>Tue, 05 Nov 2019 12:27:34 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/datarotonde/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>http://localhost:1313/nl/tags/development/</link>
+      <pubDate>Mon, 07 Oct 2019 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>http://localhost:1313/nl/tags/web/</link>
+      <pubDate>Mon, 07 Oct 2019 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Angular</title>
+      <link>http://localhost:1313/nl/tags/angular/</link>
+      <pubDate>Tue, 13 Aug 2019 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/angular/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BettyBlocks</title>
+      <link>http://localhost:1313/nl/tags/bettyblocks/</link>
+      <pubDate>Tue, 13 Aug 2019 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/bettyblocks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>QNH</title>
+      <link>http://localhost:1313/nl/tags/qnh/</link>
+      <pubDate>Tue, 13 Aug 2019 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/qnh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firebase</title>
+      <link>http://localhost:1313/nl/tags/firebase/</link>
+      <pubDate>Fri, 07 Dec 2018 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/firebase/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React Native</title>
+      <link>http://localhost:1313/nl/tags/react-native/</link>
+      <pubDate>Fri, 07 Dec 2018 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/react-native/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xamarin</title>
+      <link>http://localhost:1313/nl/tags/xamarin/</link>
+      <pubDate>Fri, 07 Dec 2018 14:04:09 +0100</pubDate>
+      <guid>http://localhost:1313/nl/tags/xamarin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blockchain</title>
+      <link>http://localhost:1313/nl/tags/blockchain/</link>
+      <pubDate>Mon, 25 Jun 2018 16:15:09 +0800</pubDate>
+      <guid>http://localhost:1313/nl/tags/blockchain/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

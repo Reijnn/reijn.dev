@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPFS on Niels Reijn</title>
+    <link>http://localhost:1313/nl/tags/ipfs/</link>
+    <description>Recent content in IPFS on Niels Reijn</description>
+    <generator>Hugo</generator>
+    <language>nl-NL</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 30 Oct 2023 20:54:27 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/nl/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Websites Hosten op IPFS</title>
+      <link>http://localhost:1313/nl/posts/2023/10/hugo-websites-hosten-op-ipfs/</link>
+      <pubDate>Mon, 30 Oct 2023 20:05:27 +0100</pubDate>
+      <guid>http://localhost:1313/nl/posts/2023/10/hugo-websites-hosten-op-ipfs/</guid>
+      <description>&lt;p&gt;De IPFS versie van deze pagina is te vinden op: &lt;a href=&#34;https://ipfs.reijn.dev&#34;&gt;https://ipfs.reijn.dev&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Het gedecentraliseerde web is de toekomst, en IPFS (InterPlanetary File System) is een van de pioniers op dit gebied. IPFS is een peer-to-peer protocol voor het opslaan en benaderen van bestanden, websites, applicaties en meer. Combineer dat met Hugo - een snelle en moderne static site generator, en je hebt een recept voor een gedecentraliseerde en razendsnelle website. Hier lees je hoe je je Hugo website op IPFS host.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

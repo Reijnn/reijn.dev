@@ -1,0 +1,13 @@
+/* Styles for lazy-loaded images */
+img[loading="lazy"] {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-loading {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img.loaded {
+  opacity: 1;
+} 

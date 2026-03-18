@@ -1,0 +1,136 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Niels Reijn</title>
+        <link>http://localhost:1313/nl/posts/</link>
+        <description>Recent content in Posts on Niels Reijn</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>nl-NL</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Mon, 30 Oct 2023 20:05:27 +0100</lastBuildDate>
+        <atom:link href="http://localhost:1313/nl/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hugo Websites Hosten op IPFS</title>
+            <link>http://localhost:1313/nl/posts/2023/10/hugo-websites-hosten-op-ipfs/</link>
+            <pubDate>Mon, 30 Oct 2023 20:05:27 +0100</pubDate>
+            
+            <guid>http://localhost:1313/nl/posts/2023/10/hugo-websites-hosten-op-ipfs/</guid>
+            <description>&lt;p&gt;De IPFS versie van deze pagina is te vinden op: &lt;a href=&#34;https://ipfs.reijn.dev&#34;&gt;https://ipfs.reijn.dev&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Het gedecentraliseerde web is de toekomst, en IPFS (InterPlanetary File System) is een van de pioniers op dit gebied. IPFS is een peer-to-peer protocol voor het opslaan en benaderen van bestanden, websites, applicaties en meer. Combineer dat met Hugo - een snelle en moderne static site generator, en je hebt een recept voor een gedecentraliseerde en razendsnelle website. Hier lees je hoe je je Hugo website op IPFS host.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>De IPFS versie van deze pagina is te vinden op: <a href="https://ipfs.reijn.dev">https://ipfs.reijn.dev</a></p>
+<p>Het gedecentraliseerde web is de toekomst, en IPFS (InterPlanetary File System) is een van de pioniers op dit gebied. IPFS is een peer-to-peer protocol voor het opslaan en benaderen van bestanden, websites, applicaties en meer. Combineer dat met Hugo - een snelle en moderne static site generator, en je hebt een recept voor een gedecentraliseerde en razendsnelle website. Hier lees je hoe je je Hugo website op IPFS host.</p>
+<ol>
+<li>Wat je nodig hebt:
+Een website gebouwd met Hugo
+IPFS geïnstalleerd op je computer
+Een vleugje enthousiasme voor het gedecentraliseerde web!</li>
+<li>Bouw je Hugo website:
+Voordat je iets naar IPFS kunt uploaden, moet je je website bouwen met Hugo. Navigeer naar de hoofdmap van je Hugo-site en voer uit:</li>
+</ol>
+<pre tabindex="0"><code>hugo --minify
+</code></pre><p>Dit genereert een &lsquo;public&rsquo; map met daarin je gebouwde site.</p>
+<ol start="3">
+<li>Voeg je website toe aan IPFS:
+Navigeer naar de &lsquo;public&rsquo; map:</li>
+</ol>
+<pre tabindex="0"><code>cd public
+</code></pre><p>Voeg nu deze map toe aan IPFS:</p>
+<pre tabindex="0"><code>ipfs add -r .
+</code></pre><p>Je krijgt een hash voor elk bestand en één voor de hele map. Noteer de hash voor de map, omdat dit het adres van je website op IPFS vertegenwoordigt.</p>
+<ol start="4">
+<li>Toegang tot je website:
+Je website is nu live op IPFS! Om er toegang toe te krijgen, ga je naar elke openbare IPFS gateway en voeg je jouw hash toe:</li>
+</ol>
+<pre tabindex="0"><code>https://ipfs.io/ipfs/[Your_Directory_Hash]
+</code></pre><p>Vervang [Jouw_Map_Hash] door de hash die je in de vorige stap hebt genoteerd.</p>
+<ol start="5">
+<li>Houd je site toegankelijk:
+IPFS vertrouwt op peers om inhoud te hosten. Als niemand gedurende een langere periode toegang heeft tot je website, kan deze ontoegankelijk worden. Overweeg om je website vast te zetten met services zoals Pinata of je eigen dedicated IPFS node te draaien voor consistente beschikbaarheid.</li>
+</ol>
+<h2 id="conclusie">Conclusie:</h2>
+<p>Het hosten van een Hugo-website op IPFS is een eenvoudig proces dat het beste van statische webgeneratie combineert met de veerkracht en visie van het gedecentraliseerde web. Het is niet alleen in lijn met een opener en vrijer internet, maar biedt ook een blik op hoe het web van de toekomst eruit zou kunnen zien.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Xamarin</title>
+            <link>http://localhost:1313/nl/posts/2018/12/xamarin/</link>
+            <pubDate>Fri, 07 Dec 2018 14:04:09 +0100</pubDate>
+            
+            <guid>http://localhost:1313/nl/posts/2018/12/xamarin/</guid>
+            <description>&lt;p&gt;Veel bedrijven houden zich tegenwoordig bezig met het ontwikkelen van mobiele applicaties.
+Om zo veel mogelijk gebruikers te bereiken zal er ondersteuning moeten zijn voor meerdere
+platformen. Hiervan zijn Android en iOS de grootste. Om voor elk platform een applicatie te
+ontwikkelen en te onderhouden, kunnen de kosten hoog oplopen. Vandaar dat veel bedrijven
+onderzoek doen naar een manier, hoe deze kosten kunnen worden verlaagd.&lt;/p&gt;
+&lt;p&gt;Het doel van dit onderzoek is te achterhalen of Xamarin een geschikte oplossing is voor QNH
+Consulting om hierin cross-platform applicaties te gaan ontwikkelen. Hierbij is de volgende
+hoofdvraag opgesteld: ‘In hoeverre is Xamarin geschikt voor QNH Consulting om native cross-
+platform applicaties te ontwikkelen die draaien op Android, iOS en Windows?’&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Veel bedrijven houden zich tegenwoordig bezig met het ontwikkelen van mobiele applicaties.
+Om zo veel mogelijk gebruikers te bereiken zal er ondersteuning moeten zijn voor meerdere
+platformen. Hiervan zijn Android en iOS de grootste. Om voor elk platform een applicatie te
+ontwikkelen en te onderhouden, kunnen de kosten hoog oplopen. Vandaar dat veel bedrijven
+onderzoek doen naar een manier, hoe deze kosten kunnen worden verlaagd.</p>
+<p>Het doel van dit onderzoek is te achterhalen of Xamarin een geschikte oplossing is voor QNH
+Consulting om hierin cross-platform applicaties te gaan ontwikkelen. Hierbij is de volgende
+hoofdvraag opgesteld: ‘In hoeverre is Xamarin geschikt voor QNH Consulting om native cross-
+platform applicaties te ontwikkelen die draaien op Android, iOS en Windows?’</p>
+<p>Om antwoord te geven op deze vraag is literatuur en empirisch onderzoek gedaan naar de
+theorie en de praktijk van Xamarin. Er is een vergelijking gemaakt met een soortgelijk
+framework genaamd React Native.</p>
+<p>Uit de verschillende hoofdstukken kunnen we concluderen dat Xamarin geschikt is voor QNH
+Consulting om in een aantal gevallen Xamarin in te zetten bij projecten. De redenen hiervoor
+zijn:</p>
+<ul>
+<li>Cross-platform development heeft als voordeel dat in de ontwikkeltijd van 1 normale
+applicatie, er gelijk meerdere platformen ondersteunt worden.</li>
+<li>Xamarin combineert de voordelen van native en hybrid. De voordelen van native
+API’s, native UI en performance komen samen met het hybrid ontwikkelen voor
+meerdere platformen.</li>
+<li>Er bestaan frameworks die een soortgelijke oplossing aanbieden als Xamarin. Echter is
+de aanpak van Xamarin uniek.</li>
+<li>Xamarin biedt verschillende opties met native en forms. Dit vergroot de
+inzetbaarheid.</li>
+<li>Naast mobiele platformen is het ook mogelijk voor desktop te ontwikkelen.</li>
+</ul>
+<p>Uit het onderzoek is ook gebleken dat DevOps een goede ondersteuning is voor het
+ontwikkelen van applicaties met Xamarin. Dit komt doordat:</p>
+<ul>
+<li>QNH Consulting wil starten met Xamarin, hierdoor kan het gelijk implementeren van
+een aantal DevOps principes makker doorgevoerd worden.</li>
+<li>QNH Consulting investeert in Scrum. DevOps zou een logische volgende stap kunnen
+zijn.</li>
+<li>DevOps is een veel voorkomende trend. Door hier meer kennis mee op te doen kan dit
+ook bij klanten worden toegepast.</li>
+<li>Microsoft zet met Xamarin ook in op DevOps met omgevingen zoals Mobile Center en
+Team Services.</li>
+</ul>
+<p>Wel is het belangrijk om uit deze resultaten te concluderen dat, terwijl Xamarin in de huidige
+markt een sterke kandidaat is, er altijd moet worden gekeken naar andere oplossingen die
+misschien wel beter passen bij het project. Cross-platform development frameworks komen en
+gaan in een rap tempo terwijl de native development approach voorlopig blijft bestaan.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Van blockchain Bitcoin-baby naar privacy-puber</title>
+            <link>http://localhost:1313/nl/posts/2018/06/van-blockchain-bitcoin-baby-naar-privacy-puber/</link>
+            <pubDate>Mon, 25 Jun 2018 16:15:09 +0800</pubDate>
+            
+            <guid>http://localhost:1313/nl/posts/2018/06/van-blockchain-bitcoin-baby-naar-privacy-puber/</guid>
+            <description>&lt;p&gt;&lt;strong&gt;&lt;strong&gt;Blockchain, hype, buzzwoord hoe je het ook wilt noemen, er is volop aandacht voor.&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Veel bedrijven werken hard aan toepassingen van deze nieuwe technologie. Nadat de eerste generatie blockchains in 2009 ontwikkeld zijn, won de blockchain pas in 2011 echt aan populariteit door de toenemende interesse in de Bitcoin. Deze eerste generatie blockchain staat wat mij betreft voor de cryptocurrency. Deze variant is een grootboek van alle transacties en daarmee een soort database die automatisch transacties vastlegt en laat goedkeuren door de deelnemers. Als developer kun je weinig met dit type platform, alleen de eigenaar van de blockchain kan code toevoegen en applicaties aan de blockchain koppelen. Niet ideaal wanneer toepassingen van het platform ontwikkeld moeten worden voor het bedrijfsleven. Dus werd het tijd voor de Bitcoin-baby om op te groeien.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p><strong><strong>Blockchain, hype, buzzwoord hoe je het ook wilt noemen, er is volop aandacht voor.</strong></strong></p>
+<p>Veel bedrijven werken hard aan toepassingen van deze nieuwe technologie. Nadat de eerste generatie blockchains in 2009 ontwikkeld zijn, won de blockchain pas in 2011 echt aan populariteit door de toenemende interesse in de Bitcoin. Deze eerste generatie blockchain staat wat mij betreft voor de cryptocurrency. Deze variant is een grootboek van alle transacties en daarmee een soort database die automatisch transacties vastlegt en laat goedkeuren door de deelnemers. Als developer kun je weinig met dit type platform, alleen de eigenaar van de blockchain kan code toevoegen en applicaties aan de blockchain koppelen. Niet ideaal wanneer toepassingen van het platform ontwikkeld moeten worden voor het bedrijfsleven. Dus werd het tijd voor de Bitcoin-baby om op te groeien.</p>
+<p><strong>Generatie code-kleuter</strong></p>
+<p>De handen van developers jeuken om aan de slag te gaan met blockchain en om zo het bedrijfsleven te voorzien van toepassingen anders dan cryptovaluta. Daarom is er gewerkt aan de ontwikkeling van het platform. Bij de tweede generatie blockchains is het wel mogelijk om code toe te voegen en zo het platform steeds een beetje beter te maken. Een goed voorbeeld is de open source ethereum blockchain, dit platform is een mining-netwerk voor diverse cryptovaluta met enkele beveiligingsmaatregelen erin verwerkt. Met de ontwikkeling van de tweede generatie blockchains is het mogelijk geworden niet alleen informatie op te slaan, maar ook om bijvoorbeeld een smart contract te bouwen en deze automatisch te laten uitvoeren. Een hele verbetering die blockchain ook toepasbaar maakt voor bedrijven. De uitdaging waar we op dit moment voor staan en waarom de derde generatie echt nodig is om blockchain een vlucht te laten nemen, is privacy.</p>
+<p><strong>Generatie privacy-puber</strong></p>
+<p>Privacy is de afgelopen jaren een belangrijk thema, denk maar aan de komst van de AVG, maar ook aan de grote hoeveelheid datalekken. Bij het ontwikkelen van applicaties op een blockchainplatform is dit dan ook een belangrijk onderwerp. De derde generatie blockchain moet dan ook een belangrijke extra functionaliteit krijgen. Op dit moment is alles wat in de blockchain wordt gezet openbaar en inzichtelijk. Bij ilionx (voorheen QNH) hebben we een versleuteling ontwikkeld zodat de gegevens niet voor iedereen inzichtelijk zijn. Een voorwaarde is wel, dat de versleutelde gegevens niet relevant zijn voor bijvoorbeeld een transactie. Het aantal coins dat je bezit kun je nu bijvoorbeeld niet versleutelen, dat is waar de blockchain mee rekent. In de derde generatie blockchains moet de blockchain kunnen rekenen met versleutelde gegevens, wil deze technologie ingezet kunnen worden door bedrijven. Op dit moment is dat echter nog toekomstmuziek.</p>
+<p><strong>Generatie oneindig</strong></p>
+<p>We staan inmiddels aan de vooravond van deze derde generatie blockchains, waarin de blockchain kan rekenen met gecodeerde informatie. Dat noemen we zero-knowledge-proof. Zodra dit ontwikkeld is kan een supermarkt via de blockchain controleren of je wel echt 18 jaar bent zonder dat zij inzicht krijgen in je leeftijd. De supermarkt krijgt alleen de bevestiging of je wel of niet ouder bent, de ‘transactie’ vindt dan plaats zonder dat jouw gegevens openbaar en inzichtelijk zijn. Wanneer deze derde generatie blockchains er precies gaan komen, durf ik je niet te zeggen. Maar zodra ze er zijn, zijn de mogelijkheden eindeloos. Vanzelfsprekend zullen er ook weer nieuwe wensen ontstaan als privacy een onderdeel van de technologie is geworden. Ik kijk er in ieder geval naar uit om te ontdekken wat het volgende obstakel zal zijn voordat blockchain gemeengoed gaat worden. Maar welk obstakel dit ook wordt, op een dag is blockchain het nieuwe internet. En vanaf dat moment kunnen we ons niet meer voorstellen hoe ‘lastig’ ons leven was voor de blockchain-generatie.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,7 +1,3 @@
-<!-- Load library dependencies first -->
-<script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.21.0/dist/core.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js" defer></script>
-
 {{ $main := resources.Get "js/main.js" }}
 {{ $menu := resources.Get "js/menu.js" }}
 {{ $prism := resources.Get "js/prism.js" }}
@@ -14,11 +10,9 @@
     {{ end }}
 {{ end }}
 
-<!-- Load typewriter effect initialization -->
-{{ $typewriterEffect := resources.Get "js/typewriter-effect.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script type="text/javascript" src="{{ $typewriterEffect.RelPermalink }}" integrity="{{ $typewriterEffect.Data.Integrity }}" defer></script>
+<!-- Vite-built bundles for npm packages (ES modules) -->
+<script type="module" src="/js/typewriter.bundle.js"></script>
 
 {{ if .Page.Store.Get "hasMermaid" }}
-{{ $mermaidJS := resources.Get "js/mermaid.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script type="text/javascript" src="{{ $mermaidJS.RelPermalink }}" integrity="{{ $mermaidJS.Data.Integrity }}" defer></script>
+<script type="module" src="/js/mermaid.bundle.js"></script>
 {{ end }}
