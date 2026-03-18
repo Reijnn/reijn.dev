@@ -1,15 +1,11 @@
 baseURL = "https://reijn.dev"
 title = "Niels Reijn"
-languageCode = "en-us"
 theme = "hello-friend-ng"
 
 sectionPagesMenu = 'main'
 
-
-
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
-                                                                                        # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 googleAnalytics = "G-YHYHH5YJDE"
@@ -85,11 +81,11 @@ gitUrl = "https://github.com/Reijnn/reijn.dev/commit/"
 disableReadOtherPosts = false
 
 # Enable theme toggle
-# 
-# This options enables the theme toggle for the theme. 
-# Per default, this option is off. 
-# The theme is respecting the prefers-color-scheme of the operating systeme. 
-# With this option on, the page user is able to set the scheme he wants. 
+#
+# This options enables the theme toggle for the theme.
+# Per default, this option is off.
+# The theme is respecting the prefers-color-scheme of the operating system.
+# With this option on, the page user is able to set the scheme he wants.
 enableThemeToggle = true
 
 # Sharing buttons
@@ -116,8 +112,6 @@ customJS = []
 #
 justifyContent = false # Set "text-align: justify" to .post-content.
 
-relativeURLs=true
-
 # Integrate Plausible.io
 # plausibleDataDomain = 'test.com'
 # plausibleScriptSource = 'https://plausible.io/js/script.js'
@@ -126,7 +120,7 @@ relativeURLs=true
 # If you want, you can easily override the default footer with your own content. 
 #
 [params.footer]
-trademark = 2025
+trademark = 2026
 rss = false
 copyright = false
 author = false
@@ -187,10 +181,12 @@ url = "https://twitter.com/Reijnn_"
 
 [languages]
 [languages.en]
+locale = "en-US"
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 weight = 1
 
 [languages.nl]
+locale = "nl-NL"
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 weight = 2
 

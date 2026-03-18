@@ -1,4 +1,4 @@
-var subtitle = document.getElementById('subtitle');
+var subtitle = document.querySelector('h1 + p'); 
 
 var subwriter = new Typewriter(subtitle, {
   loop: true,
