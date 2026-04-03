@@ -1,0 +1,19 @@
+<div class="book-card">
+  {{ if .Params.isbn }}
+    <div class="book-cover">
+      <img src="https://covers.openlibrary.org/b/isbn/{{ .Params.isbn }}-L.jpg" alt="Cover of {{ .Title }}" loading="lazy" />
+    </div>
+  {{ else }}
+    <div class="book-cover book-cover--placeholder">
+      <span>{{ .Title }}</span>
+    </div>
+  {{ end }}
+
+  <div class="book-meta">
+    <p class="book-title">{{ .Title }}</p>
+    {{ with .Params.author }}
+      <p class="book-author">{{ . }}</p>
+    {{ end }}
+    <p class="book-year">{{ .Date.Format "2006" }}</p>
+  </div>
+</div>

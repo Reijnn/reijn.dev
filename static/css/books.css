@@ -1,0 +1,105 @@
+/* ── Books grid layout ───────────────────────────────────── */
+.books-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  padding: 0 20px;
+}
+
+.books-category-heading {
+  font-size: 1.625rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 0.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .books-category-heading {
+    border-bottom-color: #4e4e57;
+  }
+}
+
+[data-theme=dark] .books-category-heading {
+  border-bottom-color: #4e4e57;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 684px) {
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* ── Individual card ─────────────────────────────────────── */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.book-cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #eaeaea;
+}
+
+@media (prefers-color-scheme: dark) {
+  .book-cover {
+    background-color: #3b3d42;
+  }
+}
+
+[data-theme=dark] .book-cover {
+  background-color: #3b3d42;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.book-cover--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* ── Book metadata ───────────────────────────────────────── */
+.book-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.book-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.book-author {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.book-year {
+  margin: 0;
+  font-size: 0.7rem;
+  opacity: 0.5;
+}

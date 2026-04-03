@@ -107,7 +107,7 @@ enableGlobalLanguageMenu = false
 # Integrate Javascript files or stylesheets by adding the url to the external assets or by
 # linking local files with their path relative to the static folder, e.g. "css/styles.css"
 #
-customCSS = []
+customCSS = ["/css/books.css"]
 customJS = []
 
 # Toggle this option need to rebuild SCSS, requires extended version of Hugo
@@ -208,3 +208,15 @@ identifier = "projects"
 name = "Projects"
 url = "projects/"
 weight = "3"
+
+[[languages.en.menu.main]]
+identifier = "books"
+name       = "Books"
+url        = "books/"
+weight     = "4"
+
+[[languages.nl.menu.main]]
+identifier = "books"
+name       = "Boeken"
+url        = "books/"
+weight     = "4"

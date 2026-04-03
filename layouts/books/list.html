@@ -1,0 +1,37 @@
+{{ define "main" }}
+  {{ $work  := where .Data.Pages "Params.category" "work"  }}
+  {{ $other := where .Data.Pages "Params.category" "other" }}
+
+  <div class="content">
+    <main class="posts">
+      <h1>{{ .Title }}</h1>
+
+      {{ if $work }}
+        <section class="books-section">
+          <h2 class="books-category-heading">
+            {{ if eq .Site.Language.Lang "nl" }}Werk{{ else }}Work{{ end }}
+          </h2>
+          <div class="books-grid">
+            {{ range $work.ByDate.Reverse }}
+              {{ partial "book-card.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+      {{ if $other }}
+        <section class="books-section">
+          <h2 class="books-category-heading">
+            {{ if eq .Site.Language.Lang "nl" }}Overig{{ else }}Other{{ end }}
+          </h2>
+          <div class="books-grid">
+            {{ range $other.ByDate.Reverse }}
+              {{ partial "book-card.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+    </main>
+  </div>
+{{ end }}
