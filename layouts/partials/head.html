@@ -7,6 +7,7 @@
 
 <!-- Preconnect to external resources -->
 {{- if .Site.Config.Services.GoogleAnalytics.ID }}
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="dns-prefetch" href="https://www.google-analytics.com">
 {{- end }}
@@ -30,10 +31,15 @@
     </title>
 {{ end }}
 
-<!-- CSS -->
+<!-- Font preloads (break critical chain) -->
+<link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- CSS (non-blocking) -->
 {{ $opts := dict "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" (eq hugo.Environment "development") }}
 {{ with resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  <link rel="preload" href="{{ .RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  <noscript><link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></noscript>
 {{ end }}
 
 
@@ -74,10 +80,8 @@
     {{ partial "extra-head.html" . }}
 {{- end }}
 
-<!-- Google Analytics internal template -->
-{{- if .Site.Config.Services.GoogleAnalytics.ID }}
-    {{ template "_internal/google_analytics.html" . }}
-{{- end }}
+<!-- Google Analytics (lazy-loaded) -->
+{{ partial "google_analytics_lazy.html" . }}
 
 <!-- Plausible.io -->
 {{- if $.Site.Params.plausibleDataDomain }}
