@@ -22,10 +22,6 @@ linkify = true
 style = "monokai"
 codeFences = true
 
-[services]
-[services.googleAnalytics]
-id = "G-YHYHH5YJDE"
-
 [taxonomies]
 tag = "tags"
 category = "categories"
