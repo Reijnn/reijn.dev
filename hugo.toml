@@ -101,11 +101,13 @@ url = "https://www.linkedin.com/in/reijnn/"
 [languages]
 [languages.en]
 locale = "en-US"
+label = "English"
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 weight = 1
 
 [languages.nl]
 locale = "nl-NL"
+label = "Nederlands"
 copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 weight = 2
 
