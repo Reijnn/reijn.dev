@@ -1,0 +1,127 @@
+baseURL = "https://reijn.dev"
+title = "Niels Reijn"
+theme = "hello-friend-ng"
+
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # Used by the RSS template.
+disqusShortname = "reijn-dev"
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+disableHugoGeneratorInject = true
+
+[permalinks]
+posts = "/posts/:year/:month/:title/"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+linkify = true
+
+[markup.highlight]
+style = "monokai"
+codeFences = true
+
+[services]
+[services.googleAnalytics]
+id = "G-YHYHH5YJDE"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+description = "Niels Reijn — Software Engineer, Management Consultant, and Product Owner. Writing about technology, privacy, and development."
+images = ["/android-chrome-512x512.png"]
+keywords = "homepage, blog, science, informatics, development, programming"
+
+homeSubtitle = "Software Engineer"
+
+themeColor = "#1b1c1d"
+
+gitUrl = "https://github.com/Reijnn/reijn.dev/commit/"
+
+disableReadOtherPosts = false
+enableThemeToggle = true
+enableSharingButtons = true
+enableGlobalLanguageMenu = false
+
+customCSS = []
+customJS = []
+
+justifyContent = false
+
+[params.footer]
+trademark = 2026
+rss = false
+copyright = true
+author = false
+
+topText = [""]
+bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
+
+[params.favicon.color]
+mask = "#1b1c1d"
+msapplication = "#1b1c1d"
+theme = "#1b1c1d"
+
+[params.logo]
+logoMark = ">"
+logoText = "$ cd /home/"
+logoHomeLink = "/"
+logoCursorColor = "#dcdcdc"
+
+[params.author]
+name = "Niels Reijn"
+
+[params.portrait]
+path = "/profile.webp"
+alt = "Portrait"
+maxWidth = "150"
+maxHeight = "150"
+
+[[params.social]]
+name = "email"
+url = "mailto:niels@reijn.dev"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/reijnn/"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/reijnn/"
+
+[languages]
+[languages.en]
+locale = "en-US"
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+weight = 1
+
+[languages.nl]
+locale = "nl-NL"
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+weight = 2
+
+[menus]
+[[menus.main]]
+identifier = "about"
+name = "About"
+url = "about/"
+weight = 1
+[[menus.main]]
+identifier = "posts"
+name = "Posts"
+url = "posts/"
+weight = 2
+[[menus.main]]
+identifier = "projects"
+name = "Projects"
+url = "projects/"
+weight = 3
