@@ -1,0 +1,25 @@
+{{ $main := resources.Get "js/main.js" }}
+{{ $menu := resources.Get "js/menu.js" }}
+{{ $prism := resources.Get "js/prism.js" }}
+{{ $secureJS := slice $main $menu $prism | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+
+{{ range $val := $.Site.Params.customJS }}
+    {{ if gt (len $val) 0 }}
+        <script src="{{ $val }}" defer></script>
+    {{ end }}
+{{ end }}
+
+{{ if .IsHome }}
+{{ $twOpts := dict "format" "iife" "minify" true }}
+{{ with resources.Get "js/typewriter-effect.js" | js.Build $twOpts }}
+<script>{{ .Content | safeJS }}</script>
+{{ end }}
+{{ end }}
+
+{{ if .Page.Store.Get "hasMermaid" }}
+{{ $mermaidOpts := dict "format" "esm" "minify" true }}
+{{ with resources.Get "js/mermaid.js" | js.Build $mermaidOpts | fingerprint "sha512" }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}
+{{ end }}
