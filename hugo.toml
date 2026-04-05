@@ -63,7 +63,7 @@ rss = false
 copyright = true
 author = false
 
-topText = [""]
+topText = []
 bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
 
 [params.favicon.color]
