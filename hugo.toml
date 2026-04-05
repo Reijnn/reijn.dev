@@ -125,3 +125,8 @@ identifier = "projects"
 name = "Projects"
 url = "projects/"
 weight = 3
+[[menus.main]]
+identifier = "photos"
+name = "Photos"
+pageRef = "photos"
+weight = 4
