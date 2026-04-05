@@ -1,4 +1,4 @@
-import mermaid from 'mermaid';
+import mermaid from 'mermaid/dist/mermaid.esm.min.mjs';
 
 let storedTheme;
 try {

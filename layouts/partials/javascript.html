@@ -10,11 +10,16 @@
     {{ end }}
 {{ end }}
 
-<!-- Vite-built bundles for npm packages (ES modules) -->
 {{ if .IsHome }}
-<script type="module" src="/js/typewriter.bundle.js"></script>
+{{ $twOpts := dict "format" "esm" "minify" true }}
+{{ with resources.Get "js/typewriter-effect.js" | js.Build $twOpts | fingerprint "sha512" }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}
 {{ end }}
 
 {{ if .Page.Store.Get "hasMermaid" }}
-<script type="module" src="/js/mermaid.bundle.js"></script>
+{{ $mermaidOpts := dict "format" "esm" "minify" true }}
+{{ with resources.Get "js/mermaid.js" | js.Build $mermaidOpts | fingerprint "sha512" }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}
 {{ end }}
