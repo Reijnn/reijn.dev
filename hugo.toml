@@ -23,8 +23,6 @@ codeFences = true
 
 [taxonomies]
 tag = "tags"
-category = "categories"
-series = "series"
 
 [params]
 dateform = "Jan 2, 2006"
@@ -44,12 +42,6 @@ gitUrl = "https://github.com/Reijnn/reijn.dev/commit/"
 disableReadOtherPosts = false
 enableThemeToggle = true
 enableSharingButtons = true
-enableGlobalLanguageMenu = false
-
-customCSS = []
-customJS = []
-
-justifyContent = false
 
 [params.footer]
 trademark = true # shows "© <current year>"
