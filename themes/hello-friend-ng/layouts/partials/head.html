@@ -20,8 +20,23 @@
 {{ end }}
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+{{- /* Fingerprinted font URLs: a changed font gets a new URL, so fonts can be cached forever */}}
+{{- $faces := slice
+  (dict "file" "Inter-Regular" "weight" 400 "style" "normal" "preload" true)
+  (dict "file" "Inter-Italic" "weight" 400 "style" "italic")
+  (dict "file" "Inter-Medium" "weight" 600 "style" "normal")
+  (dict "file" "Inter-MediumItalic" "weight" 600 "style" "italic")
+  (dict "file" "Inter-Bold" "weight" 800 "style" "normal" "preload" true)
+  (dict "file" "Inter-BoldItalic" "weight" 800 "style" "italic") }}
+{{- $fontFaces := "" }}
+{{- range $faces }}
+  {{- $font := resources.Get (printf "fonts/%s.woff2" .file) | fingerprint }}
+  {{- if .preload }}
+<link rel="preload" href="{{ $font.RelPermalink }}" as="font" type="font/woff2" crossorigin>
+  {{- end }}
+  {{- $fontFaces = printf "%s@font-face{font-family:Inter;font-style:%s;font-weight:%d;font-display:swap;src:url(%s) format(\"woff2\")}" $fontFaces .style .weight $font.RelPermalink }}
+{{- end }}
+<style>{{ $fontFaces | safeCSS }}</style>
 
 <!-- Apply the saved theme before the first paint, so pages don't flash in the OS theme; main.js handles the toggle -->
 <script>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (_) {}</script>
