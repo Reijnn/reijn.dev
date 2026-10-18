@@ -38,7 +38,7 @@ Feedback is your best friend. It helps you improve, and it shows that you care a
 ## Cultural Competence and Diversity Awareness
 The diversity of our world is a remarkable aspect that should be embraced. Gaining knowledge about various cultures, customs, and values is essential. This understanding not only helps in avoiding unintended offenses but also broadens your horizons and enriches your life experience.
 
-**For instance**: Consider the example of some of my colleagues who observe Ramadan. By inquiring about their practices and the reasons behind this ritual, I am able to demonstrate understanding and support. Such interactions not only foster respect but also deepen my appreciation and awareness of their cultural practices."
+**For instance**: Consider the example of some of my colleagues who observe Ramadan. By inquiring about their practices and the reasons behind this ritual, I am able to demonstrate understanding and support. Such interactions not only foster respect but also deepen my appreciation and awareness of their cultural practices.
 
 ## Ethical Considerations
 Lastly, let's talk ethics. Be kind, respectful, and honest in your interactions. Treat others how you'd like to be treated. It's a golden rule for a reason. And remember, honesty doesn't mean bluntness. You can be truthful without hurting someone's feelings.
