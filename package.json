@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "hugo-extended": "^0.159.2",
-    "mermaid": "^10.9.5",
+    "pele": "^1.6.0",
     "typewriter-effect": "^2.22.0"
   },
   "keywords": [
