@@ -2,7 +2,7 @@
 title: "reijn.dev gemeten: 79% lichter en sneller op elke pagina"
 date: 2026-10-18T21:00:00+02:00
 draft: false
-description: "Een voor-en-na van een ronde verbeteringen aan deze site: 79% minder data per pagina, overal 100 voor Lighthouse-performance, en fixes die je niet in een score terugziet."
+description: "Een voor-en-na van een ronde verbeteringen aan deze site: 79% minder data per pagina, 100 voor Lighthouse-performance op elke gemeten pagina, en fixes die je niet in een score terugziet."
 tags:
   - Hugo
   - Prestaties
@@ -65,6 +65,19 @@ Sommige van de belangrijkere wijzigingen zie je helemaal niet terug in Lighthous
 ## Makkelijker te onderhouden
 
 Het theme begon als fork van [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng). Het origineel is al bijna een jaar niet veranderd, en mijn kopie was er ver van af gegroeid. Ik heb het in deze repository opgenomen, zodat een wijziging nu één commit is in plaats van twee pull requests en een submodule-update. Het theme ging van zo'n 10.700 naar 2.600 regels, en de build-output van 14 MB naar 4,2 MB.
+
+## Soepeler navigeren
+
+Na het publiceren van deze post heb ik nog een paar nieuwere browserfuncties toegevoegd. Elk is maar een paar regels, en browsers die ze niet ondersteunen gedragen zich precies zoals eerst.
+
+- **Overgangen tussen pagina's.** Wisselen van pagina gaat nu met een vloeiende overgang in plaats van een flits, en de titel van een post schuift van de postlijst naar zijn plek. Dit gebruikt cross-document view transitions (Chrome, Edge en Safari), en staat uit voor bezoekers die minder beweging willen.
+- **Direct klikken.** Als je over een link beweegt, rendert Chrome die pagina al op de achtergrond (speculation rules), waardoor de klik meteen voelt.
+- **Mooiere regelafbreking.** `text-wrap: balance` voorkomt dat een kop eindigt met één los woord op de laatste regel, en `pretty` doet hetzelfde voor alinea's.
+- **Browseronderdelen die het thema volgen.** Met `color-scheme` volgen scrollbalken en formulieren de lichte of donkere modus. De scrollbalk was eerst ook in lichte modus donker.
+
+## Een les over caching
+
+Vlak na het verkleinen van de fonts kregen echte bezoekers nog steeds de oude fonts van 96 KB. Cloudflare, dat vóór deze site staat, had ze opgeslagen onder de oude regel: "bewaar dit bestand een jaar, het verandert nooit". Het legen van de cache loste dat op. Om te zorgen dat het niet opnieuw kan gebeuren, hebben de fontbestanden nu een hash van hun inhoud in de bestandsnaam, zoals `Inter-Regular.a0e995d1….woff2`. Een gewijzigd font krijgt een nieuwe URL, dus fonts kunnen een jaar gecachet worden zonder ooit verouderd te raken.
 
 ## Hoe ik heb gemeten
 

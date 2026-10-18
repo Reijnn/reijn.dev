@@ -2,7 +2,7 @@
 title: "reijn.dev, Measured: 79% Lighter and Faster on Every Page"
 date: 2026-10-18T21:00:00+02:00
 draft: false
-description: "A before-and-after look at a round of improvements to this site: page weight down 79%, every page scoring 100 on Lighthouse performance, and fixes you can't see in a score."
+description: "A before-and-after look at a round of improvements to this site: page weight down 79%, every measured page scoring 100 on Lighthouse performance, and fixes you can't see in a score."
 tags:
   - Hugo
   - Performance
@@ -65,6 +65,19 @@ Some of the more important changes don't show up in Lighthouse at all.
 ## Easier to maintain
 
 The theme started as a fork of [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng). Upstream hasn't changed in almost a year, and my copy had drifted far from it. I moved it into this repository, so a change is now one commit instead of two pull requests and a submodule update. The theme went from about 10,700 lines to 2,600, and the build output from 14 MB to 4.2 MB.
+
+## Smoother navigation
+
+After publishing this post, I added a few newer browser features. Each one is a few lines, and browsers that don't support them behave exactly as before.
+
+- **Page transitions.** Moving between pages now cross-fades instead of flashing, and a post's title slides from the posts list into place. This uses cross-document view transitions (Chrome, Edge and Safari), and it's switched off for visitors who prefer reduced motion.
+- **Instant clicks.** When you hover over a link, Chrome already renders that page in the background (speculation rules), so the click feels immediate.
+- **Better line breaks.** `text-wrap: balance` keeps headings from ending with a single word on the last line, and `pretty` does the same for paragraphs.
+- **Browser UI that follows the theme.** `color-scheme` makes scrollbars and form controls follow light or dark mode. The scrollbar used to be dark even in light mode.
+
+## A lesson about caching
+
+Right after the font change, real visitors still got the old 96 KB fonts. Cloudflare, which sits in front of this site, had cached them under the old rule: "keep this file for a year, it never changes". Clearing its cache fixed that. To make sure it can't happen again, the font files now have a hash of their content in the file name, like `Inter-Regular.a0e995d1….woff2`. A changed font gets a new URL, so fonts can be cached for a year without ever going stale.
 
 ## How I measured
 
