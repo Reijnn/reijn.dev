@@ -9,12 +9,12 @@
     "build:preview": "hugo --buildDrafts --buildFuture --minify",
     "clean": "rm -rf public resources",
     "deploy": "npm run build && firebase deploy",
-    "deploy:preview": "npm run build:preview && firebase deploy",
-    "check": "hugo version && hugo version | grep -q extended || (echo 'Error: Hugo extended is required' && exit 1)"
+    "deploy:preview": "npm run build:preview && firebase deploy"
   },
   "devDependencies": {
-    "hugo-extended": "^0.168.0",
+    "hugo-bin": "^0.166.0",
     "pele": "^1.6.0",
+    "sass-embedded": "^1.105.2",
     "typewriter-effect": "^2.22.0"
   },
   "keywords": [
@@ -25,7 +25,7 @@
   ],
   "author": "Niels Reijn <reijnn@gmail.com>",
   "license": "MIT",
-  "overrides": {
-    "adm-zip": "^0.6.1"
+  "allowScripts": {
+    "hugo-bin": true
   }
 }
