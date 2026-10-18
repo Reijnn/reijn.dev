@@ -19,7 +19,8 @@ npm run dev     # Start local server at http://localhost:1313 (includes drafts &
 | `npm run start` | Dev server, published content only |
 | `npm run build` | Production build to `public/` |
 | `npm run build:preview` | Preview build with drafts and future posts |
-| `npm run clean` | Remove `public/` and `resources/` |
+| `npm run diagrams` | Pre-render ```` ```mermaid ```` diagrams to SVG (runs automatically before `dev`, `start` and `build`) |
+| `npm run clean` | Remove `public/`, `resources/` and the generated diagram SVGs |
 
 ## Writing a post
 

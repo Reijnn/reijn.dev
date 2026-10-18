@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Personal website and blog by Niels Reijn",
   "scripts": {
-    "dev": "hugo serve --buildDrafts --buildFuture --disableFastRender",
-    "start": "hugo serve",
-    "build": "hugo --minify",
-    "build:preview": "hugo --buildDrafts --buildFuture --minify",
-    "clean": "rm -rf public resources"
+    "diagrams": "node scripts/render-diagrams.mjs",
+    "dev": "npm run -s diagrams && hugo serve --buildDrafts --buildFuture --disableFastRender",
+    "start": "npm run -s diagrams && hugo serve",
+    "build": "npm run -s diagrams && hugo --minify",
+    "build:preview": "npm run -s diagrams && hugo --buildDrafts --buildFuture --minify",
+    "clean": "rm -rf public resources assets/diagrams"
   },
   "devDependencies": {
     "hugo-bin": "^0.166.0",

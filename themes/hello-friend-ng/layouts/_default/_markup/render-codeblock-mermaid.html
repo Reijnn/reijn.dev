@@ -1,2 +1,8 @@
+{{- /* Use the SVG pre-rendered by scripts/render-diagrams.mjs (npm run build/dev). Without one,
+       e.g. for a diagram edited while the dev server runs, render it in the browser with Pele. */ -}}
+{{- with resources.Get (printf "diagrams/%s.svg" (sha256 (strings.TrimSpace .Inner))) -}}
+<div class="diagram">{{ .Content | safeHTML }}</div>
+{{- else -}}
 <div class="diagram">{{ .Inner }}</div>
-{{ .Page.Store.Set "hasMermaid" true }}
+{{- .Page.Store.Set "hasMermaid" true -}}
+{{- end -}}
