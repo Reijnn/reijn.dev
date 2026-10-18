@@ -24,5 +24,8 @@
     "static-site"
   ],
   "author": "Niels Reijn <reijnn@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "adm-zip": "^0.6.1"
+  }
 }
