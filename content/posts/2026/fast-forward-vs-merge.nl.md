@@ -72,17 +72,18 @@ Geen van beide is beter. Een lineaire geschiedenis leest makkelijker met `git lo
 
 ## Hoe de diagrammen hier komen
 
-Elk diagram hierboven is een gewoon ```` ```mermaid ````-codeblok in de Markdown-bron. Een Hugo render hook maakt er een `div` van en markeert de pagina, zodat het script alleen wordt geladen waar het nodig is:
+Elk diagram hierboven is een gewoon ```` ```mermaid ````-codeblok in de Markdown-bron. Bij het bouwen van de site tekent een klein script elk diagram met Pele, en een Hugo render hook zet het resultaat direct in de pagina:
 
 ```mermaid
 sequenceDiagram
-  participant B as Browser
-  participant H as reijn.dev
+  participant M as Markdown
+  participant S as Buildscript
   participant P as Pele
-  B->>H: Vraag post op
-  H->>B: HTML met de diagrambron
-  B->>P: Laad pele.js (alleen op pagina's met een diagram)
-  P->>B: SVG, gekleurd met CSS-variabelen
+  participant B as Browser
+  M->>S: mermaid-codeblok
+  S->>P: Teken het diagram
+  P->>S: SVG, gekleurd met CSS-variabelen
+  S->>B: HTML met de SVG erin
 ```
 
-Vergeleken met Mermaid.js ging het script van ongeveer 1,6 MB naar ongeveer 245 kB gzipped. Omdat de kleuren CSS-variabelen zijn, volgen de diagrammen ook de licht/donker-schakelaar zonder opnieuw getekend te worden. Probeer de schakelaar bovenaan de pagina maar eens.
+Je browser downloadt helemaal geen JavaScript voor de diagrammen; met Mermaid.js was dat zo'n 1,6 MB. Omdat de kleuren CSS-variabelen zijn, volgen de diagrammen nog steeds de licht/donker-schakelaar. Probeer de schakelaar bovenaan de pagina maar eens.
