@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+{{ if .Params.noindex }}
+<meta name="robots" content="noindex" />
+{{ end }}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="author" content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ if .Site.Params.author.name }}{{ .Site.Params.author.name }}{{ else }}{{ range .Site.Params.Author }}{{ . }} {{ end }}{{ end }}{{ end }}">
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.homeSubtitle }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
+<meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{ block "title" . }}
+    <title>
+        {{ if .IsHome }}
+            {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }} {{ end }}
+        {{ else }}
+            {{ .Title }} :: {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}
+        {{ end }}
+    </title>
+{{ end }}
+
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Apply the saved theme before the first paint, so pages don't flash in the OS theme; main.js handles the toggle -->
+<script>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (_) {}</script>
+
+<!-- CSS -->
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" (eq hugo.Environment "development") }}
+{{ with resources.Get "scss/style.scss" | toCSS $opts | minify }}
+  <style>{{ .Content | safeCSS }}</style>
+{{ end }}
+
+<!-- Icons -->
+{{- partial "favicons.html" . }}
+
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }}
+
+{{ range .Params.categories }}
+    <meta property="article:section" content="{{ . }}" />
+{{ end }}
+
+{{ if isset .Params "date" }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ end }}
+
+<!-- RSS -->
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Custom head tags -->
+{{- if templates.Exists "partials/extra-head.html" -}}
+    {{ partial "extra-head.html" . }}
+{{- end }}
+

@@ -1,0 +1,75 @@
+@use "variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  // Default
+  background: variables.$light-background-header;
+
+  @media (prefers-color-scheme: dark) {
+    background: variables.$dark-background-header;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: variables.$light-background-header;
+  }
+
+  [data-theme=dark] & {
+    background: variables.$dark-background-header;
+  }
+
+  [data-theme=light] & {
+    background: variables.$light-background-header;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media #{variables.$media-size-phone} {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;
+  }
+}
+
+// Reset the browser's default button look for the header buttons
+.theme-toggle,
+.menu-trigger {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.theme-toggler {
+  fill: currentColor;
+}
+
+.not-selectable {
+  user-select: none;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+}
