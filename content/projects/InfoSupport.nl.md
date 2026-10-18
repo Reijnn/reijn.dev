@@ -1,5 +1,6 @@
 ---
 title: "Technical Integrator - InfoSupport"
+description: "Technisch integrator in het DevOps-team van Info Support: koppelingen ontwerpen en bouwen tussen de systemen van verschillende klanten."
 date: 2020-11-05T12:27:34+01:00
 draft: false
 images:

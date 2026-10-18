@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Niels Reijn: software engineer, management consultant at ilionx, technical business analyst at Dutch Customs, and infantry squad leader in the army reserve."
 ---
 
 __Software Engineer & Infantry Squad Leader__
@@ -10,12 +11,12 @@ __Download my [resume](https://drive.google.com/uc?export=download&id=1NMcwfurrZ
 
 __Work History__   
 2026 - present | Technical Business Analyst @ Douane Nederland  
-2025 - present | Infantry Squad Leader(Sergeant) @ Koninklijke Landmacht  
+2025 - present | Infantry Squad Leader (Sergeant) @ Koninklijke Landmacht  
 2023 - present | Management Consultant @ ilionx  
 2024 - 2025 | Product Owner @ Douane Nederland  
-2023 - 2025 | Assistant Squad Leader(Corporal) @ Koninklijke Landmacht  
+2024 - 2025 | Assistant Squad Leader (Corporal) @ Koninklijke Landmacht  
 2022 - 2024 | Senior Data Engineer / Scrum Master @ Douane Nederland  
-2021 - 2023 | Riflemen(Private) @ Koninklijke Landmacht  
+2021 - 2023 | Rifleman (Private) @ Koninklijke Landmacht  
 2019 - 2023 | Software Engineer @ ilionx  
 2019 - 2022 | Technical Integrator @ Info Support  
 2017 - 2019 | Software Engineer @ QNH  
@@ -26,7 +27,7 @@ __Languages__
 Javascript, HTML, CSS, Typescript, Java, Kotlin, C#, SQL and many more...
 
 __Services__    
-[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn?nav_source=navbar), [Azure Portal](https://portal.azure.com) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
+[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn), [Azure Portal](https://portal.azure.com) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
 __Frameworks__  
 * Data: [Azure Synapse](https://azure.microsoft.com/nl-nl/products/synapse-analytics), [Jupyter Notebooks](https://jupyter.org/)
@@ -35,4 +36,4 @@ __Frameworks__
 * Web: [Bettyblocks](https://www.bettyblocks.com/), [Angular](https://angular.io/), [React](https://reactjs.org/), [Hugo](https://gohugo.io/), [Vue](https://vuejs.org/)
 
 __Contributions__   
-[Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn), [Hugo-theme-hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), [Forus-R&D](https://github.com/teamforus/research-and-development/commits?author=Reijnn)
+[Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn), [Hugo-theme-hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn)

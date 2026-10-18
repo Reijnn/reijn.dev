@@ -1,5 +1,6 @@
 ---
 title: "Rapid Application Developer - SVWOH"
+description: "Een certificerings- en registratiesysteem voor SVWOH, gebouwd met BettyBlocks, dat cursisten in veilig werken op hoogte volgt."
 date: 2018-02-03T14:05:57+01:00
 draft: false
 toc: false

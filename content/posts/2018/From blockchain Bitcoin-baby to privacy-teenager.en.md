@@ -1,5 +1,6 @@
 ---
 title: "From blockchain Bitcoin-baby to privacy-teenager"
+description: "How blockchain grew from Bitcoin's simple ledger to smart contracts, and why privacy is the challenge a third generation of blockchains has to solve."
 date: 2018-06-25T16:15:09+08:00
 draft: false
 images:

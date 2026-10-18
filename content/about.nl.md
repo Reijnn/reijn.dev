@@ -1,23 +1,24 @@
 ---
 title: "Over"
+description: "Niels Reijn: software engineer, managementconsultant bij ilionx, technical business analyst bij de Douane en groepscommandant bij de reserve van de Landmacht."
 ---
 
 __Software Engineer & Infanterie Groepscommandant__
 
 Een toegewijde Software Engineer met een Bachelor-diploma in Software Engineering. Ik ben gespecialiseerd in webontwikkeling en heb ruime kennis van cloudtechnologieën, met name Microsoft Azure. Gecertificeerd in Scrum-methodologieën breng ik wendbaarheid en efficiëntie naar elk project, waarmee ik robuuste en schaalbare oplossingen waarborg.
 
-Naast mijn technische rol dien ik met veel toewijding als plaatsvervanged groepscommandant, een ervaring die mij discipline, leiderschap en het vermogen om onder druk te presteren heeft bijgebracht. Door mijn ervaring in verschillende sectoren te combineren, breng ik een unieke mix van vaardigheden mee die innovatie, veerkracht en een standvastige toewijding aan elk team of project bevordert.
+Naast mijn technische rol dien ik met veel toewijding als groepscommandant bij de reserve van de Koninklijke Landmacht, een ervaring die mij discipline, leiderschap en het vermogen om onder druk te presteren heeft bijgebracht. Door mijn ervaring in verschillende sectoren te combineren, breng ik een unieke mix van vaardigheden mee die innovatie, veerkracht en een standvastige toewijding aan elk team of project bevordert.
 
 __Download mijn [cv](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
-__Werk Historie__  
+__Werkervaring__  
 2026 - heden | Technical Business Analyst @ Douane Nederland  
-2025 - heden | Infanterie Groepscommandant(Sergeant) @ Koninklijke Landmacht  
+2025 - heden | Infanterie Groepscommandant (Sergeant) @ Koninklijke Landmacht  
 2023 - heden | Management Consultant @ ilionx  
 2024 - 2025 | Product Owner @ Douane Nederland  
-2024 - 2025 | Plaatsvervanged Groepscommandant(Korporaal) @ Koninklijke Landmacht  
+2024 - 2025 | Plaatsvervangend Groepscommandant (Korporaal) @ Koninklijke Landmacht  
 2022 - 2024 | Senior Data Engineer / Scrum Master @ Douane Nederland  
-2021 - 2023 | Geweerschutter(Soldaat) @ Koninklijke Landmacht  
+2021 - 2023 | Geweerschutter (Soldaat) @ Koninklijke Landmacht  
 2019 - 2023 | Software Engineer @ ilionx  
 2019 - 2022 | Technical Integrator @ Info Support  
 2017 - 2019 | Software Engineer @ QNH  
@@ -28,7 +29,7 @@ __Talen__
 Javascript, HTML, CSS, Typescript, Java, Kotlin, C#, SQL en nog veel meer...
 
 __Diensten__    
-[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn), [Azure Portal](https://portal.azure.com), and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
+[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn), [Azure Portal](https://portal.azure.com) en [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
 
 __Frameworks__  
 * Data: [Azure Synapse](https://azure.microsoft.com/nl-nl/products/synapse-analytics), [Jupyter Notebooks](https://jupyter.org/)
@@ -37,4 +38,4 @@ __Frameworks__
 * Web: [Bettyblocks](https://www.bettyblocks.com/), [Angular](https://angular.io/), [React](https://reactjs.org/), [Hugo](https://gohugo.io/), [Vue](https://vuejs.org/)
 
 __Bijdragen__   
-[Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn), [Hugo-theme-hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), [Forus-R&D](https://github.com/teamforus/research-and-development/commits?author=Reijnn)
+[Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn), [Hugo-theme-hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn)

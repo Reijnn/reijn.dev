@@ -1,5 +1,6 @@
 ---
 title: "Hoe je effectief met andere mensen omgaat"
+description: "Praktische lessen over goed communiceren: actief luisteren, je stijl aanpassen, conflicten oplossen, feedback, cultureel bewustzijn en eerlijkheid."
 date: 2023-11-14T20:05:27+01:00
 draft: false
 tags:

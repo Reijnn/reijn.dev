@@ -1,5 +1,6 @@
 ---
 title: "Web Developer - Whitepapers"
+description: "A mobile-friendly web app for QNH Consulting to distribute whitepapers and store client data, built with React, Angular and Firebase."
 date: 2018-12-07T14:04:09+01:00
 draft: false
 toc: false

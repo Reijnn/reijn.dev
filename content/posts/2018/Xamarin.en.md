@@ -1,5 +1,6 @@
 ---
 title: "Xamarin"
+description: "A study into whether Xamarin is a good fit for QNH Consulting to build cross-platform apps for Android, iOS and Windows from a single codebase."
 date: 2018-12-07T14:04:09+01:00
 draft: false
 tags: 

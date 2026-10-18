@@ -1,13 +1,12 @@
 ---
 title: "Hugo Websites Hosten op IPFS"
+description: "Een stappenplan om een Hugo-site te bouwen en te publiceren op IPFS, het peer-to-peer InterPlanetary File System."
 date: 2023-10-30T20:05:27+01:00
 draft: false
 tags:
   - IPFS
   - Hugo
 ---
-
-De IPFS versie van deze pagina is te vinden op: https://ipfs.reijn.dev
 
 Het gedecentraliseerde web is de toekomst, en IPFS (InterPlanetary File System) is een van de pioniers op dit gebied. IPFS is een peer-to-peer protocol voor het opslaan en benaderen van bestanden, websites, applicaties en meer. Combineer dat met Hugo - een snelle en moderne static site generator, en je hebt een recept voor een gedecentraliseerde en razendsnelle website. Hier lees je hoe je je Hugo website op IPFS host.
 

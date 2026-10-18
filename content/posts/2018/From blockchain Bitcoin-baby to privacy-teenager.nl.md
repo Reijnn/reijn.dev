@@ -1,5 +1,6 @@
 ---
 title: "Van blockchain Bitcoin-baby naar privacy-puber"
+description: "Hoe blockchain groeide van Bitcoins eenvoudige grootboek naar smart contracts, en waarom privacy de uitdaging is voor een derde generatie blockchains."
 date: 2018-06-25T16:15:09+08:00
 draft: false
 images:
