@@ -21,7 +21,7 @@
       </div>
 
       <article>
-        <h1 class="post-title">
+        <h1 class="post-title"{{ with .File }} style="view-transition-name: post-{{ .UniqueID }}"{{ end }}>
           <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
         </h1>
 
