@@ -13,7 +13,7 @@
     "check": "hugo version && hugo version | grep -q extended || (echo 'Error: Hugo extended is required' && exit 1)"
   },
   "devDependencies": {
-    "hugo-extended": "^0.159.2",
+    "hugo-extended": "^0.167.0",
     "pele": "^1.6.0",
     "typewriter-effect": "^2.22.0"
   },
