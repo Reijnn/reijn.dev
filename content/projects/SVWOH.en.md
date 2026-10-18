@@ -1,5 +1,6 @@
 ---
 title: "Rapid Application Developer - SVWOH"
+description: "A certification and registration system for SVWOH, built with BettyBlocks, that tracks trainees in safe working at heights."
 date: 2018-02-03T14:05:57+01:00
 draft: false
 toc: false

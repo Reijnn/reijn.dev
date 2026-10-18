@@ -1,5 +1,6 @@
 ---
 title: "How to interact with other people effectively"
+description: "Practical lessons on communicating well: active listening, adapting your style, resolving conflict, feedback, cultural awareness and honesty."
 date: 2023-11-14T20:05:27+01:00
 draft: false
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "Web Developer - Whitepapers"
+description: "Een mobielvriendelijke webapp voor QNH Consulting om whitepapers te verspreiden en klantgegevens op te slaan, met React, Angular en Firebase."
 date: 2018-12-07T14:04:09+01:00
 draft: false
 toc: false

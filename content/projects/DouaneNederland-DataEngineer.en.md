@@ -1,5 +1,6 @@
 ---
 title: "Senior Data Engineer & Scrum Master - Douane Nederland"
+description: "Senior data engineer and Scrum Master at Dutch Customs: Azure Synapse data pipelines, data warehousing and leading agile teams."
 date: 2022-05-01T00:00:00+01:00
 draft: false
 toc: false

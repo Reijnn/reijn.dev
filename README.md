@@ -19,16 +19,15 @@ npm run dev     # Start local server at http://localhost:1313 (includes drafts &
 | `npm run start` | Dev server, published content only |
 | `npm run build` | Production build to `public/` |
 | `npm run build:preview` | Preview build with drafts and future posts |
-| `npm run deploy` | Build and deploy to Firebase Hosting |
 | `npm run clean` | Remove `public/` and `resources/` |
 
 ## Writing a post
 
 ```bash
-hugo new posts/my-post-title.md
+npx hugo new posts/2026/my-post-title.en.md   # then copy it to .nl.md and translate
 ```
 
-Posts are in `content/posts/`, organized by year. Set `draft: false` and a future `date` to schedule a post. For bilingual pages, use `.en.md` / `.nl.md` suffixes.
+Posts are in `content/posts/`, organized by year. Pushing to `main` deploys the site; set `draft: false` and a future `date` to schedule a post (it appears with the first deploy after that date). For bilingual pages, use `.en.md` / `.nl.md` suffixes.
 
 ## Theme
 

@@ -1,5 +1,6 @@
 ---
 title: "Rapid Application Developer - Gemeente Amsterdam"
+description: "Rapid application developer voor de Gemeente Amsterdam: bedrijfsapplicaties bouwen op het low-code platform BettyBlocks."
 date: 2019-08-13T14:04:09+01:00
 draft: false
 toc: false

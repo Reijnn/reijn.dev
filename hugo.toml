@@ -2,7 +2,7 @@ baseURL = "https://reijn.dev"
 title = "Niels Reijn"
 theme = "hello-friend-ng"
 
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # Used by the RSS template.
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>' # Footer shows it as a link; the RSS feed strips the HTML
 
 enableRobotsTXT = true
 enableGitInfo = true
@@ -25,13 +25,12 @@ codeFences = true
 tag = "tags"
 
 [params]
-dateform = "Jan 2, 2006"
 dateformShort = "Jan 2"
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 
 description = "Niels Reijn — Software Engineer, Management Consultant, and Product Owner. Writing about technology, privacy, and development."
-images = ["/android-chrome-512x512.png"]
+images = ["/profile.jpg"] # Image for shared links
 
 homeSubtitle = "Software Engineer"
 
@@ -50,7 +49,7 @@ copyright = true
 author = false
 
 topText = []
-bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"]
+bottomText = ["Powered by <a href=\"https://gohugo.io\">Hugo</a>"]
 
 [params.favicon]
 mask = "#1b1c1d" # Safari pinned-tab icon color
@@ -58,7 +57,6 @@ mask = "#1b1c1d" # Safari pinned-tab icon color
 [params.logo]
 logoMark = ">"
 logoText = "$ cd /home/"
-logoHomeLink = "/"
 logoCursorColor = "#dcdcdc"
 
 [params.utterances]
@@ -71,7 +69,7 @@ name = "Niels Reijn"
 
 [params.portrait]
 path = "/profile.webp"
-alt = "Portrait"
+alt = "Niels Reijn"
 maxWidth = "150"
 maxHeight = "150"
 
@@ -91,13 +89,11 @@ url = "https://www.linkedin.com/in/reijnn/"
 [languages.en]
 locale = "en-US"
 label = "English"
-copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 weight = 1
 
 [languages.nl]
 locale = "nl-NL"
 label = "Nederlands"
-copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 weight = 2
 
 [menus]

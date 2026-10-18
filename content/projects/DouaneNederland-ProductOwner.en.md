@@ -1,5 +1,6 @@
 ---
 title: "Product Owner - Douane Nederland"
+description: "Product owner at Dutch Customs: product vision, roadmap and priorities for digital transformation, between business and technical teams."
 date: 2024-02-09T00:00:00+01:00
 draft: false
 toc: false

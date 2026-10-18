@@ -1,5 +1,6 @@
 ---
 title: "Web Developer - Portfolio Website"
+description: "Deze website: een tweetalig portfolio en blog in Hugo, automatisch gedeployed naar Firebase Hosting."
 date: 2019-10-07T14:04:09+01:00
 draft: false
 tags: 

@@ -1,5 +1,6 @@
 ---
 title: "Technical Business Analyst - Douane Nederland"
+description: "Technical business analysis at Dutch Customs: turning business requirements into technical specifications and roadmaps for strategic initiatives."
 date: 2026-01-01T00:00:00+01:00
 draft: false
 toc: false
