@@ -4,7 +4,7 @@ Personal website and blog of [Niels Reijn](https://reijn.dev) — software engin
 
 ## Getting started
 
-Requires [Node.js](https://nodejs.org). Hugo extended is bundled as a dev dependency.
+Requires [Node.js](https://nodejs.org). Hugo and Dart Sass are installed as dev dependencies, so run Hugo through `npm run` or `npx hugo`.
 
 ```bash
 npm install
