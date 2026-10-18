@@ -6,7 +6,24 @@ html {
   letter-spacing: 0.06em;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+  // Lets the browser draw scrollbars, selection and form controls in the active theme
+  color-scheme: light dark;
+
+  &[data-theme=light] { color-scheme: light; }
+  &[data-theme=dark] { color-scheme: dark; }
 }
+
+// Nicer line breaks: no single orphan word on the last line of a heading or paragraph
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+
+// Smooth cross-page transitions (Chrome/Edge, Safari); other browsers navigate as before
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+}
+
+// The header stays put during a transition instead of cross-fading
+.header { view-transition-name: site-header; }
 
 *,
 *:before,

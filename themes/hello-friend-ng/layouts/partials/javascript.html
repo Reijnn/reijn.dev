@@ -1,6 +1,10 @@
 {{ $main := resources.Get "js/main.js" }}
 {{ $menu := resources.Get "js/menu.js" }}
 {{ $secureJS := slice $main $menu | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{/* Prerender same-site pages when a visitor hovers or presses a link (Chromium); other browsers ignore it */}}
+<script type="speculationrules">
+{"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": "/*.xml"}}]}, "eagerness": "moderate"}]}
+</script>
 <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
 
 {{ if .IsHome }}
