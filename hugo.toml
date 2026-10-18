@@ -3,7 +3,6 @@ title = "Niels Reijn"
 theme = "hello-friend-ng"
 
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # Used by the RSS template.
-disqusShortname = "reijn-dev"
 
 enableRobotsTXT = true
 enableGitInfo = true
@@ -35,7 +34,6 @@ dateformNumTime = "2006-01-02 15:04"
 
 description = "Niels Reijn — Software Engineer, Management Consultant, and Product Owner. Writing about technology, privacy, and development."
 images = ["/android-chrome-512x512.png"]
-keywords = "homepage, blog, science, informatics, development, programming"
 
 homeSubtitle = "Software Engineer"
 
@@ -54,7 +52,7 @@ customJS = []
 justifyContent = false
 
 [params.footer]
-trademark = 2026
+trademark = true # shows "© <current year>"
 rss = false
 copyright = true
 author = false
@@ -72,6 +70,11 @@ logoMark = ">"
 logoText = "$ cd /home/"
 logoHomeLink = "/"
 logoCursorColor = "#dcdcdc"
+
+[params.utterances]
+repository = "Reijnn/reijn.dev"
+issueTerm = "pathname"
+label = "comments"
 
 [params.author]
 name = "Niels Reijn"
