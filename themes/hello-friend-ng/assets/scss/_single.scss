@@ -57,7 +57,7 @@
   }
 
   &-excerpt {
-    color: grey;
+    @include mixins.dimmed;
     font-style: italic;
   }
 
