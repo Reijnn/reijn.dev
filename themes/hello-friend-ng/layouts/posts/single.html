@@ -14,7 +14,7 @@
 
           {{ if .IsTranslated }} | {{ i18n "postAvailable" }}
             {{ range .Translations }}
-                <a href="{{ .Permalink }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
+                <a href="{{ .Permalink }}" aria-label="{{ .Language.Label }}" title="{{ .Language.Label }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
             {{ end}}
           {{ end }}
         </p>
