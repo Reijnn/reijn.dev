@@ -2,7 +2,7 @@
 title: "reijn.dev gemeten: 79% lichter en sneller op elke pagina"
 date: 2026-10-18T21:00:00+02:00
 draft: false
-description: "Een voor-en-na van een ronde verbeteringen aan deze site: 79% minder data per pagina, 100 voor Lighthouse-performance op elke gemeten pagina, en fixes die je niet in een score terugziet."
+description: "Een voor-en-na van een ronde verbeteringen aan deze site: 79% minder data per pagina, 100 voor Lighthouse-performance op elke pagina, en fixes die je niet in een score terugziet."
 tags:
   - Hugo
   - Prestaties
@@ -50,7 +50,7 @@ Bijna niets van de winst kwam uit slimme trucs. Het kwam uit het niet meer verst
 - **JavaScript: 62 KB → 0,6 KB.** Het theme stuurde Prism mee, een code-highlighter die in de browser draait, op elke pagina. Hugo kleurt code al in tijdens het bouwen van de site, dus Prism deed niets.
 - **CSS op elke pagina: 52 KB → 19 KB.** De helft was opmaak voor vlaggetjes van 268 landen. De site toont er twee.
 - **De type-animatie op de homepage: 13,4 KB → 0,9 KB.** Een kleine bibliotheek werd 30 regels die hetzelfde doen.
-- **Diagrammen: zo'n 1,6 MB → 245 KB**, alleen op pagina's die er een hebben. Ik heb Mermaid vervangen door [Pele](https://pele.run), dat dezelfde syntax leest. De grafieken hierboven zijn ermee getekend.
+- **Diagrammen: zo'n 1,6 MB JavaScript → niets.** Ik heb Mermaid vervangen door [Pele](https://pele.run), dat dezelfde syntax leest en ook in Node draait. Diagrammen worden nu getekend tijdens het bouwen van de site en komen als gewone SVG in de HTML. De grafieken hierboven zijn zo gemaakt.
 
 ## Fixes die je niet in een score ziet
 
@@ -78,6 +78,16 @@ Na het publiceren van deze post heb ik nog een paar nieuwere browserfuncties toe
 ## Een les over caching
 
 Vlak na het verkleinen van de fonts kregen echte bezoekers nog steeds de oude fonts van 96 KB. Cloudflare, dat vóór deze site staat, had ze opgeslagen onder de oude regel: "bewaar dit bestand een jaar, het verandert nooit". Het legen van de cache loste dat op. Om te zorgen dat het niet opnieuw kan gebeuren, hebben de fontbestanden nu een hash van hun inhoud in de bestandsnaam, zoals `Inter-Regular.a0e995d1….woff2`. Een gewijzigd font krijgt een nieuwe URL, dus fonts kunnen een jaar gecachet worden zonder ooit verouderd te raken.
+
+## Diagrammen zonder JavaScript
+
+Pagina's met diagrammen waren de laatste die geen 100 scoorden. Het tekenen was het probleem niet; Pele heeft er zo'n 0,1 seconde voor nodig. Maar de browser moest eerst 200 KB aan Pele zelf downloaden, en op een telefoonverbinding wachtte zelfs de eerste tekst daarop. Nu tekent een klein script elk diagram met Pele tijdens het bouwen van de site, zodat de browser een kant-en-klaar plaatje in de HTML krijgt.
+
+| Pagina met diagrammen | Voor | Na |
+|---|---|---|
+| Lighthouse-performance | 98 | **100** |
+| Eerste tekst zichtbaar | 1,84 s | **1,07 s** |
+| Data per bezoek | 314 KB | **108 KB** |
 
 ## Hoe ik heb gemeten
 

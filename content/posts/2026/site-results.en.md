@@ -2,7 +2,7 @@
 title: "reijn.dev, Measured: 79% Lighter and Faster on Every Page"
 date: 2026-10-18T21:00:00+02:00
 draft: false
-description: "A before-and-after look at a round of improvements to this site: page weight down 79%, every measured page scoring 100 on Lighthouse performance, and fixes you can't see in a score."
+description: "A before-and-after look at a round of improvements to this site: page weight down 79%, every page scoring 100 on Lighthouse performance, and fixes you can't see in a score."
 tags:
   - Hugo
   - Performance
@@ -50,7 +50,7 @@ Almost none of the savings came from clever tricks. They came from not sending t
 - **JavaScript: 62 KB → 0.6 KB.** The theme shipped Prism, a code highlighter that runs in the browser, on every page. Hugo already highlights code when it builds the site, so Prism did nothing.
 - **CSS on every page: 52 KB → 19 KB.** Half of it was styling for flag icons of 268 countries. The site shows two.
 - **The typing animation on the home page: 13.4 KB → 0.9 KB.** A small library became 30 lines that do the same thing.
-- **Diagrams: about 1.6 MB → 245 KB**, only on pages that have one. I replaced Mermaid with [Pele](https://pele.run), which reads the same syntax. The charts above are drawn with it.
+- **Diagrams: about 1.6 MB of JavaScript → none.** I replaced Mermaid with [Pele](https://pele.run), which reads the same syntax and also runs in Node. Diagrams are now drawn while the site is built and arrive as plain SVG in the HTML. The charts above are made that way.
 
 ## Fixes you can't see in a score
 
@@ -78,6 +78,16 @@ After publishing this post, I added a few newer browser features. Each one is a 
 ## A lesson about caching
 
 Right after the font change, real visitors still got the old 96 KB fonts. Cloudflare, which sits in front of this site, had cached them under the old rule: "keep this file for a year, it never changes". Clearing its cache fixed that. To make sure it can't happen again, the font files now have a hash of their content in the file name, like `Inter-Regular.a0e995d1….woff2`. A changed font gets a new URL, so fonts can be cached for a year without ever going stale.
+
+## Diagrams without JavaScript
+
+Pages with diagrams were the last ones not scoring 100. Drawing the diagrams wasn't the problem; Pele needs about 0.1 seconds. But the browser first had to download 200 KB of Pele itself, and on a phone connection even the first text waited for that. Now a small script renders every diagram with Pele while the site is built, so the browser receives a finished image in the HTML.
+
+| Page with diagrams | Before | After |
+|---|---|---|
+| Lighthouse performance | 98 | **100** |
+| First text visible | 1.84 s | **1.07 s** |
+| Data per visit | 314 KB | **108 KB** |
 
 ## How I measured
 

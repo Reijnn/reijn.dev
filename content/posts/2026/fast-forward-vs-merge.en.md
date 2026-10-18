@@ -72,17 +72,18 @@ Neither is better. A linear history is easier to read with `git log`, and merge 
 
 ## How the diagrams get here
 
-Every diagram above is a plain ```` ```mermaid ```` code block in the Markdown source. A Hugo render hook turns it into a `div` and flags the page, so the script is only loaded where it's needed:
+Every diagram above is a plain ```` ```mermaid ```` code block in the Markdown source. When the site is built, a small script renders each one with Pele, and a Hugo render hook puts the result straight into the page:
 
 ```mermaid
 sequenceDiagram
-  participant B as Browser
-  participant H as reijn.dev
+  participant M as Markdown
+  participant S as Build script
   participant P as Pele
-  B->>H: Request post
-  H->>B: HTML with the diagram source
-  B->>P: Load pele.js (only on pages with a diagram)
-  P->>B: SVG, colored with CSS variables
+  participant B as Browser
+  M->>S: mermaid code block
+  S->>P: Render the diagram
+  P->>S: SVG, colored with CSS variables
+  S->>B: HTML with the SVG inline
 ```
 
-Compared to Mermaid.js, the script went from about 1.6 MB to about 245 kB gzipped. Because the colors are CSS variables, the diagrams also follow the light/dark toggle without being re-rendered. Try the toggle at the top of the page.
+Your browser downloads no diagram JavaScript at all; with Mermaid.js that was about 1.6 MB. Because the colors are CSS variables, the diagrams still follow the light/dark toggle. Try the toggle at the top of the page.
