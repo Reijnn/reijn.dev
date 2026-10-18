@@ -18,8 +18,8 @@
 {{ end }}
 
 {{ if .Page.Store.Get "hasMermaid" }}
-{{ $mermaidOpts := dict "format" "esm" "minify" true }}
-{{ with resources.Get "js/mermaid.js" | js.Build $mermaidOpts | fingerprint "sha512" }}
+{{ $peleOpts := dict "format" "esm" "minify" true }}
+{{ with resources.Get "js/pele.js" | js.Build $peleOpts | fingerprint "sha512" }}
 <script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
 {{ end }}
 {{ end }}
