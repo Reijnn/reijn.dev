@@ -1,0 +1,36 @@
+@use "variables";
+
+// --pele-bg must be the real page color: Pele also uses it for text on filled shapes
+@mixin pele-dark {
+  --pele-bg: #{variables.$dark-background};
+  --pele-fg: #{variables.$dark-color};
+  --pele-muted: #{variables.$dark-color-secondary};
+  --pele-line: #{variables.$dark-color};
+  --pele-surface: #{variables.$dark-background-secondary};
+  --pele-surface-alt: #{variables.$dark-background-header};
+  --pele-border: #{variables.$dark-border-color};
+}
+
+.diagram {
+  --pele-bg: #{variables.$light-background};
+  margin: 40px 0;
+  overflow-x: auto;
+
+  @media (prefers-color-scheme: dark) {
+    @include pele-dark;
+  }
+
+  [data-theme=dark] & {
+    @include pele-dark;
+  }
+
+  [data-theme=light] & {
+    --pele-bg: #{variables.$light-background};
+    --pele-fg: #{variables.$light-color};
+    --pele-muted: #{variables.$light-color-secondary};
+    --pele-line: #{variables.$light-color};
+    --pele-surface: #{variables.$light-background-secondary};
+    --pele-surface-alt: #{variables.$light-background-header};
+    --pele-border: #{variables.$light-border-color};
+  }
+}

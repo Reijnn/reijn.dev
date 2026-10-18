@@ -32,7 +32,7 @@ Posts are in `content/posts/`, organized by year. Set `draft: false` and a futur
 
 ## Theme
 
-Uses a [custom fork of hello-friend-ng](https://github.com/Reijnn/hugo-theme-hello-friend-ng) as a git submodule. Site-level files in `layouts/` and `assets/` override theme defaults — keep customizations there rather than editing the submodule directly.
+Based on [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) (MIT), heavily modified and kept in this repo at `themes/hello-friend-ng/`. Edit the theme files there directly; there is no upstream to stay in sync with. Its history up to the move lives in the archived [Reijnn/hugo-theme-hello-friend-ng](https://github.com/Reijnn/hugo-theme-hello-friend-ng) fork.
 
 ## License
 

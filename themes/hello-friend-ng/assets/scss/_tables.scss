@@ -1,0 +1,86 @@
+@use "variables";
+
+.post-content {
+  table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    max-width: 100%;
+
+    th,
+    td {
+      padding: 12px 15px;
+      // Default
+      border: 1px solid variables.$light-table-color;
+      
+      @media (prefers-color-scheme: dark) {
+        border: 1px solid variables.$dark-table-color;
+      }
+    
+      @media (prefers-color-scheme: light) {
+        border: 1px solid variables.$light-table-color;
+      }
+    
+      [data-theme=dark] & {
+        border: 1px solid variables.$dark-table-color;
+      }
+    
+      [data-theme=light] & {
+        border: 1px solid variables.$light-table-color;
+      }
+    }
+
+    thead {
+      tr {
+        text-align: left;
+        // Default
+        background-color: variables.$light-table-color;
+        color: variables.$light-color;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: variables.$dark-table-color;
+          color: variables.$dark-color;
+        }
+      
+        @media (prefers-color-scheme: light) {
+          background-color: variables.$light-table-color;
+          color: variables.$light-color;
+        }
+      
+        [data-theme=dark] & {
+          background-color: variables.$dark-table-color;
+          color: variables.$dark-color;
+        }
+      
+        [data-theme=light] & {
+          background-color: variables.$light-table-color;
+          color: variables.$light-color;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        // Default
+        border: 1px solid variables.$light-table-color;
+        
+        @media (prefers-color-scheme: dark) {
+          border: 1px solid variables.$dark-table-color;
+        }
+      
+        @media (prefers-color-scheme: light) {
+          border: 1px solid variables.$light-table-color;
+        }
+      
+        [data-theme=dark] & {
+          border: 1px solid variables.$dark-table-color;
+        }
+      
+        [data-theme=light] & {
+          border: 1px solid variables.$light-table-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{{ $main := resources.Get "js/main.js" }}
+{{ $menu := resources.Get "js/menu.js" }}
+{{ $secureJS := slice $main $menu | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+
+{{ if .IsHome }}
+{{/* Inlined to avoid a critical request chain on the home page */}}
+{{ $twOpts := dict "format" "iife" "minify" true }}
+{{ with resources.Get "js/typewriter-effect.js" | js.Build $twOpts }}
+<script>{{ .Content | safeJS }}</script>
+{{ end }}
+{{ end }}
+
+{{ if .Page.Store.Get "hasMermaid" }}
+{{ $peleOpts := dict "format" "esm" "minify" true }}
+{{ with resources.Get "js/pele.js" | js.Build $peleOpts | fingerprint "sha512" }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}
+{{ end }}

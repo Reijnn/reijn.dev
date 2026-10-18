@@ -1,0 +1,46 @@
+@use "variables";
+
+.button,
+a.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  // Default
+  background: variables.$light-background-header;
+
+  @media (prefers-color-scheme: dark) {
+    background: variables.$dark-background-header;
+    color: inherit;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: variables.$light-background-header;
+  }
+
+  [data-theme=dark] & {
+    background: variables.$dark-background-header;
+    color: inherit;
+  }
+
+  [data-theme=light] & {
+    background: variables.$light-background-header;
+  }
+
+  &.link {
+    background: none;
+    font-size: 1rem;
+  }
+
+}
+
