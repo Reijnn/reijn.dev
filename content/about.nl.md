@@ -33,7 +33,7 @@ __Werkervaring__
 2014 - 2017 | Hiker @ Easyway
 
 __Open source__  
-Ik heb bijgedragen aan de Hugo-thema's [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) en [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), het thema waar deze site mee begon.
+Ik heb bijgedragen aan de Hugo-thema's [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) en [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), het thema waar deze site mee begon. Voor [OpenTAKServer](https://github.com/brian7704/OpenTAKServer/commits?author=Reijnn) heb ik de Mumble-authenticatie gerepareerd voor de ATAK Vx-plugin.
 
 __Contact__  
 Stuur me een [e-mail](mailto:niels@reijn.dev), of vind me op [LinkedIn](https://www.linkedin.com/in/reijnn/) en [GitHub](https://github.com/reijnn/).
