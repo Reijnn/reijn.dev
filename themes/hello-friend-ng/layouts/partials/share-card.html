@@ -1,6 +1,7 @@
 {{- /* 1200×630 share card: title on the page color, portrait and site name below. Text is drawn on the inner 1040×470 area, then padded, because images.Text wraps at the image edge. shortcut: a title over 3 lines (~85 chars) runs into the portrait, shrink "size" if one ever does */}}
 {{- $bg := site.Params.themeColor }}
-{{- $text := images.Text .Title (dict "color" "#dcdcdc" "size" 64 "linespacing" 12 "x" 0 "y" 0) }}
+{{- $title := cond .IsHome (printf "%s — %s" site.Title site.Params.homeSubtitle) .Title }}
+{{- $text := images.Text $title (dict "color" "#dcdcdc" "size" 64 "linespacing" 12 "x" 0 "y" 0) }}
 {{- $byline := images.Text (printf "%s · reijn.dev" site.Title) (dict "color" "#a9a9b3" "size" 32 "x" 150 "y" 395) }}
 {{- $card := (resources.Get "images/profile.jpg").Process "fill 120x120 png" | images.Filter (images.Padding 350 920 0 0 $bg) $text $byline (images.Padding 80 80 80 80 $bg) }}
 {{- return $card }}
