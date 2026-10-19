@@ -8,13 +8,21 @@
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
+{{- if .IsTranslated }}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}" />
+{{- end }}
+{{- with index (where .AllTranslations "Language.Lang" (index hugo.Sites 0).Language.Lang) 0 }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{- end }}
+{{- end }}
 
 {{ block "title" . }}
     <title>
         {{ if .IsHome }}
-            {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }} {{ end }}
+            {{ $.Site.Title }}{{ with $.Site.Params.homeSubtitle }} — {{ . }}{{ end }}
         {{ else }}
-            {{ .Title }} :: {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}
+            {{ .Title }} :: {{ $.Site.Title }}
         {{ end }}
     </title>
 {{ end }}
@@ -51,8 +59,20 @@
 {{- partial "favicons.html" . }}
 
 {{ template "_internal/schema.html" . }}
-<meta name="twitter:card" content="summary">
 {{ template "_internal/opengraph.html" . }}
+{{- /* Pages get a generated share card, other pages the site's share image */}}
+{{- if and .IsPage (not .Params.images) }}
+{{- $card := partial "share-card.html" . }}
+<meta property="og:image" content="{{ $card.Permalink }}" />
+<meta property="og:image:width" content="{{ $card.Width }}" />
+<meta property="og:image:height" content="{{ $card.Height }}" />
+<meta name="twitter:card" content="summary_large_image">
+{{- else if not .Params.images }}
+<meta property="og:image" content="{{ site.Params.shareImage | absURL }}" />
+<meta name="twitter:card" content="summary">
+{{- else }}
+<meta name="twitter:card" content="summary_large_image">
+{{- end }}
 
 <!-- RSS -->
 {{ with .OutputFormats.Get "rss" -}}
