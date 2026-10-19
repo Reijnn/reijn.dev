@@ -7,9 +7,9 @@ __Technical Business Analyst & Management Consultant__
 
 Ik ben Niels, en ik werk op het snijvlak van business en technologie. Op dit moment ben ik technical business analyst bij de Douane en managementconsultant bij ilionx. Het grootste deel van mijn werk is vertalen wat een organisatie nodig heeft naar specificaties en roadmaps waar een team echt mee aan de slag kan.
 
-Ik ben niet aan de businesskant begonnen. Ik heb een bachelor Software Engineering en heb jarenlang zelf gebouwd: als software engineer, technical integrator, data engineer met Azure Synapse, Scrum Master en product owner. Juist die achtergrond maakt deze rol leuk: ik weet hoe een eis eruitziet vanaf de kant van de ontwikkelaar.
+Ik ben niet aan de businesskant begonnen. Ik heb een bachelor Software Engineering en heb jarenlang zelf gebouwd: als software engineer, technical integrator, data engineer, Scrum Master en product owner. Juist die achtergrond maakt deze rol leuk: ik weet hoe de wereld eruitziet vanaf de kant van de ontwikkelaar.
 
-Daarnaast dien ik bij de reserve als infanterie-groepscommandant (sergeant) bij de Koninklijke Landmacht. Dat heeft me discipline geleerd, en hoe je een team leidt als het onder druk staat.
+Daarnaast dien ik bij de Infanterie Bewaken&Beveiligen als groepscommandant (sergeant) bij de Koninklijke Landmacht. Dat heeft me discipline geleerd, en hoe je een team leidt als het onder druk staat.
 
 Op deze site [schrijf](/nl/posts/) ik over technologie, privacy en ontwikkeling, van blockchain en websites hosten op IPFS tot hoe ik deze site 79% lichter heb gemaakt.
 

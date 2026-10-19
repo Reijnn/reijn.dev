@@ -7,9 +7,9 @@ __Technical Business Analyst & Management Consultant__
 
 I'm Niels, and I work where business and technology meet. Right now I'm a technical business analyst at Dutch Customs (Douane Nederland) and a management consultant at ilionx. Most of my work is turning what an organization needs into specifications and roadmaps that a team can actually build.
 
-I didn't start on the business side. I have a bachelor's degree in Software Engineering and spent years building things: as a software engineer, a technical integrator, a data engineer working with Azure Synapse, a Scrum Master and a product owner. That background is why I like this role: I know what a requirement looks like from the developer's side of the table.
+I didn't start on the business side. I have a bachelor's degree in Software Engineering and spent years building things: as a software engineer, a technical integrator, a data engineer, a Scrum Master and a product owner. That background is why I like this role: I know what a requirement looks like from the developer's side of the table.
 
-Next to that, I serve in the army reserve as an infantry squad leader (sergeant) in the Royal Netherlands Army. It has taught me discipline, and how to lead a team when things are under pressure.
+Next to that, I serve in the Infanterie Bewaken & Beveiligen as an infantry squad leader (sergeant) in the Royal Netherlands Army. It has taught me discipline, and how to lead a team when things are under pressure.
 
 On this site I [write](/posts/) about technology, privacy and development, from blockchain and hosting websites on IPFS to how I made this site 79% lighter.
 
