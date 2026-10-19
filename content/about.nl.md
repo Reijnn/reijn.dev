@@ -9,7 +9,7 @@ Ik ben Niels, en ik werk op het snijvlak van business en technologie. Op dit mom
 
 Ik ben niet aan de businesskant begonnen. Ik heb een bachelor Software Engineering en heb jarenlang zelf gebouwd: als software engineer, technical integrator, data engineer, Scrum Master en product owner. Juist die achtergrond maakt deze rol leuk: ik weet hoe de wereld eruitziet vanaf de kant van de ontwikkelaar.
 
-Daarnaast dien ik bij de Infanterie Bewaken&Beveiligen als groepscommandant (sergeant) bij de Koninklijke Landmacht. Dat heeft me discipline geleerd, en hoe je een team leidt als het onder druk staat.
+Daarnaast dien ik bij de Infanterie Bewaken & Beveiligen als groepscommandant (sergeant) bij de Koninklijke Landmacht. Dat heeft me discipline geleerd, en hoe je een team leidt als het onder druk staat.
 
 Op deze site [schrijf](/nl/posts/) ik over technologie, privacy en ontwikkeling, van blockchain en websites hosten op IPFS tot hoe ik deze site 79% lichter heb gemaakt.
 
