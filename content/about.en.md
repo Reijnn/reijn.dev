@@ -33,7 +33,7 @@ __Work history__
 2014 - 2017 | Hiker @ Easyway
 
 __Open source__  
-I've contributed to the Hugo themes [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) and [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), the theme this site started from.
+I've contributed to the Hugo themes [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) and [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), the theme this site started from. For [OpenTAKServer](https://github.com/brian7704/OpenTAKServer/commits?author=Reijnn) I fixed Mumble authentication for the ATAK Vx plugin.
 
 __Get in touch__  
 Send me an [email](mailto:niels@reijn.dev), or find me on [LinkedIn](https://www.linkedin.com/in/reijnn/) and [GitHub](https://github.com/reijnn/).
