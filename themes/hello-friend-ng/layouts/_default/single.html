@@ -6,13 +6,13 @@
                 {{ if .IsTranslated }}
                     {{ i18n "postAvailable" }}
                     {{ range .Translations }}
-                        <a href="{{ .Permalink }}" aria-label="{{ .Language.Label }}" title="{{ .Language.Label }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
+                        <a href="{{ .RelPermalink }}" aria-label="{{ .Language.Label }}" title="{{ .Language.Label }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
                     {{ end}}
                 {{ end }}
             </div>
 
             <article>
-                <h2 class="post-title"{{ with .File }} style="view-transition-name: post-{{ .UniqueID }}"{{ end }}><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+                <h2 class="post-title"{{ with .File }} style="view-transition-name: post-{{ .UniqueID }}"{{ end }}><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
 
                 {{ if .Params.Cover }}
                     <figure class="post-cover">
