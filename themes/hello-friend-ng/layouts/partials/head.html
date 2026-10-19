@@ -60,19 +60,14 @@
 
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/opengraph.html" . }}
-{{- /* Pages get a generated share card, other pages the site's share image */}}
-{{- if and .IsPage (not .Params.images) }}
+{{- /* Every page gets a generated share card, unless it sets its own images */}}
+{{- if not .Params.images }}
 {{- $card := partial "share-card.html" . }}
 <meta property="og:image" content="{{ $card.Permalink }}" />
 <meta property="og:image:width" content="{{ $card.Width }}" />
 <meta property="og:image:height" content="{{ $card.Height }}" />
-<meta name="twitter:card" content="summary_large_image">
-{{- else if not .Params.images }}
-<meta property="og:image" content="{{ site.Params.shareImage | absURL }}" />
-<meta name="twitter:card" content="summary">
-{{- else }}
-<meta name="twitter:card" content="summary_large_image">
 {{- end }}
+<meta name="twitter:card" content="summary_large_image">
 
 <!-- RSS -->
 {{ with .OutputFormats.Get "rss" -}}
