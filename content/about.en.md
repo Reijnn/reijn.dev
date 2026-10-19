@@ -1,15 +1,24 @@
 ---
 title: "About"
-description: "Niels Reijn: software engineer, management consultant at ilionx, technical business analyst at Dutch Customs, and infantry squad leader in the army reserve."
+description: "Niels Reijn: technical business analyst at Dutch Customs, management consultant at ilionx, software engineer by training, and squad leader in the army reserve."
 ---
 
-__Software Engineer & Infantry Squad Leader__
+__Technical Business Analyst & Management Consultant__
 
-A dedicated Software Engineer with a Bachelor's degree in Software Engineering, I specialize in web development and am well-versed in cloud technologies, particularly Microsoft Azure. Certified in Scrum methodologies, I bring agility and efficiency to every project, ensuring robust and scalable solutions. Alongside my technical role, I serve with commitment in the military reserve, an experience that has instilled in me discipline, leadership, and the ability to thrive under pressure. Balancing both the tech and defense sectors, I bring a unique blend of skills, ensuring innovation, resilience, and steadfast dedication to any team or project I undertake.
+I'm Niels, and I work where business and technology meet. Right now I'm a technical business analyst at Dutch Customs (Douane Nederland) and a management consultant at ilionx. Most of my work is turning what an organization needs into specifications and roadmaps that a team can actually build.
+
+I didn't start on the business side. I have a bachelor's degree in Software Engineering and spent years building things: as a software engineer, a technical integrator, a data engineer working with Azure Synapse, a Scrum Master and a product owner. That background is why I like this role: I know what a requirement looks like from the developer's side of the table.
+
+Next to that, I serve in the army reserve as an infantry squad leader (sergeant) in the Royal Netherlands Army. It has taught me discipline, and how to lead a team when things are under pressure.
+
+On this site I [write](/posts/) about technology, privacy and development, from blockchain and hosting websites on IPFS to how I made this site 79% lighter.
+
+__What I work with__  
+Business and technical analysis · product ownership · Scrum (certified) · Microsoft Azure, including Synapse and Azure DevOps · data engineering and SQL · web development with TypeScript, JavaScript and Hugo
 
 __Download my [resume](https://drive.google.com/uc?export=download&id=1NMcwfurrZ_74_xQFppRGzY2BKrOTfCd-).__
 
-__Work History__   
+__Work history__  
 2026 - present | Technical Business Analyst @ Douane Nederland  
 2025 - present | Infantry Squad Leader (Sergeant) @ Koninklijke Landmacht  
 2023 - present | Management Consultant @ ilionx  
@@ -20,20 +29,11 @@ __Work History__
 2019 - 2023 | Software Engineer @ ilionx  
 2019 - 2022 | Technical Integrator @ Info Support  
 2017 - 2019 | Software Engineer @ QNH  
-2014 - 2017 | Hiker @ Easyway  
-2016 - 2017 | Teaching assistant @ Hogeschool van Amsterdam   
+2016 - 2017 | Teaching assistant @ Hogeschool van Amsterdam  
+2014 - 2017 | Hiker @ Easyway
 
-__Languages__   
-Javascript, HTML, CSS, Typescript, Java, Kotlin, C#, SQL and many more...
+__Open source__  
+I've contributed to the Hugo themes [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) and [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), the theme this site started from.
 
-__Services__    
-[Firebase](https://firebase.google.com/), [Github](https://github.com/Reijnn), [Gitlab](https://gitlab.com/Reijnn), [Azure Portal](https://portal.azure.com) and [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/).
-
-__Frameworks__  
-* Data: [Azure Synapse](https://azure.microsoft.com/nl-nl/products/synapse-analytics), [Jupyter Notebooks](https://jupyter.org/)
-* Blockchain: [Ethereum](https://www.ethereum.org/), [Solidity](http://solidity.readthedocs.io), [Embark](https://github.com/embark-framework/embark), [IPFS](https://ipfs.io/), [Truffle](http://truffleframework.com/)
-* Mobile: [iOS](https://developer.apple.com/), [Android](https://developer.android.com/), [Xamarin](https://www.xamarin.com/), [Flutter](https://flutter.io/)
-* Web: [Bettyblocks](https://www.bettyblocks.com/), [Angular](https://angular.io/), [React](https://reactjs.org/), [Hugo](https://gohugo.io/), [Vue](https://vuejs.org/)
-
-__Contributions__   
-[Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn), [Hugo-theme-hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn)
+__Get in touch__  
+Send me an [email](mailto:niels@reijn.dev), or find me on [LinkedIn](https://www.linkedin.com/in/reijnn/) and [GitHub](https://github.com/reijnn/).
