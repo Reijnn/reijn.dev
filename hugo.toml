@@ -41,7 +41,6 @@ dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 
 description = "Niels Reijn — Software Engineer, Management Consultant, and Product Owner. Writing about technology, privacy, and development."
-shareImage = "/profile.jpg" # Shared links to pages without a generated card (head.html)
 
 homeSubtitle = "Software Engineer"
 
