@@ -1,4 +1,4 @@
-{{- /* Returns dict "img" (original cover resource, or nil) and "color" (an accent hex from the cover, or ""). Cover: front.* in the page bundle first (not cover.*: Hugo's opengraph template would add that as og:image before the share card), then Open Library by ISBN. Fetched at build time, so pages make no third-party request and the CSP needs no change. Call with partialCached, keyed by the page. */ -}}
+{{- /* Returns the original cover resource, or nil. Cover: front.* in the page bundle first (not cover.*: Hugo's opengraph template would add that as og:image before the share card), then Open Library by ISBN. Fetched at build time, so pages make no third-party request and the CSP needs no change. Call with partialCached, keyed by the page. */ -}}
 {{- $img := .Resources.GetMatch "front.*" -}}
 {{- $title := .Title -}}
 {{- with and (not $img) .Params.isbn -}}
@@ -14,13 +14,4 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- $color := "" -}}
-{{- with $img -}}
-  {{- /* The most common color is often the paper-white or black background, so take the first one that is neither */ -}}
-  {{- range .Colors -}}
-    {{- if and (not $color) (gt .Luminance 0.03) (lt .Luminance 0.6) -}}
-      {{- $color = .ColorHex -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-{{- return dict "img" $img "color" $color -}}
+{{- return $img -}}

@@ -1,9 +1,9 @@
 {{ define "main" }}
-    {{ $c := partialCached "book-image.html" . . }}
+    {{ $img := partialCached "book-image.html" . . }}
     <div class="content">
         <main class="post">
-            <article class="book-single"{{ with $c.color }} style="--book-color: {{ . }}"{{ end }}>
-                {{ partial "book-cover.html" (dict "page" . "img" $c.img "lazy" false) }}
+            <article class="book-single">
+                {{ partial "book-cover.html" (dict "page" . "img" $img "lazy" false) }}
 
                 <div class="book-meta">
                     <h2 class="post-title">{{ .Title }}</h2>

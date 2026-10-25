@@ -6,7 +6,7 @@
 {{- $card := (resources.Get "images/profile.jpg").Process "fill 240x240 png" | images.Filter (images.Padding 700 1840 0 0 $bg) $text $byline (images.Padding 160 160 160 160 $bg) }}
 {{- /* A book with a cover gets the cover on the left instead, with author, title and rating in the 1353px to its right. shortcut: a title over 5 lines (~90 chars) runs into the rating */}}
 {{- if and .IsPage (eq .Section "books") }}
-  {{- with (partialCached "book-image.html" . .).img }}
+  {{- with partialCached "book-image.html" . . }}
     {{- $x := 727 }}
     {{- $filters := slice
       (images.Padding 0 1453 0 0 $bg)
