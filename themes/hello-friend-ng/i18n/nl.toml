@@ -62,3 +62,9 @@ other = "Nu"
 
 [reading]
 other = "Nu aan het lezen"
+
+[buyBook]
+other = "Koop dit boek"
+
+[affiliateLink]
+other = "affiliatelink"

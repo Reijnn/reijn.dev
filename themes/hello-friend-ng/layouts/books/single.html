@@ -14,6 +14,10 @@
                     {{ else }}
                         <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
                     {{ end }}
+                    {{- /* Dutch advertising rules require affiliate links to be marked as such */}}
+                    {{ with .Params.affiliate }}
+                        <p><a href="{{ . }}" target="_blank" rel="sponsored noopener">{{ i18n "buyBook" }}</a> <span class="book-finished">({{ i18n "affiliateLink" }})</span></p>
+                    {{ end }}
                 </div>
             </article>
 

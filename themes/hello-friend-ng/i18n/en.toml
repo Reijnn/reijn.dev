@@ -62,3 +62,9 @@ other = "Now"
 
 [reading]
 other = "Currently reading"
+
+[buyBook]
+other = "Buy this book"
+
+[affiliateLink]
+other = "affiliate link"
