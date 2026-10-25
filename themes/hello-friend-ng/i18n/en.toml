@@ -71,3 +71,6 @@ other = "affiliate link"
 
 [finishedIn]
 other = "Finished in"
+
+[amazonAssociate]
+other = "As an Amazon Associate I earn from qualifying purchases."

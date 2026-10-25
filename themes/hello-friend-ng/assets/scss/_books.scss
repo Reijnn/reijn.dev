@@ -166,3 +166,8 @@
 .book-finished {
   @include mixins.dimmed;
 }
+
+.book-disclosure {
+  font-size: .75rem;
+  @include mixins.dimmed;
+}
