@@ -68,3 +68,6 @@ other = "Buy this book"
 
 [affiliateLink]
 other = "affiliate link"
+
+[finishedIn]
+other = "Finished in"

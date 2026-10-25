@@ -11,6 +11,8 @@
                     {{ partial "book-rating.html" . }}
                     {{ if eq .Params.status "reading" }}
                         <p class="book-finished">{{ i18n "reading" }}</p>
+                    {{ else if .Params.yearOnly }}
+                        <p class="book-finished">{{ i18n "finishedIn" }} {{ .Date.Year }}</p>
                     {{ else }}
                         <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
                     {{ end }}
