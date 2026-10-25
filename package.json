@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "hugo-bin": "^0.166.0",
-    "pele": "^1.6.0",
+    "pele": "^1.8.0",
     "sass-embedded": "^1.105.2"
   },
   "keywords": [
