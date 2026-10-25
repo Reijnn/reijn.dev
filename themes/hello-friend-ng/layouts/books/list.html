@@ -7,20 +7,25 @@
                 <div class="content">{{ .Content }}</div>
             {{ end }}
 
-            {{ range .Pages.GroupByDate "2006" }}
+            {{ with where .Pages "Params.status" "reading" }}
                 <div class="posts-group">
-                    <div class="post-year">{{ .Key }}</div>
+                    <div class="post-year books-year">{{ i18n "now" }}</div>
+
+                    <ul class="books-grid">
+                        {{ range . }}
+                            <li>{{ partial "book-card.html" . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+
+            {{ range (where .Pages "Params.status" "!=" "reading").GroupByDate "2006" }}
+                <div class="posts-group">
+                    <div class="post-year books-year">{{ .Key }}</div>
 
                     <ul class="books-grid">
                         {{ range .Pages }}
-                            <li>
-                                <a href="{{ .RelPermalink }}" class="book">
-                                    {{ partial "book-cover.html" (dict "page" . "lazy" true) }}
-                                    <span class="book-title">{{ .Title }}</span>
-                                    {{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}
-                                    {{ partial "book-rating.html" . }}
-                                </a>
-                            </li>
+                            <li>{{ partial "book-card.html" . }}</li>
                         {{ end }}
                     </ul>
                 </div>

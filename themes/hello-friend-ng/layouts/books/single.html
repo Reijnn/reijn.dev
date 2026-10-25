@@ -1,14 +1,19 @@
 {{ define "main" }}
+    {{ $c := partialCached "book-image.html" . . }}
     <div class="content">
         <main class="post">
-            <article class="book-single">
-                {{ partial "book-cover.html" (dict "page" . "lazy" false) }}
+            <article class="book-single"{{ with $c.color }} style="--book-color: {{ . }}"{{ end }}>
+                {{ partial "book-cover.html" (dict "page" . "img" $c.img "lazy" false) }}
 
                 <div class="book-meta">
                     <h2 class="post-title">{{ .Title }}</h2>
                     {{ with .Params.author }}<p class="book-author">{{ . }}</p>{{ end }}
                     {{ partial "book-rating.html" . }}
-                    <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
+                    {{ if eq .Params.status "reading" }}
+                        <p class="book-finished">{{ i18n "reading" }}</p>
+                    {{ else }}
+                        <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
+                    {{ end }}
                 </div>
             </article>
 

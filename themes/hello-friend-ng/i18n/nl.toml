@@ -56,3 +56,9 @@ other = "Uitgelezen op"
 
 [rating]
 other = "Beoordeling"
+
+[now]
+other = "Nu"
+
+[reading]
+other = "Nu aan het lezen"

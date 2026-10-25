@@ -1,6 +1,11 @@
 @use "mixins";
 @use "variables";
 
+// As wide as a year, so the "Now" row lines up with the years below it
+.books-year {
+  min-width: 2.8em; // "2026" in Inter is 2.74em
+}
+
 .books-grid {
   flex-grow: 1;
   display: grid;
@@ -31,7 +36,8 @@
   &:hover .book-cover,
   &:focus-visible .book-cover {
     transform: translateY(-4px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2), 0 14px 28px rgba(0, 0, 0, .3);
+    // Glow in the cover's own color (set by book-card.html), black when the cover has none
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2), 0 14px 32px color-mix(in srgb, var(--book-color, #000) 55%, transparent);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -41,8 +47,38 @@
   }
 }
 
+.book-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .book-title {
   font-weight: bold;
+}
+
+/* {{< book >}} in a post: a small cover with the text beside it */
+.book-embed {
+  margin: 24px 0;
+
+  .book {
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .book-cover {
+    flex: 0 0 90px;
+    margin-bottom: 0;
+  }
+
+  .book-placeholder {
+    font-size: .5rem;
+
+    &-author {
+      display: none; // shown beside the cover already
+    }
+  }
 }
 
 .book-author {
@@ -103,6 +139,10 @@
   gap: 32px;
   align-items: flex-end;
   margin-bottom: 20px;
+  padding: 24px;
+  border-radius: 8px;
+  // A wash of the cover's color (set in books/single.html), nothing when the cover has none
+  background: linear-gradient(180deg, color-mix(in srgb, var(--book-color, transparent) 22%, transparent), transparent 90%);
 
   .book-cover {
     flex: 0 0 220px;

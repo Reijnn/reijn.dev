@@ -1,0 +1,9 @@
+{{- $c := partialCached "book-image.html" . . -}}
+<a href="{{ .RelPermalink }}" class="book"{{ with $c.color }} style="--book-color: {{ . }}"{{ end }}>
+    {{ partial "book-cover.html" (dict "page" . "img" $c.img "lazy" true) }}
+    <span class="book-text">
+        <span class="book-title">{{ .Title }}</span>
+        {{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}
+        {{ partial "book-rating.html" . }}
+    </span>
+</a>

@@ -56,3 +56,9 @@ other = "Finished on"
 
 [rating]
 other = "Rating"
+
+[now]
+other = "Now"
+
+[reading]
+other = "Currently reading"
