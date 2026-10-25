@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <div class="content">
+        <main class="posts">
+            <h1>{{ .Title }}</h1>
+
+            {{ if .Content }}
+                <div class="content">{{ .Content }}</div>
+            {{ end }}
+
+            {{ with where .Pages "Params.status" "reading" }}
+                <div class="posts-group">
+                    <div class="post-year books-year">{{ i18n "now" }}</div>
+
+                    <ul class="books-grid">
+                        {{ range . }}
+                            <li>{{ partial "book-card.html" . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+
+            {{ range (where .Pages "Params.status" "!=" "reading").GroupByDate "2006" }}
+                <div class="posts-group">
+                    <div class="post-year books-year">{{ .Key }}</div>
+
+                    <ul class="books-grid">
+                        {{ range .Pages }}
+                            <li>{{ partial "book-card.html" . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+        </main>
+    </div>
+{{ end }}

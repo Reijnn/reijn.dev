@@ -49,3 +49,28 @@ other = "Menu"
 
 [toggleTheme]
 other = "Toggle dark mode"
+
+# books/
+[finished]
+other = "Finished on"
+
+[rating]
+other = "Rating"
+
+[now]
+other = "Now"
+
+[reading]
+other = "Currently reading"
+
+[buyBook]
+other = "Buy this book"
+
+[affiliateLink]
+other = "affiliate link"
+
+[finishedIn]
+other = "Finished in"
+
+[amazonAssociate]
+other = "As an Amazon Associate I earn from qualifying purchases."

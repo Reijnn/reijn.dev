@@ -1,0 +1,40 @@
+{{ define "main" }}
+    {{ $img := partialCached "book-image.html" . . }}
+    <div class="content">
+        <main class="post">
+            <article class="book-single">
+                {{ partial "book-cover.html" (dict "page" . "img" $img "lazy" false) }}
+
+                <div class="book-meta">
+                    <h2 class="post-title">{{ .Title }}</h2>
+                    {{ with .Params.author }}<p class="book-author">{{ . }}</p>{{ end }}
+                    {{ partial "book-rating.html" . }}
+                    {{ if eq .Params.status "reading" }}
+                        <p class="book-finished">{{ i18n "reading" }}</p>
+                    {{ else if .Params.yearOnly }}
+                        <p class="book-finished">{{ i18n "finishedIn" }} {{ .Date.Year }}</p>
+                    {{ else }}
+                        <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
+                    {{ end }}
+                    {{- /* Dutch advertising rules require affiliate links to be marked as such; Amazon's associate terms ask for their own sentence, which does that too */}}
+                    {{ with .Params.affiliate }}
+                        {{ if strings.Contains . "amazon" }}
+                            <p><a href="{{ . }}" target="_blank" rel="sponsored noopener">{{ i18n "buyBook" }}</a></p>
+                            <p class="book-disclosure">{{ i18n "amazonAssociate" }}</p>
+                        {{ else }}
+                            <p><a href="{{ . }}" target="_blank" rel="sponsored noopener">{{ i18n "buyBook" }}</a> <span class="book-finished">({{ i18n "affiliateLink" }})</span></p>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </article>
+
+            {{ with .Content }}
+                <div class="post-content">{{ . }}</div>
+            {{ end }}
+
+            <hr />
+
+            <p><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
+        </main>
+    </div>
+{{ end }}

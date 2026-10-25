@@ -1,0 +1,14 @@
+{{- /* Cover markup, or a typographic placeholder. Takes dict "page", "img" (from book-image.html) and "lazy". The view-transition-name lets the cover morph between the list and the book page. */ -}}
+{{- $page := .page -}}
+<div class="book-cover"{{ with $page.File }} style="view-transition-name: book-{{ .UniqueID }}"{{ end }}>
+  {{- with .img -}}
+    {{- $img := .Resize "480x webp" -}}
+    {{- /* Empty alt: the title is always shown as text next to the cover */ -}}
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt=""{{ if $.lazy }} loading="lazy"{{ end }}>
+  {{- else -}}
+    <span class="book-placeholder" aria-hidden="true">
+      <span class="book-placeholder-title">{{ $page.Title }}</span>
+      {{- with $page.Params.author }}<span class="book-placeholder-author">{{ . }}</span>{{ end -}}
+    </span>
+  {{- end -}}
+</div>
