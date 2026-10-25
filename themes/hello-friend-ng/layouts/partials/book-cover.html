@@ -1,0 +1,28 @@
+{{- /* Book cover: cover.* in the page bundle first, then Open Library by ISBN, else a typographic placeholder. Fetched at build time, so pages make no third-party request and the CSP needs no change. Takes dict "page" and "lazy". */ -}}
+{{- $page := .page -}}
+{{- $img := $page.Resources.GetMatch "cover.*" -}}
+{{- with and (not $img) $page.Params.isbn -}}
+  {{- /* default=false makes Open Library answer 404 instead of a blank 1×1 image */ -}}
+  {{- $url := printf "https://covers.openlibrary.org/b/isbn/%s-L.jpg?default=false" (replaceRE `[^0-9Xx]` "" (string .)) -}}
+  {{- with try (resources.GetRemote $url) -}}
+    {{- with .Err -}}
+      {{- warnf "No cover for %s (%s): %s" $page.Title $url . -}}
+    {{- else with .Value -}}
+      {{- $img = . -}}
+    {{- else -}}
+      {{- warnf "No cover for %s: Open Library has none for this ISBN, add a cover.jpg to the bundle" $page.Title -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<div class="book-cover">
+  {{- with $img -}}
+    {{- $img = .Resize "480x webp" -}}
+    {{- /* Empty alt: the title is always shown as text next to the cover */ -}}
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt=""{{ if $.lazy }} loading="lazy"{{ end }}>
+  {{- else -}}
+    <span class="book-placeholder" aria-hidden="true">
+      <span class="book-placeholder-title">{{ $page.Title }}</span>
+      {{- with $page.Params.author }}<span class="book-placeholder-author">{{ . }}</span>{{ end -}}
+    </span>
+  {{- end -}}
+</div>

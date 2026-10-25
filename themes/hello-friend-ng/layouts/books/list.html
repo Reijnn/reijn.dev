@@ -1,0 +1,30 @@
+{{ define "main" }}
+    <div class="content">
+        <main class="posts">
+            <h1>{{ .Title }}</h1>
+
+            {{ if .Content }}
+                <div class="content">{{ .Content }}</div>
+            {{ end }}
+
+            {{ range .Pages.GroupByDate "2006" }}
+                <div class="posts-group">
+                    <div class="post-year">{{ .Key }}</div>
+
+                    <ul class="books-grid">
+                        {{ range .Pages }}
+                            <li>
+                                <a href="{{ .RelPermalink }}" class="book">
+                                    {{ partial "book-cover.html" (dict "page" . "lazy" true) }}
+                                    <span class="book-title">{{ .Title }}</span>
+                                    {{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}
+                                    {{ partial "book-rating.html" . }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+        </main>
+    </div>
+{{ end }}

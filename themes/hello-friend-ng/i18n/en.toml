@@ -49,3 +49,10 @@ other = "Menu"
 
 [toggleTheme]
 other = "Toggle dark mode"
+
+# books/
+[finished]
+other = "Finished on"
+
+[rating]
+other = "Rating"

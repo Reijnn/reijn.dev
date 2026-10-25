@@ -49,3 +49,10 @@ other = "Menu"
 
 [toggleTheme]
 other = "Donkere modus aan/uit"
+
+# books/
+[finished]
+other = "Uitgelezen op"
+
+[rating]
+other = "Beoordeling"

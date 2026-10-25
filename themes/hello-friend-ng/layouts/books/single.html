@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <div class="content">
+        <main class="post">
+            <article class="book-single">
+                {{ partial "book-cover.html" (dict "page" . "lazy" false) }}
+
+                <div class="book-meta">
+                    <h2 class="post-title">{{ .Title }}</h2>
+                    {{ with .Params.author }}<p class="book-author">{{ . }}</p>{{ end }}
+                    {{ partial "book-rating.html" . }}
+                    <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
+                </div>
+            </article>
+
+            {{ with .Content }}
+                <div class="post-content">{{ . }}</div>
+            {{ end }}
+
+            <hr />
+
+            <p><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
+        </main>
+    </div>
+{{ end }}
