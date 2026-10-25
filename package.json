@@ -13,7 +13,7 @@
   "devDependencies": {
     "hugo-bin": "^0.166.0",
     "pele": "^1.6.0",
-    "sass-embedded": "^1.105.2"
+    "sass-embedded": "^1.106.1"
   },
   "keywords": [
     "hugo",
