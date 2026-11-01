@@ -16,31 +16,12 @@ a.button {
   appearance: none;
   cursor: pointer;
   outline: none;
-  // Default
-  background: variables.$light-background-header;
-
-  @media (prefers-color-scheme: dark) {
-    background: variables.$dark-background-header;
-    color: inherit;
-  }
-
-  @media (prefers-color-scheme: light) {
-    background: variables.$light-background-header;
-  }
-
-  [data-theme=dark] & {
-    background: variables.$dark-background-header;
-    color: inherit;
-  }
-
-  [data-theme=light] & {
-    background: variables.$light-background-header;
-  }
+  color: inherit;
+  background: light-dark(variables.$light-background-header, variables.$dark-background-header);
 
   &.link {
     background: none;
     font-size: 1rem;
   }
-
 }
 

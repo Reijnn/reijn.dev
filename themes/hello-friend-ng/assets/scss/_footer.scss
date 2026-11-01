@@ -3,19 +3,7 @@
 .footer {
   padding: 40px 20px;
   flex-grow: 0;
-  color: #767676;
-
-  @media (prefers-color-scheme: dark) {
-    color: variables.$dark-color-secondary;
-  }
-
-  [data-theme=dark] & {
-    color: variables.$dark-color-secondary;
-  }
-
-  [data-theme=light] & {
-    color: #767676;
-  }
+  color: light-dark(#767676, variables.$dark-color-secondary);
 
   &__inner {
     display: flex;

@@ -6,24 +6,7 @@
   justify-content: center;
   position: relative;
   padding: 20px;
-  // Default
-  background: variables.$light-background-header;
-
-  @media (prefers-color-scheme: dark) {
-    background: variables.$dark-background-header;
-  }
-
-  @media (prefers-color-scheme: light) {
-    background: variables.$light-background-header;
-  }
-
-  [data-theme=dark] & {
-    background: variables.$dark-background-header;
-  }
-
-  [data-theme=light] & {
-    background: variables.$light-background-header;
-  }
+  background: light-dark(variables.$light-background-header, variables.$dark-background-header);
 
   &__right {
     display: flex;

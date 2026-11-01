@@ -131,29 +131,8 @@
       text-decoration: none;
       letter-spacing: 0.1em;
       z-index: 1;
-      // Default
-      background: variables.$light-background;
-      color: variables.$light-color-secondary;
-
-      @media (prefers-color-scheme: dark) {
-        background: variables.$dark-background;
-        color: variables.$dark-color-secondary;
-      }
-    
-      @media (prefers-color-scheme: light) {
-        background: variables.$light-background;
-        color: variables.$light-color-secondary;
-      }
-    
-      [data-theme=dark] & {
-        background: variables.$dark-background;
-        color: variables.$dark-color-secondary;
-      }
-    
-      [data-theme=light] & {
-        background: variables.$light-background;
-        color: variables.$light-color-secondary;
-      }
+      background: light-dark(variables.$light-background, variables.$dark-background);
+      color: light-dark(variables.$light-color-secondary, variables.$dark-color-secondary);
     }
 
     hr {
@@ -190,24 +169,7 @@
   padding: 0;
   cursor: pointer;
   appearance: none;
-  // Default
-  background: variables.$light-background-secondary;
-
-  @media (prefers-color-scheme: dark) {
-    background: variables.$dark-background-secondary;
-  }
-
-  @media (prefers-color-scheme: light) {
-    background: variables.$light-background-secondary;
-  }
-
-  [data-theme=dark] & {
-    background: variables.$dark-background-secondary;
-  }
-
-  [data-theme=light] & {
-    background: variables.$light-background-secondary;
-  }
+  background: light-dark(variables.$light-background-secondary, variables.$dark-background-secondary);
 
   + .button {
     margin-left: 10px;
