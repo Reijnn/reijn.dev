@@ -1,0 +1,11 @@
+// Cloudflare Workers static assets: reijn.dev deploys from main, PRs upload preview versions.
+{
+  "name": "reijn-dev",
+  "compatibility_date": "2026-10-15",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "reijn.dev", "custom_domain": true }],
+  "preview_urls": true
+}
