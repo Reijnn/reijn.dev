@@ -2,9 +2,9 @@
     <div class="content-center">
         <main>
             <div>
-                {{ if .Site.Params.Portrait.Path }}
-                <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" width="{{ .Site.Params.Portrait.MaxWidth }}" height="{{ .Site.Params.Portrait.MaxHeight }}" fetchpriority="high" />
-                {{ end }}
+                {{ with .Site.Params.Portrait.Path }}{{ with resources.Get (strings.TrimPrefix "/" .) | fingerprint }}
+                <img src="{{ .RelPermalink }}" class="circle" alt="{{ site.Params.Portrait.Alt }}" width="{{ site.Params.Portrait.MaxWidth }}" height="{{ site.Params.Portrait.MaxHeight }}" fetchpriority="high" />
+                {{ end }}{{ end }}
 
                 <h1>{{ .Site.Title }}</h1>
 
