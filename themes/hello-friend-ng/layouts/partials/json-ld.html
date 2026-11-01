@@ -1,0 +1,36 @@
+{{- /* Structured data for search engines: the site and its owner on the home page, an article on posts, a profile on About. Other pages get none. */ -}}
+{{- $home := site.Home.Permalink -}}
+{{- $sameAs := slice -}}
+{{- range site.Params.social }}{{ if not (hasPrefix .url "mailto:") }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end -}}
+{{- /* One @id on every language, so search engines see one author */ -}}
+{{- $person := dict "@type" "Person" "@id" (printf "%s#person" ((index hugo.Sites 0).Home.Permalink)) "name" site.Params.author.name "url" $home "sameAs" $sameAs -}}
+{{- with site.Params.portrait.path }}{{ $person = merge $person (dict "image" (absURL .)) }}{{ end -}}
+{{- $description := cond .IsHome site.Params.description (.Description | default (.Summary | plainify)) -}}
+
+{{- $data := dict -}}
+{{- if .IsHome -}}
+  {{- $data = dict "@type" "WebSite" "url" .Permalink "name" site.Title "description" $description "inLanguage" .Language.Locale "author" $person -}}
+{{- else if eq .Path "/about" -}}
+  {{- $data = dict "@type" "ProfilePage" "url" .Permalink "name" .Title "description" $description "inLanguage" .Language.Locale "mainEntity" $person -}}
+{{- else if and .IsPage (eq .Section "posts") -}}
+  {{- $image := "" -}}
+  {{- with .Params.images }}{{ $image = absURL (index . 0) }}{{ else }}{{ $image = (partial "share-card.html" $).Permalink }}{{ end -}}
+  {{- $data = dict
+    "@type" "BlogPosting"
+    "headline" (.Title | plainify)
+    "description" $description
+    "url" .Permalink
+    "mainEntityOfPage" .Permalink
+    "inLanguage" .Language.Locale
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "wordCount" .WordCount
+    "image" $image
+    "author" $person
+  -}}
+  {{- with .Params.tags }}{{ $data = merge $data (dict "keywords" .) }}{{ end -}}
+{{- end -}}
+
+{{- with $data }}
+<script type="application/ld+json">{{ merge (dict "@context" "https://schema.org") . | jsonify | safeJS }}</script>
+{{- end }}
