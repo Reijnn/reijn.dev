@@ -95,6 +95,10 @@ url = "https://github.com/reijnn/"
 name = "linkedin"
 url = "https://www.linkedin.com/in/reijnn/"
 
+[[params.social]]
+name = "buy-me-a-coffee" # humanized into the "Buy me a coffee" tooltip
+url = "https://buymeacoffee.com/reijnn"
+
 [languages]
 [languages.en]
 locale = "en-US"
