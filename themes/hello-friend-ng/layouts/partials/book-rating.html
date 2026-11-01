@@ -1,0 +1,3 @@
+{{- with .Params.rating -}}
+  <span class="book-rating" role="img" aria-label="{{ i18n "rating" }}: {{ . }}/5">{{ strings.Repeat (int .) "★" }}{{ strings.Repeat (sub 5 (int .)) "☆" }}</span>
+{{- end -}}

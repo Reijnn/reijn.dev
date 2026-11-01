@@ -49,3 +49,19 @@ other = "Menu"
 
 [toggleTheme]
 other = "Donkere modus aan/uit"
+
+# books/
+[finished]
+other = "Uitgelezen op"
+
+[rating]
+other = "Beoordeling"
+
+[now]
+other = "Nu"
+
+[reading]
+other = "Nu aan het lezen"
+
+[finishedIn]
+other = "Uitgelezen in"
