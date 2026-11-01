@@ -74,8 +74,10 @@
     margin-right: 15px;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &[aria-current="page"] {
       text-decoration: underline;
+      text-underline-offset: 0.25em;
     }
 
     &:last-of-type {
