@@ -3,7 +3,6 @@ title: "Assistant Squad Leader - Koninklijke Landmacht"
 description: "Assistant squad leader (corporal) in the Royal Netherlands Army reserve: second in command of an infantry squad, coaching and instruction."
 date: 2024-01-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Military
   - Leadership

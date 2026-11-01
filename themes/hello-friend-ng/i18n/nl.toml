@@ -20,10 +20,6 @@ other = "Oeps, pagina niet gevonden…"
 
 # posts/single.html
 #
-[readingTime]
-one   = "Eén minuut"
-other = "{{ .Count }} minuten"
-
 [tableOfContents]
 other = "Inhoudsopgave"
 

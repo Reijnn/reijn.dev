@@ -2,23 +2,7 @@
   <div class="content">
     <main class="post">
 
-      <div class="post-info">
-        <p>
-          {{- if .Site.Params.EnableReadingTime }}
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-            {{ i18n "readingTime" .Page.ReadingTime }}
-          {{ end }}
-
-          {{ if .IsTranslated }} | {{ i18n "postAvailable" }}
-            {{ range .Translations }}
-                <a href="{{ .RelPermalink }}" aria-label="{{ .Language.Label }}" title="{{ .Language.Label }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
-            {{ end}}
-          {{ end }}
-        </p>
-      </div>
+      {{ partial "translations.html" . }}
 
       <article>
         <h1 class="post-title"{{ with .File }} style="view-transition-name: post-{{ .UniqueID }}"{{ end }}>
@@ -29,16 +13,6 @@
           <div class="post-excerpt">{{ . }}</div>
         {{ end }}
 
-        {{ if .Params.Cover }}
-          <figure class="post-cover">
-            <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
-            
-            {{ if .Params.CoverCaption }}
-              <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
-            {{ end }}
-          </figure>
-        {{ end }}
-
         {{- if .Params.toc }}
           <hr />
           <aside id="toc">
@@ -47,14 +21,6 @@
           </aside>
           <hr />
         {{- end }}
-
-        {{ if .Params.Audio }}
-          <div class="post-audio">
-            <audio controls>
-              <source src="{{ .Params.Audio }}">
-            </audio>
-          </div>
-        {{ end }}
 
         <div class="post-content">
           {{ .Content }}
@@ -84,35 +50,11 @@
             <line x1="8" y1="2" x2="8" y2="6"></line>
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
-          {{ if .Site.Params.dateformNumTime }}
-            {{ dateFormat .Site.Params.dateformNumTime .Date }}
-          {{ else }}
-            {{ dateFormat "2006-01-02 15:04" .Date }}
-          {{ end }}
-
-          {{ if .Lastmod }} 
-            {{ if not (eq .Lastmod .Date )}}
-              {{ if .Site.Params.dateformNumTime }}
-                ({{ i18n "lastModified" }}: {{ dateFormat .Site.Params.dateformNumTime .Lastmod }})
-              {{ else }} 
-                ({{ i18n "lastModified" }}: {{ dateFormat "2006-01-02 15:04" .Lastmod }})
-              {{ end }}
-            {{ end }}
-          {{ end }}
+          {{ dateFormat site.Params.dateformNumTime .Date }}
+          {{ if ne .Lastmod .Date }}({{ i18n "lastModified" }}: {{ dateFormat site.Params.dateformNumTime .Lastmod }}){{ end }}
         </p>
 
-        {{- if .GitInfo }}
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit">
-              <circle cx="12" cy="12" r="4"></circle>
-              <line x1="1.05" y1="12" x2="7" y2="12"></line>
-              <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
-            </svg>
-
-            <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
-            @ {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate }}{{ end }}
-          </p>
-        {{- end }}
+        {{ partial "git-info.html" . }}
       </div>
 
       {{- if .Site.Params.EnableSharingButtons }}

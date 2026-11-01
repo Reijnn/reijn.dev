@@ -3,7 +3,6 @@ title: "Infantry Squad Leader - Koninklijke Landmacht"
 description: "Infantry squad leader (sergeant) in the Royal Netherlands Army reserve: leading a squad, planning training and developing soldiers."
 date: 2025-04-01T00:00:00+02:00
 draft: false
-toc: false
 tags:
   - Military
   - Leadership

@@ -3,7 +3,6 @@ title: "Rifleman - Koninklijke Landmacht"
 description: "Rifleman in the Royal Netherlands Army reserve (Natres), infantry guarding and security, alongside a civilian career."
 date: 2021-02-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Military
   - Infantry

@@ -3,7 +3,6 @@ title: "Software Engineer - ilionx"
 description: "Software engineer at ilionx from 2019 to 2024, on assignments at Dutch Customs, Info Support and the City of Amsterdam."
 date: 2019-02-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Consultancy
   - Software Engineering

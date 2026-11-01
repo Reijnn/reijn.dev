@@ -3,7 +3,6 @@ title: "Instructiegroep Opleiden & Begeleiden - Koninklijke Landmacht"
 description: "Instructeur (sergeant) bij de Instructiegroep Opleiden & Begeleiden van de Natres: lesgeven, begeleiden en beoordelen van reservisten."
 date: 2026-02-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Military
   - Instruction
