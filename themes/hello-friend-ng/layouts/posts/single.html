@@ -125,7 +125,7 @@
       {{ partial "pagination-single.html" . }}
 
       {{ with .Site.Params.Utterances }}{{ if .Repository }}
-      {{/* Pick the utterances theme from the same choice main.js uses; the theme toggle reloads the page */}}
+      {{/* Start utterances in the current theme; main.js switches it when the theme is toggled */}}
       <script>
         (() => {
           let theme;
