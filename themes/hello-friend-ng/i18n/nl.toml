@@ -63,14 +63,5 @@ other = "Nu"
 [reading]
 other = "Nu aan het lezen"
 
-[buyBook]
-other = "Koop dit boek"
-
-[affiliateLink]
-other = "affiliatelink"
-
 [finishedIn]
 other = "Uitgelezen in"
-
-[amazonAssociate]
-other = "Als Amazon-partner verdien ik aan gekwalificeerde aankopen."
