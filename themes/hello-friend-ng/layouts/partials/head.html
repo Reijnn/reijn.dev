@@ -58,7 +58,7 @@
 <!-- Icons -->
 {{- partial "favicons.html" . }}
 
-{{ template "_internal/schema.html" . }}
+{{- partial "json-ld.html" . }}
 {{ template "_internal/opengraph.html" . }}
 {{- /* Every page gets a generated share card, unless it sets its own images */}}
 {{- if not .Params.images }}
