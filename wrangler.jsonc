@@ -1,0 +1,9 @@
+// Cloudflare Workers static assets. No routes yet: only reijn-dev.<account>.workers.dev serves it.
+{
+  "name": "reijn-dev",
+  "compatibility_date": "2026-10-15",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
