@@ -1,0 +1,35 @@
+{{ define "main" }}
+    {{ $img := partialCached "book-image.html" . . }}
+    <div class="content">
+        <main class="post">
+            <article class="book-single">
+                {{ partial "book-cover.html" (dict "page" . "img" $img "lazy" false) }}
+
+                <div class="book-meta">
+                    <h2 class="post-title">{{ .Title }}</h2>
+                    {{ with .Params.author }}<p class="book-author">{{ . }}</p>{{ end }}
+                    {{ partial "book-rating.html" . }}
+                    {{ if eq .Params.status "reading" }}
+                        <p class="book-finished">{{ i18n "reading" }}</p>
+                    {{ else if .Params.yearOnly }}
+                        <p class="book-finished">{{ i18n "finishedIn" }} {{ .Date.Year }}</p>
+                    {{ else }}
+                        <p class="book-finished">{{ i18n "finished" }} {{ .Date | time.Format ":date_long" }}</p>
+                    {{ end }}
+                </div>
+            </article>
+
+            {{- /* description: what the book is about (also the meta description); the body: an optional note of my own */}}
+            {{ if or .Description .Content }}
+                <div class="post-content">
+                    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+                    {{ .Content }}
+                </div>
+            {{ end }}
+
+            <hr />
+
+            <p><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
+        </main>
+    </div>
+{{ end }}

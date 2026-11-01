@@ -1,0 +1,6 @@
+{{- /* {{< book "teamveiligheid" >}}: the book's card inside a post, linked to its page in the same language */ -}}
+{{- with site.GetPage (printf "/books/%s" (.Get 0)) -}}
+  <div class="book-embed">{{ partial "book-card.html" . }}</div>
+{{- else -}}
+  {{- errorf "book shortcode: no book %q in content/books (%s)" (.Get 0) .Position -}}
+{{- end -}}
