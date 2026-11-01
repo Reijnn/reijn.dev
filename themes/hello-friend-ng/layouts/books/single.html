@@ -19,8 +19,12 @@
                 </div>
             </article>
 
-            {{ with .Content }}
-                <div class="post-content">{{ . }}</div>
+            {{- /* description: what the book is about (also the meta description); the body: an optional note of my own */}}
+            {{ if or .Description .Content }}
+                <div class="post-content">
+                    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+                    {{ .Content }}
+                </div>
             {{ end }}
 
             <hr />
