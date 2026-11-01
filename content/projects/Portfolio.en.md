@@ -1,6 +1,6 @@
 ---
 title: "Web Developer - Portfolio Website"
-description: "This website: a bilingual Hugo portfolio and blog with automated deployment to Firebase Hosting."
+description: "This website: a bilingual Hugo portfolio and blog with automated deployment to Cloudflare."
 date: 2019-10-07T14:04:09+01:00
 draft: false
 tags: 
@@ -20,4 +20,4 @@ __Responsibilities__
 
 __Applied Technologies__
 
-JavaScript, Firebase, SCSS, Hugo, Markdown, Git, GitHub Actions
+JavaScript, Cloudflare Workers, SCSS, Hugo, Markdown, Git, GitHub Actions

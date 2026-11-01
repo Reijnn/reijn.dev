@@ -1,0 +1,57 @@
+name: Preview on Cloudflare for PRs
+"on": pull_request
+
+concurrency:
+  group: preview-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write # Preview link comment
+
+jobs:
+  build_and_preview:
+    if: github.event.pull_request.head.repo.full_name == github.repository # Fork PRs get no secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Security audit
+        run: npm audit --audit-level=high
+
+      - name: Build
+        run: npm run build
+
+      # Uploads a preview version at pr-<number>-reijn-dev.reijnn.workers.dev; the live site is untouched
+      - name: Preview
+        id: preview
+        if: github.event.pull_request.user.login != 'dependabot[bot]' # Dependabot PRs get no Actions secrets
+        uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: versions upload --preview-alias pr-${{ github.event.pull_request.number }}
+
+      # Posts the preview link on the PR, and updates that comment on later pushes
+      - name: Comment preview link
+        if: steps.preview.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTPUT: ${{ steps.preview.outputs.command-output }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          url=$(grep -oE 'https://pr-[0-9]+-[a-z0-9.-]+\.workers\.dev' <<< "$OUTPUT" | head -1)
+          test -n "$url" || { echo "No preview URL in Wrangler output"; exit 1; }
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --edit-last --create-if-none --body "Preview: $url (commit ${GITHUB_SHA::7})"
