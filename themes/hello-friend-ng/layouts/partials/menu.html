@@ -15,7 +15,8 @@
                 </div>
             {{ else }}
                 {{- $url := .URL | relLangURL }}
-                <li><a href="{{ $url }}"{{ if eq $url $currentPage.RelPermalink }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+                {{- /* "page" on the entry itself, "true" on a page under it, like a post under Posts */}}
+                <li><a href="{{ $url }}"{{ if eq $url $currentPage.RelPermalink }} aria-current="page"{{ else if hasPrefix $currentPage.RelPermalink $url }} aria-current="true"{{ end }}>{{ .Name }}</a></li>
             {{ end }}
         {{- end }}
     </ul>
