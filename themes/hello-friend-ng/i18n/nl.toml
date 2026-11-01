@@ -93,3 +93,13 @@ other = "vanaf"
 
 [cvSkills]
 other = "Vaardigheden"
+
+# partials/sharing-buttons.html
+[shareEmail]
+other = "Delen via e-mail"
+
+[shareLinkedIn]
+other = "Delen op LinkedIn"
+
+[shareWhatsApp]
+other = "Delen op WhatsApp"
