@@ -11,6 +11,8 @@ tags:
   - Digital Transformation
 ---
 
+__Department__: Afdeling Data & Digitalisering, Utrecht
+
 __Responsibilities__
 
 * Defined product vision and strategy for digital transformation initiatives

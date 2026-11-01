@@ -1,5 +1,7 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate .Data.Pages }}
+    {{/* Projects on one page, so none hide on page 2; other lists keep the site's page size */}}
+    {{ $paginator := "" }}
+    {{ if eq .Section "projects" }}{{ $paginator = .Paginate .Data.Pages 1000 }}{{ else }}{{ $paginator = .Paginate .Data.Pages }}{{ end }}
 
     <div class="content">
         <main class="posts">

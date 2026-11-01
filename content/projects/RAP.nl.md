@@ -9,17 +9,17 @@ tags:
   - Angular
   - BettyBlocks
   - Development
-  - QNH
+  - ilionx
 ---
 
-Ik werkte als Rapid Application Developer voor de gemeente Amsterdam en ontwikkelde bedrijfsapplicaties met behulp van het BettyBlocks low-code platform. Deze rol bestond uit het vertalen van complexe gemeentelijke vereisten naar efficiënte digitale oplossingen, in samenwerking met stakeholders uit verschillende afdelingen.
+Ik werkte als Rapid Application Developer voor de gemeente Amsterdam en ontwikkelde bedrijfsapplicaties op het low-code platform BettyBlocks. Deze rol bestond uit het vertalen van complexe gemeentelijke vereisten naar efficiënte digitale oplossingen, in samenwerking met stakeholders uit verschillende afdelingen.
 
 __Verantwoordelijkheden__
 
-* Verzamel van vereisten
-* Opzetten van de applicatiestructuur
-* Ontwikkelen van de back-end applicatie
-* Implementeren front-end ontwerpen
+* Requirements verzameld
+* De applicatiestructuur opgezet
+* De back-end ontwikkeld
+* De front-endontwerpen geïmplementeerd
 
 __Toegepaste technologieën__
 

@@ -1,4 +1,4 @@
-{{- /* Structured data for search engines: the site and its owner on the home page, an article on posts, a profile on About. Other pages get none. */ -}}
+{{- /* Structured data for search engines: the site and its owner on the home page, an article on posts, a profile with the CV on About. Other pages get none. */ -}}
 {{- $home := site.Home.Permalink -}}
 {{- $sameAs := slice -}}
 {{- range site.Params.social }}{{ if not (hasPrefix .url "mailto:") }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end -}}
@@ -10,8 +10,17 @@
 {{- $data := dict -}}
 {{- if .IsHome -}}
   {{- $data = dict "@type" "WebSite" "url" .Permalink "name" site.Title "description" $description "inLanguage" .Language.Locale "author" $person -}}
-{{- else if eq .Path "/about" -}}
-  {{- $data = dict "@type" "ProfilePage" "url" .Permalink "name" .Title "description" $description "inLanguage" .Language.Locale "mainEntity" $person -}}
+{{- else if eq .Section "about" -}}
+  {{- /* About with the CV: the person with this version's job title, schools and earned certificates */ -}}
+  {{- $cv := hugo.Data.cv -}}
+  {{- $schools := slice }}{{ range $cv.education }}{{ $schools = $schools | append (dict "@type" "EducationalOrganization" "name" .institution) }}{{ end -}}
+  {{- $credentials := slice -}}
+  {{- range where (where $cv.certifications "profiles" "intersect" (slice .Params.profile)) "expected" "!=" true -}}
+    {{- $c := dict "@type" "EducationalOccupationalCredential" "name" .name -}}
+    {{- with .issuer }}{{ $c = merge $c (dict "recognizedBy" (dict "@type" "Organization" "name" .)) }}{{ end -}}
+    {{- $credentials = $credentials | append $c -}}
+  {{- end -}}
+  {{- $data = dict "@type" "ProfilePage" "url" .Permalink "name" .Title "description" $description "inLanguage" .Language.Locale "mainEntity" (merge $person (dict "jobTitle" .Params.headline "alumniOf" $schools "hasCredential" $credentials)) -}}
 {{- else if and .IsPage (eq .Section "posts") -}}
   {{- $image := "" -}}
   {{- with .Params.images }}{{ $image = absURL (index . 0) }}{{ else }}{{ $image = (partial "share-card.html" $).Permalink }}{{ end -}}

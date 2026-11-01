@@ -1,23 +1,24 @@
 ---
-title: "Technical Integrator - InfoSupport"
+title: "Technical Integrator - Info Support"
 description: "Technical integrator in the DevOps team at Info Support: designing and building integrations between the systems of different clients."
-date: 2020-11-05T12:27:34+01:00
+date: 2020-03-01T00:00:00+01:00
 draft: false
-images:
 tags:
   - Consultancy
   - Datarotonde
 ---
 
-As a Technical Integrator at ISRES, I am a member of the DevOps team and build innovative links between different systems of (various) clients, technically understand interfaces and prepare and implement technical design. I am supported by one or more Solution Architects who have experience with the Datarotonde and who have knowledge of the relevant application landscape and the requested digital processes.
+As a technical integrator at ISRES, part of Info Support, I was a member of the DevOps team. I built integrations between the systems of various clients: I worked out how their interfaces behaved, and prepared and carried out the technical design. Solution architects who knew the Datarotonde, the application landscape and the digital processes involved supported me.
+
+__Team__: Datarotonde, Veenendaal
 
 __Responsibilities__
 
-* Work with application suppliers from our clients, test integration connections and develop unit tests for these connections
-* Translate the technical design into a working connection, for example with the aim of synchronization, integration and / or automation of data or business processes
-* Responsible for the mapping of messages and develop XSLTs and WSDLs
-* Primary point of contact within the DevOps team for the management of connections that I have developed and implemented. I handle incidents, change-requests and service-requests independently
+* Worked with our clients' application suppliers, tested integrations and wrote unit tests for them
+* Turned technical designs into working integrations, for example to synchronize, integrate or automate data and business processes
+* Mapped messages and developed XSLTs and WSDLs
+* Was the first point of contact in the DevOps team for the integrations I built, and handled incidents, change requests and service requests on my own
 
 __Applied Technologies__
 
-Soap/Rest, XSLT/Xpath, .Net(C#, WCF), Git/TFS
+SOAP/REST, XSLT/XPath, .NET (C#, WCF), Git/TFS
