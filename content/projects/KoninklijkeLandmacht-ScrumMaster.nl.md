@@ -12,8 +12,6 @@ tags:
 
 Vanaf januari 2027 ben ik Scrum Master bij de Koninklijke Landmacht, gedetacheerd via ilionx.
 
-__Afdeling__: , Utrecht
-
 __Certificaten__
 
 Professional Scrum Master I (2017) · Professional Scrum Master II (2019) · Leading SAFe (verwacht november 2026)

@@ -12,8 +12,6 @@ tags:
 
 From January 2027 I'll be a Scrum Master at the Royal Netherlands Army (Koninklijke Landmacht), on assignment through ilionx.
 
-__Department__: , Utrecht
-
 __Certifications__
 
 Professional Scrum Master I (2017) · Professional Scrum Master II (2019) · Leading SAFe (expected November 2026)
