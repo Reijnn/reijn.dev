@@ -3,6 +3,9 @@ title: "Over"
 description: "Niels Reijn: technical business analyst bij de Douane, managementconsultant bij ilionx, software engineer van origine, en groepscommandant en instructeur bij de reserve."
 headline: "Technisch Business Analist en Software Engineer"
 profile: technical
+noindex: true # keep the CV out of search results
+sitemap:
+  disable: true
 ---
 
 Ik ben Niels, en ik werk op het snijvlak van business en technologie. Op dit moment ben ik technical business analyst bij de Douane en managementconsultant bij ilionx. Het grootste deel van mijn werk is vertalen wat een organisatie nodig heeft naar specificaties en roadmaps waar een team echt mee aan de slag kan.

@@ -3,6 +3,9 @@ title: "About"
 description: "Niels Reijn: technical business analyst at Dutch Customs, management consultant at ilionx, software engineer by training, and squad leader and instructor in the army reserve."
 headline: "Technical Business Analyst and Software Engineer"
 profile: technical
+noindex: true # keep the CV out of search results
+sitemap:
+  disable: true
 ---
 
 I'm Niels, and I work where business and technology meet. Right now I'm a technical business analyst at Dutch Customs (Douane Nederland) and a management consultant at ilionx. Most of my work is turning what an organization needs into specifications and roadmaps that a team can actually build.
