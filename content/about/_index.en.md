@@ -1,9 +1,9 @@
 ---
 title: "About"
 description: "Niels Reijn: technical business analyst at Dutch Customs, management consultant at ilionx, software engineer by training, and squad leader and instructor in the army reserve."
+headline: "Technical Business Analyst and Software Engineer"
+profile: technical
 ---
-
-__Technical Business Analyst & Management Consultant__
 
 I'm Niels, and I work where business and technology meet. Right now I'm a technical business analyst at Dutch Customs (Douane Nederland) and a management consultant at ilionx. Most of my work is turning what an organization needs into specifications and roadmaps that a team can actually build.
 
@@ -12,12 +12,6 @@ I didn't start on the business side. I have a bachelor's degree in Software Engi
 Next to that, I'm a sergeant in the Royal Netherlands Army reserve, in 20 Infanteriebataljon Bewaken & Beveiligen KNR. I lead an infantry squad, and since 2026 I also train other reservists as an instructor. It has taught me discipline, and how to lead a team when things are under pressure.
 
 On this site I [write](/posts/) about technology, privacy and development, from blockchain and hosting websites on IPFS to how I made this site 79% lighter.
-
-__What I work with__  
-Business and technical analysis · product ownership · Scrum (certified) · Microsoft Azure, including Synapse and Azure DevOps · data engineering and SQL · web development with TypeScript, JavaScript and Hugo
-
-__Work history__  
-My work history, courses and certificates are in my [CV](/cv/), as a web page and a PDF.
 
 __Open source__  
 I've contributed to the Hugo themes [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) and [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), the theme this site started from. For [OpenTAKServer](https://github.com/brian7704/OpenTAKServer/commits?author=Reijnn) I fixed Mumble authentication for the ATAK Vx plugin.

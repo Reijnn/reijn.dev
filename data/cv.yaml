@@ -1,4 +1,4 @@
-# Single source for the CV pages and their PDFs.
+# Single source for the CV on the About page (/about/ and /about/military/).
 # The repo is public: only put facts here that may be published.
 # Roles and assignments may set unit and location. A role whose start is still in the future shows as "from <month>".
 # Dates are "YYYY-MM", or "YYYY" when only the year is known. end: null means present.
@@ -134,7 +134,7 @@ experience:
         profiles: [military]
         page: projects/KoninklijkeLandmacht-Rifleman
 
-skills: # used in practice, from the Applied Technologies lists on the project pages
+skills: # used in practice, from the Applied Technologies lists on the project pages and the old About page
   - { name: { en: Business analysis, nl: Business-analyse }, profiles: [technical] }
   - { name: { en: Product management, nl: Productmanagement }, profiles: [technical] }
   - { name: { en: Scrum and SAFe, nl: Scrum en SAFe }, profiles: [technical] }
@@ -145,6 +145,7 @@ skills: # used in practice, from the Applied Technologies lists on the project p
   - { name: { en: Data warehousing, nl: Datawarehousing }, profiles: [technical] }
   - { name: { en: C# and .NET, nl: C# en .NET }, profiles: [technical] }
   - { name: { en: SOAP and REST integrations, nl: SOAP- en REST-koppelingen }, profiles: [technical] }
+  - { name: { en: "Web development: TypeScript, JavaScript, Hugo", nl: "Webontwikkeling: TypeScript, JavaScript, Hugo" }, profiles: [technical] }
 
 education:
   - degree: { en: "BSc Software Engineering (HBO)", nl: "HBO Software Engineering" }

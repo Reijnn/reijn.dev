@@ -1,4 +1,5 @@
-{{- /* Both CV pages: /cv/ (civilian) and /cv/military/. The page's front matter sets the profile and headline.
+{{- /* The About page with the CV: /about/ (civilian) and /about/military/. The page's front matter sets the profile and headline;
+       the About text sits between the header and the CV, and the military page borrows it from /about/.
        One column in reading order, so readers, printouts and CV parsers see the same sequence. */ -}}
 {{ define "main" }}
 {{ $p := .Params.profile }}
@@ -9,7 +10,7 @@
         <div class="cv-top">
             {{ partial "translations.html" . }}
             <nav class="cv-switch" aria-label="CV">
-                {{ range $v := slice (dict "path" "/cv" "label" "cvCivilian") (dict "path" "/cv/military" "label" "cvMilitary") }}
+                {{ range $v := slice (dict "path" "/about" "label" "cvCivilian") (dict "path" "/about/military" "label" "cvMilitary") }}
                     {{ with site.GetPage $v.path }}<a href="{{ .RelPermalink }}"{{ if eq .Params.profile $p }} aria-current="page"{{ end }}>{{ i18n $v.label }}</a>{{ end }}
                 {{ end }}
             </nav>
@@ -19,7 +20,7 @@
             <p class="cv-headline">{{ .Params.headline }}</p>
         </header>
 
-        {{ .Content }}
+        <div class="cv-intro">{{ with .Content }}{{ . }}{{ else }}{{ .Parent.Content }}{{ end }}</div>
 
         <h2>{{ i18n "cvExperience" }}</h2>
         {{/* Flatten roles and assignments, then group them by where the work happened, as LinkedIn does:
