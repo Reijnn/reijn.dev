@@ -1,6 +1,6 @@
 ---
 title: "Scrum Master - Koninklijke Landmacht"
-description: "Scrum Master bij de Koninklijke Landmacht vanaf januari 2027, via ilionx."
+description: "Scrum Master bij de Koninklijke Landmacht vanaf januari 2027, via ilionx, bij COMMIT in Utrecht."
 date: 2027-01-01T00:00:00+01:00
 publishDate: 2026-11-01T00:00:00+01:00 # shown now, although the role starts in 2027
 draft: false
@@ -11,6 +11,8 @@ tags:
 ---
 
 Vanaf januari 2027 ben ik Scrum Master bij de Koninklijke Landmacht, gedetacheerd via ilionx.
+
+__Afdeling__: COMMIT, Utrecht
 
 __Certificaten__
 

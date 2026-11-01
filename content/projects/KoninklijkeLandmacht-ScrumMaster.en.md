@@ -1,6 +1,6 @@
 ---
 title: "Scrum Master - Koninklijke Landmacht"
-description: "Scrum Master at the Royal Netherlands Army from January 2027, through ilionx."
+description: "Scrum Master at the Royal Netherlands Army from January 2027, through ilionx, at COMMIT in Utrecht."
 date: 2027-01-01T00:00:00+01:00
 publishDate: 2026-11-01T00:00:00+01:00 # shown now, although the role starts in 2027
 draft: false
@@ -11,6 +11,8 @@ tags:
 ---
 
 From January 2027 I'll be a Scrum Master at the Royal Netherlands Army (Koninklijke Landmacht), on assignment through ilionx.
+
+__Department__: COMMIT, Utrecht
 
 __Certifications__
 

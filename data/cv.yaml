@@ -22,6 +22,8 @@ experience:
         assignments:
           - client: Koninklijke Landmacht
             title: { en: Scrum Master, nl: Scrum Master }
+            unit: COMMIT
+            location: Utrecht
             start: "2027-01"
             end: null
             page: projects/KoninklijkeLandmacht-ScrumMaster
