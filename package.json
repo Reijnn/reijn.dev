@@ -11,7 +11,7 @@
     "clean": "rm -rf public resources assets/diagrams"
   },
   "devDependencies": {
-    "hugo-bin": "^0.166.0",
+    "hugo-bin": "^0.167.0",
     "pele": "^1.6.0",
     "sass-embedded": "^1.105.2"
   },
