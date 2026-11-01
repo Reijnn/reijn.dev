@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta name="author" content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ if .Site.Params.author.name }}{{ .Site.Params.author.name }}{{ else }}{{ range .Site.Params.Author }}{{ . }} {{ end }}{{ end }}{{ end }}">
-<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
 {{- if .IsTranslated }}
