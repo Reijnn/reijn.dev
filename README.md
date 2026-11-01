@@ -1,6 +1,6 @@
 # reijn.dev
 
-Personal website and blog of [Niels Reijn](https://reijn.dev) — software engineer writing about technology, privacy, and development. Built with [Hugo](https://gohugo.io) and deployed to [Firebase Hosting](https://firebase.google.com/products/hosting).
+Personal website and blog of [Niels Reijn](https://reijn.dev) — software engineer writing about technology, privacy, and development. Built with [Hugo](https://gohugo.io) and deployed to [Cloudflare Workers](https://workers.cloudflare.comucts/hosting).
 
 ## Getting started
 
