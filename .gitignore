@@ -6,9 +6,6 @@
 # Dependencies
 node_modules/
 
-# Firebase CLI cache
-.firebase/
-
 # Local notes for Claude Code
 CLAUDE.md
 
