@@ -1,7 +1,7 @@
 ---
 title: "Technical Business Analyst - Douane Nederland"
 description: "Technische bedrijfsanalyse bij de Douane: bedrijfseisen vertalen naar technische specificaties en roadmaps voor strategische initiatieven."
-date: 2026-01-01T00:00:00+01:00
+date: 2026-02-01T00:00:00+01:00
 draft: false
 toc: false
 tags:
@@ -10,6 +10,8 @@ tags:
   - Digital Transformation
   - Customs Operations
 ---
+
+__Afdeling__: Data & Digitalisering, Utrecht
 
 __Verantwoordelijkheden__
 

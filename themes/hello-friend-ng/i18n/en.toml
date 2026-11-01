@@ -3,12 +3,9 @@
 
 # Generic
 #
-[translations]
-other = "Translations"
 
 [postAvailable]
 other = "Also available in"
-
 
 # 404.html
 #
@@ -20,7 +17,6 @@ other = "Home"
 
 [notFound]
 other = "Oops, page not found…"
-
 
 # posts/single.html
 #
@@ -65,3 +61,32 @@ other = "Currently reading"
 
 [finishedIn]
 other = "Finished in"
+
+# cv/
+[present]
+other = "present"
+
+[cvExperience]
+other = "Experience"
+
+[cvEducation]
+other = "Education"
+
+[cvCertifications]
+other = "Certifications"
+
+[cvCivilian]
+other = "Civilian"
+
+[cvMilitary]
+other = "Military"
+
+[cvLanguages]
+other = "Languages"
+
+
+[cvExpected]
+other = "expected"
+
+[cvFrom]
+other = "from"

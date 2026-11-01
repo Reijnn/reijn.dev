@@ -1,0 +1,9 @@
+{{- /* "Also available in" with a flag per translation, as at the top of a post */ -}}
+{{ if .IsTranslated }}
+    <div class="post-info">
+        {{ i18n "postAvailable" }}
+        {{ range .Translations }}
+            <a href="{{ .RelPermalink }}" aria-label="{{ .Language.Label }}" title="{{ .Language.Label }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
+        {{ end }}
+    </div>
+{{ end }}

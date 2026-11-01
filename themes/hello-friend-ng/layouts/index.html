@@ -8,11 +8,15 @@
 
                 <h1>{{ .Site.Title }}</h1>
 
-                {{ partial "subtitle.html" . }}
+                {{- with .Site.Params.homeSubtitle }}
+                    <p>{{.}}</p>
+                {{- end }}
 
                 {{- with .Site.Params.social }}
                     <div>
-                        {{ partial "social-icons.html" . }}
+                        {{ range . -}}
+                            &nbsp; <a href="{{ .url }}" {{if eq .nonewpage 0}} target="_blank" {{end}} rel="me noopener {{ .rel }}" title="{{ .name | humanize }}">{{ partial "svg.html" . }}</a> &nbsp;
+                        {{- end -}}
                     </div>
                 {{- end }}
             </div>

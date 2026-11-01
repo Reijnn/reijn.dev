@@ -11,6 +11,8 @@ tags:
   - Digital Transformation
 ---
 
+__Afdeling__: Data & Digitalisering, Utrecht
+
 __Verantwoordelijkheden__
 
 * Productvisioen en strategie gedefinieerd voor digitale transformatie-initiatieven

@@ -1,7 +1,7 @@
 ---
 title: "Technical Integrator - InfoSupport"
 description: "Technical integrator in the DevOps team at Info Support: designing and building integrations between the systems of different clients."
-date: 2020-11-05T12:27:34+01:00
+date: 2020-03-01T00:00:00+01:00
 draft: false
 images:
 tags:
@@ -10,6 +10,8 @@ tags:
 ---
 
 As a Technical Integrator at ISRES, I am a member of the DevOps team and build innovative links between different systems of (various) clients, technically understand interfaces and prepare and implement technical design. I am supported by one or more Solution Architects who have experience with the Datarotonde and who have knowledge of the relevant application landscape and the requested digital processes.
+
+__Team__: Datarotonde, Veenendaal
 
 __Responsibilities__
 
