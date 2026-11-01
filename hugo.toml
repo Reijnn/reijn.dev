@@ -19,6 +19,9 @@ target = "static"
 [[module.mounts]]
 source = "static/profile.jpg"
 target = "assets/images/profile.jpg" # Used for the share cards in head.html
+[[module.mounts]]
+source = "static/profile.webp"
+target = "assets/profile.webp" # Fingerprinted on the home page, so a new picture gets a new URL past caches
 
 [permalinks]
 posts = "/posts/:year/:month/:title/"
