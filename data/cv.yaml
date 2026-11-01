@@ -1,0 +1,185 @@
+# Single source for the CV on the About page (/about/ and /about/military/).
+# The repo is public: only put facts here that may be published.
+# Roles and assignments may set unit and location. A role whose start is still in the future shows as "from <month>".
+# Dates are "YYYY-MM", or "YYYY" when only the year is known. end: null means present.
+# profiles: which CV shows the entry: technical (civilian work) or military (Defensie). An assignment with cv: false stays off the CV.
+
+person:
+  name: Niels Reijn
+
+experience:
+  # Dates follow LinkedIn (checked 2026-11-01).
+  - id: ilionx
+    organization: ilionx
+    roles:
+      - title: { en: Management Consultant, nl: Managementconsultant }
+        unit: Digitale Strategie
+        location: Amsterdam
+        start: "2024-01"
+        end: null
+        profiles: [technical]
+        page: projects/ilionx-ManagementConsultant
+        assignments:
+          - client: Koninklijke Landmacht
+            title: { en: Scrum Master, nl: Scrum Master }
+            unit: 
+            location: Utrecht
+            start: "2027-01"
+            end: null
+            page: projects/KoninklijkeLandmacht-ScrumMaster
+          - client: Douane Nederland
+            unit: Afdeling Data & Digitalisering
+            location: Utrecht
+            title: { en: Technical Business Analyst, nl: Technisch Business Analist }
+            start: "2026-02"
+            end: "2026-12"
+            page: projects/DouaneNederland-BusinessAnalyst
+          - client: Douane Nederland
+            unit: Afdeling Data & Digitalisering
+            location: Utrecht
+            title: { en: Product Owner, nl: Product Owner }
+            start: "2024-02"
+            end: "2026-02"
+            page: projects/DouaneNederland-ProductOwner
+      - title: { en: Software Engineer, nl: Software Engineer }
+        unit: Application Development
+        location: Amsterdam
+        start: "2019-02"
+        end: "2024-01"
+        profiles: [technical]
+        page: projects/ilionx-SoftwareEngineer
+        assignments:
+          - client: Douane Nederland
+            unit: Afdeling Data & Digitalisering
+            location: Utrecht
+            title: { en: Data Engineer / Scrum Master, nl: Data Engineer / Scrum Master }
+            start: "2022-05"
+            end: "2024-01"
+            page: projects/DouaneNederland-DataEngineer
+          - client: Info Support
+            unit: Datarotonde
+            location: Veenendaal
+            title: { en: Technical Integrator, nl: Technisch Integrator }
+            start: "2020-03"
+            end: "2022-07"
+            page: projects/InfoSupport
+          - client: Gemeente Amsterdam
+            title: { en: Rapid Application Developer, nl: Rapid Application Developer }
+            start: "2019"
+            end: "2019"
+            page: projects/RAP
+            cv: false # older than Info Support: project page only
+
+  - id: qnh
+    organization: QNH Consulting
+    roles:
+      - title: { en: Software Engineer, nl: Software Engineer }
+        start: "2017-02"
+        end: "2019-01"
+        profiles: [] # older than Info Support: project pages only
+        assignments:
+          - client: QNH Consulting
+            title: { en: Web Developer (Whitepapers), nl: Webdeveloper (Whitepapers) }
+            start: "2018"
+            end: "2018"
+            page: projects/Whitepapers
+          - client: SVWOH
+            title: { en: Rapid Application Developer, nl: Rapid Application Developer }
+            start: "2018"
+            end: "2018"
+            page: projects/SVWOH
+
+  - id: hva
+    organization: Hogeschool van Amsterdam
+    roles:
+      - title: { en: Teaching Assistant, nl: Studentassistent }
+        start: "2016"
+        end: "2017"
+        profiles: [] # older than Info Support: About page only
+
+
+  - id: army
+    organization: { en: Royal Netherlands Army, nl: Koninklijke Landmacht }
+    roles:
+      - title: { en: "Instructor, Instruction Group Training & Coaching", nl: Instructiegroep Opleiden & Begeleiden }
+        rank: { en: Sergeant, nl: Sergeant }
+        unit: 20 IBB KNR # full name on the project pages: 20 Infanteriebataljon Bewaken & Beveiligen KNR
+        location: Badhoevedorp
+        start: "2026-02"
+        end: null
+        profiles: [military]
+        page: projects/KoninklijkeLandmacht-Instructor
+      - title: { en: Infantry Squad Leader, nl: Groepscommandant }
+        rank: { en: Sergeant, nl: Sergeant }
+        unit: 20 IBB KNR # full name on the project pages: 20 Infanteriebataljon Bewaken & Beveiligen KNR
+        location: Bergen
+        start: "2025-04"
+        end: null
+        profiles: [military]
+        page: projects/KoninklijkeLandmacht-SquadLeader
+      - title: { en: Assistant Squad Leader, nl: Plaatsvervangend Groepscommandant }
+        rank: { en: Corporal, nl: Korporaal }
+        unit: 20 IBB KNR # full name on the project pages: 20 Infanteriebataljon Bewaken & Beveiligen KNR
+        location: Bergen
+        start: "2024-01"
+        end: "2025-03"
+        profiles: [military]
+        page: projects/KoninklijkeLandmacht-AssistantSquadLeader
+      - title: { en: Rifleman, nl: Geweerschutter }
+        rank: { en: Private, nl: Soldaat }
+        unit: 20 IBB KNR # full name on the project pages: 20 Infanteriebataljon Bewaken & Beveiligen KNR
+        location: Bergen
+        start: "2021-02"
+        end: "2023-12"
+        profiles: [military]
+        page: projects/KoninklijkeLandmacht-Rifleman
+
+skills: # used in practice, from the Applied Technologies lists on the project pages and the old About page
+  - { name: { en: Business analysis, nl: Business-analyse }, profiles: [technical] }
+  - { name: { en: Product management, nl: Productmanagement }, profiles: [technical] }
+  - { name: { en: Scrum and SAFe, nl: Scrum en SAFe }, profiles: [technical] }
+  - { name: Azure Synapse, profiles: [technical] }
+  - { name: Azure DevOps, profiles: [technical] }
+  - { name: SQL, profiles: [technical] }
+  - { name: Python, profiles: [technical] }
+  - { name: { en: Data warehousing, nl: Datawarehousing }, profiles: [technical] }
+  - { name: { en: C# and .NET, nl: C# en .NET }, profiles: [technical] }
+  - { name: { en: SOAP and REST integrations, nl: SOAP- en REST-koppelingen }, profiles: [technical] }
+  - { name: { en: "Web development: TypeScript, JavaScript, Hugo", nl: "Webontwikkeling: TypeScript, JavaScript, Hugo" }, profiles: [technical] }
+
+education:
+  - degree: { en: "BSc Software Engineering (HBO)", nl: "HBO Software Engineering" }
+    institution: Hogeschool van Amsterdam
+    start: "2013"
+    end: "2017"
+  - degree: { en: "Application Developer (MBO)", nl: "MBO Applicatieontwikkelaar" }
+    institution: Horizon College, Hoorn
+    start: "2010"
+    end: "2013"
+
+certifications:
+  # Names, issuers and dates follow LinkedIn (checked 2026-11-01); OTO, BOKL and the expected courses come from the old CV.
+  - { name: Leading SAFe, issuer: Scaled Agile, date: "2026-11", expected: true, profiles: [technical] }
+  - { name: Professional Scrum Master II (PSM II), issuer: Scrum.org, date: "2019-10", profiles: [technical] }
+  - { name: Professional Scrum Master I (PSM I), issuer: Scrum.org, date: "2017-12", profiles: [technical] }
+  - { name: Enhanced Professional Attitude Course (EPAC), issuer: Motion5, date: "2024-07", profiles: [technical] }
+  - { name: Exellior Training, issuer: springbehaviour, date: "2020-06", profiles: [technical] }
+  # Military, newest first; expected: true for a course not completed yet
+  - { name: ECOD Opleider, issuer: Expertisecentrum Opleidingskunde Defensie (ECOD), date: "2027-02", expected: true, profiles: [military] }
+  - { name: ECOD Mentor, issuer: Expertisecentrum Opleidingskunde Defensie (ECOD), date: "2026-11", expected: true, profiles: [military] }
+  - { name: Schietinstructeur Geweer, issuer: Opleidings- en Trainingscentrum Manoeuvre (OTCMan), date: "2026-11", expected: true, profiles: [military] }
+  - { name: KI OVG Urban Warfare, issuer: Opleidings- en Trainingscentrum Manoeuvre (OTCMan), date: "2026-05", profiles: [military] }
+  - { name: ECOD Praktijkleermeester, issuer: Expertisecentrum Opleidingskunde Defensie (ECOD), date: "2025-08", profiles: [military] }
+  - { name: Groepscommandant, issuer: Koninklijke Militaire School (KMS), date: "2025-04", profiles: [military] }
+  - { name: Opleiding Toekomstig Onderofficier (OTO), issuer: 20 IBB KNR, date: "2025-04", profiles: [military] }
+  - { name: ECOD Praktijkopleider, issuer: Expertisecentrum Opleidingskunde Defensie (ECOD), date: "2025-01", profiles: [military] }
+  - { name: Basisopleiding Koninklijke Landmacht, issuer: Koninklijke Militaire School (KMS), date: "2024-11", profiles: [military] }
+  - { name: BO-FO Infanterie Bewaken & Beveiligen KNR, issuer: Koninklijke Militaire School (KMS), date: "2024-09", profiles: [military] }
+  - { name: Opleiding Leidinggevend Korporaal (OLK), issuer: Koninklijke Militaire School (KMS), date: "2024-02", profiles: [military] }
+  - { name: AMO Reservisten Plus (ARP), issuer: Korps Nationale Reserve (KNR), date: "2021-10", profiles: [military] }
+  - { name: AMO Reservisten Basis (ARB), issuer: Korps Nationale Reserve (KNR), date: "2021-04", profiles: [military] }
+
+languages:
+  - { name: { en: Dutch, nl: Nederlands }, level: { en: Native, nl: Moedertaal } }
+  - { name: { en: English, nl: Engels }, level: { en: Fluent, nl: Vloeiend } }
+  - { name: { en: German, nl: Duits }, level: { en: Basic, nl: Basis } }

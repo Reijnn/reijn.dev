@@ -16,10 +16,10 @@ QNH Consulting heeft mij gevraagd een webapplicatie te ontwikkelen die het makke
 
 __Verantwoordelijkheden__
 
-* Verzamel van vereisten
-* Opzetten van de applicatiestructuur
-* Ontwikkelen van de back-end applicatie
-* Vormgeven aan de front-end
+* Requirements verzameld
+* De applicatiestructuur opgezet
+* De back-end ontwikkeld
+* De front-end vormgegeven
 
 __Toegepaste technologieën__
 

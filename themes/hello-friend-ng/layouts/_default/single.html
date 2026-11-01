@@ -2,36 +2,10 @@
     <div class="content">
         <main class="post">
 
-            <div class="post-info">
-                {{ if .IsTranslated }}
-                    {{ i18n "postAvailable" }}
-                    {{ range .Translations }}
-                        <a href="{{ .RelPermalink }}" aria-label="{{ .Language.Label }}" title="{{ .Language.Label }}"><span class="flag fi fi-{{ index hugo.Data.langFlags (.Lang) }}"></span></a>
-                    {{ end}}
-                {{ end }}
-            </div>
+            {{ partial "translations.html" . }}
 
             <article>
                 <h2 class="post-title"{{ with .File }} style="view-transition-name: post-{{ .UniqueID }}"{{ end }}><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-
-                {{ if .Params.Cover }}
-                    <figure class="post-cover">
-                        <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
-                    
-                        {{ if .Params.CoverCaption }}
-                            <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
-                        {{ end }}
-                    </figure>
-                {{ end }}
-                
-                {{ if .Params.toc }}
-                    <hr />
-                    <aside id="toc">
-                    <div class="toc-title">{{ i18n "tableOfContents" }}</div>
-                        {{ .TableOfContents }}
-                    </aside>
-                    <hr />
-                {{ end }}
 
                 <div class="post-content">
                     {{ .Content }}

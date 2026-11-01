@@ -16,10 +16,10 @@ I developed a certification and registration management system for SVWOH (Sticht
 
 __Responsibilities__
 
-* Collecting requirements
-* Setting up the application structure
-* Develop the back-end application
-* Implement front-end designs
+* Gathered requirements
+* Set up the application structure
+* Developed the back end
+* Implemented the front-end designs
 
 __Applied Technologies__
 

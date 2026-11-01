@@ -1,0 +1,23 @@
+---
+title: "About"
+description: "Niels Reijn: technical business analyst at Dutch Customs, management consultant at ilionx, software engineer by training, and squad leader and instructor in the army reserve."
+headline: "Technical Business Analyst and Software Engineer"
+profile: technical
+noindex: true # keep the CV out of search results
+sitemap:
+  disable: true
+---
+
+I'm Niels, and I work where business and technology meet. Right now I'm a technical business analyst at Dutch Customs (Douane Nederland) and a management consultant at ilionx. Most of my work is turning what an organization needs into specifications and roadmaps that a team can actually build.
+
+I didn't start on the business side. I have a bachelor's degree in Software Engineering and spent years building things: as a software engineer, a technical integrator, a data engineer, a Scrum Master and a product owner. That background is why I like this role: I know what a requirement looks like from the developer's side of the table.
+
+Next to that, I'm a sergeant in the Royal Netherlands Army reserve, in 20 Infanteriebataljon Bewaken & Beveiligen KNR. I lead an infantry squad, and since 2026 I also train other reservists as an instructor. It has taught me discipline, and how to lead a team when things are under pressure.
+
+On this site I [write](/posts/) about technology, privacy and development, from blockchain and hosting websites on IPFS to how I made this site 79% lighter.
+
+__Open source__  
+I've contributed to the Hugo themes [Hugo-coder](https://github.com/luizdepra/hugo-coder/commits?author=Reijnn) and [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng/commits?author=Reijnn), the theme this site started from. For [OpenTAKServer](https://github.com/brian7704/OpenTAKServer/commits?author=Reijnn) I fixed Mumble authentication for the ATAK Vx plugin.
+
+__Get in touch__  
+Send me an [email](mailto:niels@reijn.dev), or find me on [LinkedIn](https://www.linkedin.com/in/reijnn/) and [GitHub](https://github.com/reijnn/).

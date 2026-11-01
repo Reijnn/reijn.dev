@@ -12,14 +12,14 @@ tags:
   - QNH
 ---
 
-Ik ontwikkelde een certificerings- en registratiebeheersysteem voor SVWOH (Stichting veilig werken op hoogte), een Nederlandse organisatie die zich richt op veilig werken op hoogte in de bouwbranche. De applicatie volgt voortgang van stagiaires en beheert certificeringen voor aspirant-monteurs in steigerbouw.
+Ik ontwikkelde een certificerings- en registratiebeheersysteem voor SVWOH (Stichting veilig werken op hoogte), een Nederlandse organisatie die zich richt op veilig werken op hoogte in de bouwbranche. De applicatie volgt de voortgang van cursisten en beheert de certificeringen van aspirant-machinisten.
 
 __Verantwoordelijkheden__
 
-* Verzamel van vereisten
-* Opzetten van de applicatiestructuur
-* Ontwikkelen van de back-end applicatie
-* Implementeren front-end ontwerpen
+* Requirements verzameld
+* De applicatiestructuur opgezet
+* De back-end ontwikkeld
+* De front-endontwerpen geïmplementeerd
 
 __Toegepaste technologieën__
 

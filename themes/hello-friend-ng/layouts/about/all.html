@@ -1,0 +1,103 @@
+{{- /* The About page with the CV: /about/ (civilian) and /about/military/. The page's front matter sets the profile and headline;
+       the About text sits between the header and the CV, and the military page borrows it from /about/.
+       One column in reading order, so readers, printouts and CV parsers see the same sequence. */ -}}
+{{ define "main" }}
+{{ $p := .Params.profile }}
+{{ $cv := hugo.Data.cv }}
+<div class="content">
+    <main class="post cv">
+        {{/* Above the header, so the switch sits in the same spot on both versions whatever the header holds */}}
+        <div class="cv-top">
+            {{ partial "translations.html" . }}
+            <nav class="cv-switch" aria-label="CV">
+                {{ range $v := slice (dict "path" "/about" "label" "cvCivilian") (dict "path" "/about/military" "label" "cvMilitary") }}
+                    {{ with site.GetPage $v.path }}<a href="{{ .RelPermalink }}"{{ if eq .Params.profile $p }} aria-current="page"{{ end }}>{{ i18n $v.label }}</a>{{ end }}
+                {{ end }}
+            </nav>
+        </div>
+        <header>
+            <h1>{{ $cv.person.name }}</h1>
+            <p class="cv-headline">{{ .Params.headline }}</p>
+        </header>
+
+        <div class="cv-intro">{{ with .Content }}{{ . }}{{ else }}{{ .Parent.Content }}{{ end }}</div>
+
+        <h2>{{ i18n "cvExperience" }}</h2>
+        {{/* Flatten roles and assignments, then group them by where the work happened, as LinkedIn does:
+             a consultant's assignments sit under the client, with "via <employer>". Groups sort by their latest role. */}}
+        {{ $entries := slice }}
+        {{ $thisMonth := now.Format "2006-01" }}{{/* a role starting after this month shows "from <month>" until a build after it starts */}}
+        {{ range $e := $cv.experience }}
+            {{ $org := partial "inline/cv-text.html" $e.organization }}
+            {{ range where $e.roles "profiles" "intersect" (slice $p) }}
+                {{ $title := partial "inline/cv-text.html" .title }}
+                {{ with .rank }}{{ $title = printf "%s (%s)" $title (partial "inline/cv-text.html" .) }}{{ end }}
+                {{ $entries = $entries | append (dict "group" $org "via" "" "title" $title "start" .start "end" .end "expected" (gt .start $thisMonth) "unit" .unit "location" .location "bullets" .bullets "page" .page) }}
+                {{ range where (default slice .assignments) "cv" "!=" false }}
+                    {{ $entries = $entries | append (dict "group" .client "via" (cond (eq .client $org) "" $org) "title" (partial "inline/cv-text.html" .title) "start" .start "end" .end "expected" (gt .start $thisMonth) "unit" .unit "location" .location "bullets" .bullets "page" .page) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ $groups := slice }}
+        {{ range sort $entries "start" "desc" }}{{ if not (in $groups .group) }}{{ $groups = $groups | append .group }}{{ end }}{{ end }}
+        {{ range $g := $groups }}
+            {{ $items := sort (where $entries "group" $g) "start" "desc" }}
+            <section class="cv-org">
+                <h3>{{ $g }}</h3>
+                {{ with (index $items 0).via }}<p class="cv-meta">via {{ . }}</p>{{ end }}
+                <div class="cv-roles">
+                    {{ range $items }}
+                        {{ $page := and .page (site.GetPage (printf "/%s" .page)) }}
+                        <div class="cv-entry">
+                            <div class="cv-row">
+                                <h4><strong>{{ with $page }}<a href="{{ .RelPermalink }}">{{ end }}{{ .title }}{{ if $page }}</a>{{ end }}</strong></h4>
+                                <span class="cv-date">{{ if .expected }}{{ i18n "cvFrom" }} {{ partial "inline/cv-period.html" (slice .start .start) }}{{ else }}{{ partial "inline/cv-period.html" (slice .start .end) }}{{ end }}</span>
+                            </div>
+                            {{- $meta := slice }}{{ with .unit }}{{ $meta = $meta | append . }}{{ end }}{{ with .location }}{{ $meta = $meta | append . }}{{ end }}
+                            {{ with $meta }}<p class="cv-meta">{{ delimit . ", " }}</p>{{ end }}
+                            {{ with .bullets }}<ul>{{ range . }}<li>{{ partial "inline/cv-text.html" . | markdownify }}</li>{{ end }}</ul>{{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+            </section>
+        {{ end }}
+
+        {{ with where $cv.skills "profiles" "intersect" (slice $p) }}
+            <h2>{{ i18n "cvSkills" }}</h2>
+            <p>{{ range $i, $s := . }}{{ if $i }}, {{ end }}{{ partial "inline/cv-text.html" $s.name }}{{ end }}</p>
+        {{ end }}
+
+        <h2>{{ i18n "cvCertifications" }}</h2>
+        <ul class="cv-list">
+            {{ range sort (where $cv.certifications "profiles" "intersect" (slice $p)) "date" "desc" }}<li class="cv-row"><span><strong>{{ .name }}</strong>{{ with .issuer }}<span class="cv-sub">, {{ . }}</span>{{ end }}</span> <span class="cv-date">{{ if .expected }}{{ i18n "cvExpected" }} {{ end }}{{ partial "inline/cv-period.html" (slice .date .date) }}</span></li>{{ end }}
+        </ul>
+
+        <h2>{{ i18n "cvEducation" }}</h2>
+        <ul class="cv-list">
+            {{ range $cv.education }}<li class="cv-row"><span><strong>{{ partial "inline/cv-text.html" .degree }}</strong><span class="cv-sub">, {{ .institution }}</span></span> <span class="cv-date">{{ partial "inline/cv-period.html" (slice .start .end) }}</span></li>{{ end }}
+        </ul>
+
+        <h2>{{ i18n "cvLanguages" }}</h2>
+        <p>{{ range $i, $l := $cv.languages }}{{ if $i }}, {{ end }}{{ partial "inline/cv-text.html" $l.name }} ({{ lower (partial "inline/cv-text.html" $l.level) }}){{ end }}</p>
+    </main>
+</div>
+{{ end }}
+
+{{- define "_partials/inline/cv-text.html" -}}
+{{- /* A cv.yaml value is either plain text or { en: …, nl: … }; returns the one for this language */ -}}
+{{- if reflect.IsMap . }}{{ return index . site.Language.Lang }}{{ end -}}
+{{- return . -}}
+{{- end -}}
+
+{{- define "_partials/inline/cv-period.html" -}}
+{{- /* (slice start end) with "YYYY" or "YYYY-MM" dates; a null end is "present" */ -}}
+{{- $out := slice -}}
+{{- range . -}}
+  {{- if not . }}{{ $out = $out | append (i18n "present") -}}
+  {{- else if eq (len .) 4 }}{{ $out = $out | append . -}}
+  {{- else }}{{ $out = $out | append (time.Format "Jan 2006" (time.AsTime (printf "%s-01" .))) -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq (index $out 0) (index $out 1) }}{{ return index $out 0 }}{{ end -}}
+{{- return delimit $out " – " -}}
+{{- end -}}

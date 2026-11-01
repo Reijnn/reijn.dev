@@ -3,12 +3,9 @@
 
 # Generic
 #
-[translations]
-other = "Vertalingen"
 
 [postAvailable]
 other = "Ook beschikbaar in"
-
 
 # 404.html
 #
@@ -20,7 +17,6 @@ other = "Home"
 
 [notFound]
 other = "Oeps, pagina niet gevonden…"
-
 
 # posts/single.html
 #
@@ -65,3 +61,35 @@ other = "Nu aan het lezen"
 
 [finishedIn]
 other = "Uitgelezen in"
+
+# cv/
+[present]
+other = "heden"
+
+[cvExperience]
+other = "Werkervaring"
+
+[cvEducation]
+other = "Opleiding"
+
+[cvCertifications]
+other = "Diploma's en certificaten"
+
+[cvCivilian]
+other = "Civiel"
+
+[cvMilitary]
+other = "Defensie"
+
+[cvLanguages]
+other = "Talen"
+
+
+[cvExpected]
+other = "verwacht"
+
+[cvFrom]
+other = "vanaf"
+
+[cvSkills]
+other = "Vaardigheden"

@@ -12,14 +12,14 @@ tags:
   - QNH
 ---
 
-QNH Consulting asked me to develop a web application that makes it easier to distribute whitepapers and store client data. I developed an mobile-friendly application using React and in a later version Angular. Both use a Firebase back-end.
+QNH Consulting asked me to develop a web application that makes it easier to distribute whitepapers and store client data. I developed a mobile-friendly application using React and in a later version Angular. Both use a Firebase back-end.
 
 __Responsibilities__
 
-* Collecting requirements
-* Setting up the application structure
-* Develop the back-end application
-* Shaping the front-end
+* Gathered requirements
+* Set up the application structure
+* Developed the back end
+* Designed the front end
 
 __Applied Technologies__
 
