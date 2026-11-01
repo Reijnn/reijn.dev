@@ -28,6 +28,10 @@
     border: none;
     margin: 0;
     padding: 10px;
+
+    &:not(.open) {
+      display: none;
+    }
   }
 
   &__inner {

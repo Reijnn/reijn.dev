@@ -1,60 +1,14 @@
-/**
- * Theming.
- *
- * Supports the preferred color scheme of the operation system as well as
- * the theme choice of the user.
- *
- */
-const themeToggle = document.querySelector(".theme-toggle");
-// Reading localStorage throws when the browser blocks site data; without this
-// guard the error stops the whole bundle, including the mobile menu in menu.js.
-let chosenTheme = null;
-try {
-  chosenTheme = localStorage.getItem("theme");
-} catch (_) {}
-const chosenThemeIsDark = chosenTheme == "dark";
-const chosenThemeIsLight = chosenTheme == "light";
-
-// Detect the color scheme the operating system prefers.
-function detectOSColorTheme() {
-  if (chosenThemeIsDark) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else if (chosenThemeIsLight) {
-    document.documentElement.setAttribute("data-theme", "light");
-  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-}
-
-// Switch the theme.
-function switchTheme(e) {
-  const next = document.documentElement.getAttribute("data-theme") == "dark" ? "light" : "dark";
+// Theme toggle. head.html applies a saved choice before the first paint; without one the CSS follows the OS.
+document.querySelector(".theme-toggle")?.addEventListener("click", () => {
+  const root = document.documentElement;
+  const current = root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const next = current === "dark" ? "light" : "dark";
+  root.dataset.theme = next;
   try {
     localStorage.setItem("theme", next);
-  } catch (_) {
-    document.documentElement.setAttribute("data-theme", next);
-    return;
-  }
-
-  detectOSColorTheme();
-  window.location.reload();
-}
-
-// Event listener
-if (themeToggle) {
-  themeToggle.addEventListener("click", switchTheme, false);
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => e.matches && detectOSColorTheme());
-  window
-    .matchMedia("(prefers-color-scheme: light)")
-    .addEventListener("change", (e) => e.matches && detectOSColorTheme());
-
-  detectOSColorTheme();
-} else {
-  try {
-    localStorage.removeItem("theme");
-  } catch (_) {}
-}
+  } catch (_) {} // Site data blocked: the choice lasts until the next page
+  // The comments widget is an iframe with its own theme
+  document
+    .querySelector(".utterances-frame")
+    ?.contentWindow.postMessage({ type: "set-theme", theme: `github-${next}` }, "https://utteranc.es");
+});
