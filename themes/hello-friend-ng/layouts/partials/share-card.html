@@ -21,4 +21,5 @@
     {{- $card = .Process "fill 627x940 png" | images.Filter $filters }}
   {{- end }}
 {{- end }}
-{{- return $card }}
+{{- /* Drawn as PNG so the text stays crisp, then saved as JPEG: about a quarter of the size, and every share target accepts it */}}
+{{- return $card.Process "jpg q85" }}

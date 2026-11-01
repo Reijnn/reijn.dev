@@ -62,7 +62,8 @@
 {{ template "_internal/opengraph.html" . }}
 {{- /* Every page gets a generated share card, unless it sets its own images */}}
 {{- if not .Params.images }}
-{{- $card := partial "share-card.html" . }}
+{{- /* Tag pages share the home page's card instead of drawing their own */}}
+{{- $card := partial "share-card.html" (cond (in (slice "taxonomy" "term") .Kind) site.Home .) }}
 <meta property="og:image" content="{{ $card.Permalink }}" />
 <meta property="og:image:width" content="{{ $card.Width }}" />
 <meta property="og:image:height" content="{{ $card.Height }}" />
