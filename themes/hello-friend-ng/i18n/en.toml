@@ -93,3 +93,13 @@ other = "from"
 
 [cvSkills]
 other = "Skills"
+
+# partials/sharing-buttons.html
+[shareEmail]
+other = "Share via email"
+
+[shareLinkedIn]
+other = "Share on LinkedIn"
+
+[shareWhatsApp]
+other = "Share on WhatsApp"
