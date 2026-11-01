@@ -14,7 +14,8 @@
                     </li>
                 </div>
             {{ else }}
-                <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                {{- $url := .URL | relLangURL }}
+                <li><a href="{{ $url }}"{{ if eq $url $currentPage.RelPermalink }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
             {{ end }}
         {{- end }}
     </ul>
