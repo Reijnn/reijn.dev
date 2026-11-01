@@ -1,14 +1,12 @@
-name: Deploy to Firebase Hosting on PR
+name: Preview on Cloudflare for PRs
 "on": pull_request
 
 concurrency:
-  group: firebase-deploy-${{ github.ref }}
+  group: preview-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: read
-  pull-requests: write
-  checks: write
 
 jobs:
   build_and_preview:
@@ -35,18 +33,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy
+      # Uploads a preview version at pr-<number>-reijn-dev.reijnn.workers.dev; the live site is untouched
+      - name: Preview
         if: github.event.pull_request.user.login != 'dependabot[bot]' # Dependabot PRs get no Actions secrets
-        uses: FirebaseExtended/action-hosting-deploy@500ac625ca2dd40cbd15f7659af953801858032a # v0.11.0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_REIJN_DEV }}"
-          projectId: reijn-dev
-          expires: 7d
-
-      # Uploads a preview version with its own URL; the live site is untouched
-      - name: Preview on Cloudflare
-        if: github.event.pull_request.user.login != 'dependabot[bot]'
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
