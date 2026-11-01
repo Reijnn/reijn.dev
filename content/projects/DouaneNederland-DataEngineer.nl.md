@@ -3,7 +3,6 @@ title: "Data Engineer & Scrum Master - Douane Nederland"
 description: "Data engineer en Scrum Master bij de Douane: datapijplijnen met Azure Synapse, datawarehousing en het begeleiden van agile teams."
 date: 2022-05-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Data Engineering
   - Scrum Master

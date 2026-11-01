@@ -3,7 +3,6 @@ title: "Management Consultant - ilionx"
 description: "Management consultant at ilionx since 2024, on assignment at Dutch Customs as product owner and technical business analyst."
 date: 2024-01-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Consultancy
   - Business Analysis

@@ -4,7 +4,6 @@ description: "Scrum Master bij de Koninklijke Landmacht vanaf januari 2027, via 
 date: 2027-01-01T00:00:00+01:00
 publishDate: 2026-11-01T00:00:00+01:00 # shown now, although the role starts in 2027
 draft: false
-toc: false
 tags:
   - Scrum Master
   - Agile

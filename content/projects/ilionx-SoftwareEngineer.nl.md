@@ -3,7 +3,6 @@ title: "Software Engineer - ilionx"
 description: "Software engineer bij ilionx van 2019 tot 2024, met opdrachten bij de Douane, Info Support en de Gemeente Amsterdam."
 date: 2019-02-01T00:00:00+01:00
 draft: false
-toc: false
 tags:
   - Consultancy
   - Software Engineering

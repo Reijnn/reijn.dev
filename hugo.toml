@@ -38,6 +38,13 @@ codeFences = true
 [taxonomies]
 tag = "tags"
 
+# Tag pages only list links, so they stay out of the sitemap
+[[cascade]]
+[cascade.sitemap]
+disable = true
+[cascade.target]
+kind = "{taxonomy,term}"
+
 [params]
 dateformShort = "Jan 2"
 dateformNum = "2006-01-02"

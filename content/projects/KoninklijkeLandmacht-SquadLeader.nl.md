@@ -3,7 +3,6 @@ title: "Groepscommandant Infanterie - Koninklijke Landmacht"
 description: "Groepscommandant infanterie (sergeant) bij de Natres: een groep leiden, opleidingen plannen en militairen ontwikkelen."
 date: 2025-04-01T00:00:00+02:00
 draft: false
-toc: false
 tags:
   - Military
   - Leadership

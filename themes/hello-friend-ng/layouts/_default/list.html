@@ -21,11 +21,7 @@
                                 <a href="{{ .RelPermalink }}" class="post-item-inner">
                                     <span class="post-title"{{ with .File }} style="view-transition-name: post-{{ .UniqueID }}"{{ end }}>{{.Title}}</span>
                                     <span class="post-day">
-                                        {{ if .Site.Params.dateformShort }}
-                                            {{ time.Format .Site.Params.dateformShort .Date }}
-                                        {{ else }}
-                                            {{ time.Format "Jan 2" .Date }}
-                                        {{ end }}
+                                        {{ time.Format site.Params.dateformShort .Date }}
                                     </span>
                                 </a>
                             </li>

@@ -13,10 +13,6 @@
   Cache-Control: max-age=31536000, immutable
 /*.jpg
   Cache-Control: max-age=86400
-/*.jpeg
-  Cache-Control: max-age=86400
-/*.gif
-  Cache-Control: max-age=86400
 /*.png
   Cache-Control: max-age=86400
 /*.webp
@@ -24,6 +20,4 @@
 /*.svg
   Cache-Control: max-age=86400
 /*.ico
-  Cache-Control: max-age=86400
-/*.css
   Cache-Control: max-age=86400
