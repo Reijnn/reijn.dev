@@ -1,6 +1,6 @@
 # Single source for the CV pages and their PDFs.
 # The repo is public: only put facts here that may be published.
-# Roles and assignments may set unit and location.
+# Roles and assignments may set unit and location. A role whose start is still in the future shows as "from <month>".
 # Dates are "YYYY-MM", or "YYYY" when only the year is known. end: null means present.
 # profiles: which CV shows the entry: technical (civilian work) or military (Defensie). An assignment with cv: false stays off the CV.
 
@@ -26,7 +26,6 @@ experience:
             location: Utrecht
             start: "2027-01"
             end: null
-            expected: true # not started yet: shows "from Jan 2027"; remove once it has
             page: projects/KoninklijkeLandmacht-ScrumMaster
           - client: Douane Nederland
             unit: Afdeling Data & Digitalisering
@@ -134,6 +133,18 @@ experience:
         end: "2023-12"
         profiles: [military]
         page: projects/KoninklijkeLandmacht-Rifleman
+
+skills: # used in practice, from the Applied Technologies lists on the project pages
+  - { name: { en: Business analysis, nl: Business-analyse }, profiles: [technical] }
+  - { name: { en: Product management, nl: Productmanagement }, profiles: [technical] }
+  - { name: { en: Scrum and SAFe, nl: Scrum en SAFe }, profiles: [technical] }
+  - { name: Azure Synapse, profiles: [technical] }
+  - { name: Azure DevOps, profiles: [technical] }
+  - { name: SQL, profiles: [technical] }
+  - { name: Python, profiles: [technical] }
+  - { name: { en: Data warehousing, nl: Datawarehousing }, profiles: [technical] }
+  - { name: { en: C# and .NET, nl: C# en .NET }, profiles: [technical] }
+  - { name: { en: SOAP and REST integrations, nl: SOAP- en REST-koppelingen }, profiles: [technical] }
 
 education:
   - degree: { en: "BSc Software Engineering (HBO)", nl: "HBO Software Engineering" }

@@ -25,14 +25,15 @@
         {{/* Flatten roles and assignments, then group them by where the work happened, as LinkedIn does:
              a consultant's assignments sit under the client, with "via <employer>". Groups sort by their latest role. */}}
         {{ $entries := slice }}
+        {{ $thisMonth := now.Format "2006-01" }}{{/* a role starting after this month shows "from <month>" until a build after it starts */}}
         {{ range $e := $cv.experience }}
             {{ $org := partial "inline/cv-text.html" $e.organization }}
             {{ range where $e.roles "profiles" "intersect" (slice $p) }}
                 {{ $title := partial "inline/cv-text.html" .title }}
                 {{ with .rank }}{{ $title = printf "%s (%s)" $title (partial "inline/cv-text.html" .) }}{{ end }}
-                {{ $entries = $entries | append (dict "group" $org "via" "" "title" $title "start" .start "end" .end "expected" .expected "unit" .unit "location" .location "bullets" .bullets "page" .page) }}
+                {{ $entries = $entries | append (dict "group" $org "via" "" "title" $title "start" .start "end" .end "expected" (gt .start $thisMonth) "unit" .unit "location" .location "bullets" .bullets "page" .page) }}
                 {{ range where (default slice .assignments) "cv" "!=" false }}
-                    {{ $entries = $entries | append (dict "group" .client "via" (cond (eq .client $org) "" $org) "title" (partial "inline/cv-text.html" .title) "start" .start "end" .end "expected" .expected "unit" .unit "location" .location "bullets" .bullets "page" .page) }}
+                    {{ $entries = $entries | append (dict "group" .client "via" (cond (eq .client $org) "" $org) "title" (partial "inline/cv-text.html" .title) "start" .start "end" .end "expected" (gt .start $thisMonth) "unit" .unit "location" .location "bullets" .bullets "page" .page) }}
                 {{ end }}
             {{ end }}
         {{ end }}
@@ -58,6 +59,11 @@
                     {{ end }}
                 </div>
             </section>
+        {{ end }}
+
+        {{ with where $cv.skills "profiles" "intersect" (slice $p) }}
+            <h2>{{ i18n "cvSkills" }}</h2>
+            <p>{{ range $i, $s := . }}{{ if $i }}, {{ end }}{{ partial "inline/cv-text.html" $s.name }}{{ end }}</p>
         {{ end }}
 
         <h2>{{ i18n "cvCertifications" }}</h2>

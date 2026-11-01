@@ -90,3 +90,6 @@ other = "expected"
 
 [cvFrom]
 other = "from"
+
+[cvSkills]
+other = "Skills"

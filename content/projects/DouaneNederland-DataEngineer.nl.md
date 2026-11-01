@@ -16,12 +16,12 @@ __Afdeling__: Data & Digitalisering, Utrecht
 
 __Verantwoordelijkheden__
 
-* Architectuur en onderhoud van data pipelines met behulp van Azure Synapse voor douaneoperaties
-* Ontwerp en optimalisatie van datawarehouse-oplossingen voor kritieke overheidsinfrastructuur
-* Leiding gegeven aan agile teams als Scrum Master, met facilitatie van sprint planning en retrospectives
-* Implementatie van DevOps-praktijken en continuous integration workflows
-* Beheer van technische schuld en prestatie-optimalisatie van datasystemen
-* Mentoring van junior engineers in best practices voor data engineering
+* Datapijplijnen ontworpen en onderhouden in Azure Synapse voor douaneprocessen
+* Datawarehouse-oplossingen ontworpen en geoptimaliseerd voor kritieke overheidsinfrastructuur
+* Agile teams begeleid als Scrum Master, met sprintplanningen en retrospectives
+* DevOps-werkwijzen en continuous integration ingevoerd
+* Technische schuld beheerd en de prestaties van datasystemen verbeterd
+* Junior engineers begeleid in best practices voor data engineering
 
 __Toegepaste Technologieën__
 

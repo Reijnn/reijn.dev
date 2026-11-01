@@ -15,12 +15,12 @@ __Afdeling__: Data & Digitalisering, Utrecht
 
 __Verantwoordelijkheden__
 
-* Productvisioen en strategie gedefinieerd voor digitale transformatie-initiatieven
-* Stakeholder-analyse uitgevoerd en requirements verzameld van diverse teams
-* Productroadmap beheerd en features geprioriteerd op basis van bedrijfsimpact
-* Communicatie gefaciliteerd tussen technische teams en zakelijke stakeholders
-* Productmiddelen in het leven geroepen en deliverables van nieuwe features
-* Marktbehoeften geanalyseerd en vertaald naar uitvoerbare productvereisten
+* Productvisie en -strategie opgesteld voor digitale transformatie-initiatieven
+* Stakeholderanalyses uitgevoerd en requirements opgehaald bij verschillende teams
+* De productroadmap beheerd en features geprioriteerd op basis van impact voor de organisatie
+* De communicatie tussen technische teams en zakelijke stakeholders gefaciliteerd
+* De ontwikkeling en oplevering van nieuwe features begeleid
+* Behoeften uit de organisatie geanalyseerd en vertaald naar uitvoerbare productvereisten
 
 __Toegepaste Technologieën__
 

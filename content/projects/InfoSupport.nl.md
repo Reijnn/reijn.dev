@@ -17,7 +17,7 @@ __Verantwoordelijkheden__
 
 * Werk samen met applicatieleveranciers van onze klanten, test integratieverbindingen en ontwikkel unittests voor deze verbindingen
 * Vertalen van het technisch ontwerp naar een werkende koppeling, bijvoorbeeld met als doel synchronisatie, integratie en/of automatisering van data of bedrijfsprocessen
-* Verantwoordelijk voor het in kaart brengen van berichten en het ontwikkelen van XSLT's en WSDL's
+* Verantwoordelijk voor berichtmappings en het ontwikkelen van XSLT's en WSDL's
 * Eerste aanspreekpunt binnen het DevOps team voor het beheer van verbindingen die ik heb ontwikkeld en geïmplementeerd. Ik handel zelfstandig incidenten, wijzigingsverzoeken en serviceverzoeken af
 
 __Toegepaste technologieën__
