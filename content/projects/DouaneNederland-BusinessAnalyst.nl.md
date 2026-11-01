@@ -1,5 +1,5 @@
 ---
-title: "Technical Business Analyst - Douane Nederland"
+title: "Technisch Business Analist - Douane Nederland"
 description: "Technische bedrijfsanalyse bij de Douane: bedrijfseisen vertalen naar technische specificaties en roadmaps voor strategische initiatieven."
 date: 2026-02-01T00:00:00+01:00
 draft: false
@@ -22,6 +22,6 @@ __Verantwoordelijkheden__
 * Samenwerken met stakeholders op technische en niet-technische afdelingen
 * De huidige situatie analyseren en vastleggen, en datagedreven oplossingen voorstellen
 
-__Toegepaste Technologieën__
+__Toegepaste technologieën__
 
-Business Analysis, Technische Strategie, Azure-technologieën, Data Analysis, Agile-methodologieën, Douanedomeinexpertise
+Business-analyse, technische strategie, Azure-technologieën, data-analyse, agile werkwijzen, kennis van het douanedomein

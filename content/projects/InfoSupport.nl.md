@@ -1,25 +1,24 @@
 ---
-title: "Technical Integrator - InfoSupport"
+title: "Technisch Integrator - Info Support"
 description: "Technisch integrator in het DevOps-team van Info Support: koppelingen ontwerpen en bouwen tussen de systemen van verschillende klanten."
 date: 2020-03-01T00:00:00+01:00
 draft: false
-images:
 tags:
   - Consultancy
   - Datarotonde
 ---
 
-Als Technical Integrator bij ISRES maak ik deel uit van het DevOps-team en bouw ik innovatieve koppelingen tussen verschillende systemen van (diverse) klanten, begrijp ik interfaces technisch en bereid en implementeer ik technisch ontwerp. Ik word ondersteund door één of meerdere Solution Architects die ervaring hebben met de Datarotonde en die kennis hebben van het relevante applicatielandschap en de gevraagde digitale processen.
+Als technisch integrator bij ISRES, onderdeel van Info Support, maakte ik deel uit van het DevOps-team. Ik bouwde koppelingen tussen de systemen van verschillende klanten: ik zocht uit hoe hun interfaces werkten, en bereidde het technisch ontwerp voor en voerde het uit. Daarbij werd ik ondersteund door solution architects met kennis van de Datarotonde, het applicatielandschap en de betrokken digitale processen.
 
 __Team__: Datarotonde, Veenendaal
 
 __Verantwoordelijkheden__
 
-* Werk samen met applicatieleveranciers van onze klanten, test integratieverbindingen en ontwikkel unittests voor deze verbindingen
-* Vertalen van het technisch ontwerp naar een werkende koppeling, bijvoorbeeld met als doel synchronisatie, integratie en/of automatisering van data of bedrijfsprocessen
-* Verantwoordelijk voor berichtmappings en het ontwikkelen van XSLT's en WSDL's
-* Eerste aanspreekpunt binnen het DevOps team voor het beheer van verbindingen die ik heb ontwikkeld en geïmplementeerd. Ik handel zelfstandig incidenten, wijzigingsverzoeken en serviceverzoeken af
+* Samengewerkt met de applicatieleveranciers van onze klanten, koppelingen getest en er unittests voor geschreven
+* Technische ontwerpen omgezet in werkende koppelingen, bijvoorbeeld om data en bedrijfsprocessen te synchroniseren, te integreren of te automatiseren
+* Berichtmappings gemaakt en XSLT's en WSDL's ontwikkeld
+* Eerste aanspreekpunt in het DevOps-team voor de koppelingen die ik bouwde, en zelfstandig incidenten, wijzigingsverzoeken en serviceverzoeken afgehandeld
 
 __Toegepaste technologieën__
 
-Soap/Rest, XSLT/Xpath, .Net(C#, WCF), Git/TFS
+SOAP/REST, XSLT/XPath, .NET (C#, WCF), Git/TFS

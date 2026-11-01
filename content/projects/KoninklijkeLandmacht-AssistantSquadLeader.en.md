@@ -17,10 +17,10 @@ __Unit__: 20 Infanteriebataljon Bewaken & Beveiligen KNR, Bergen
 
 __Responsibilities__
 
-* Support the squad leader in preparing and running training and exercises
-* Lead the squad when the squad leader is absent
-* Instruct and coach soldiers in the squad
-* Look after the squad's equipment and readiness
+* Supported the squad leader in preparing and running training and exercises
+* Led the squad when the squad leader was absent
+* Instructed and coached soldiers in the squad
+* Looked after the squad's equipment and readiness
 
 __Courses__
 

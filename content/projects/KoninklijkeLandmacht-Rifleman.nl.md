@@ -16,9 +16,9 @@ __Eenheid__: 20 Infanteriebataljon Bewaken & Beveiligen KNR, Bergen
 
 __Verantwoordelijkheden__
 
-* Bewakings- en beveiligingstaken uitvoeren als onderdeel van een infanteriegroep
-* Individuele militaire vaardigheden bijhouden, zoals wapenhandelingen, velddienst en eerste hulp
-* Deelnemen aan oefenweekenden en oefeningen
+* Bewakings- en beveiligingstaken uitgevoerd als onderdeel van een infanteriegroep
+* Individuele militaire vaardigheden bijgehouden, zoals wapenhandelingen, velddienst en eerste hulp
+* Deelgenomen aan oefenweekenden en oefeningen
 
 __Opleidingen__
 

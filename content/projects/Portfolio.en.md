@@ -13,11 +13,11 @@ I created a personal portfolio website to showcase my professional work and proj
 
 __Responsibilities__
 
-* Design and develop responsive website architecture
-* Create content management system for portfolio entries
-* Implement automated deployment pipeline
+* Design and build a responsive website
+* Set up content management for portfolio entries
+* Set up an automated deployment pipeline
 * Optimize site performance and SEO
 
 __Applied Technologies__
 
-JavaScript, Firebase, SCSS, Hugo, Markdown, Git, Github Actions
+JavaScript, Firebase, SCSS, Hugo, Markdown, Git, GitHub Actions

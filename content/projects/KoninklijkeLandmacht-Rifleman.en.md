@@ -16,9 +16,9 @@ __Unit__: 20 Infanteriebataljon Bewaken & Beveiligen KNR, Bergen
 
 __Responsibilities__
 
-* Carry out guarding and security tasks as part of an infantry squad
-* Keep individual soldier skills up to date, such as weapon handling, fieldcraft and first aid
-* Take part in training weekends and exercises
+* Carried out guarding and security tasks as part of an infantry squad
+* Kept individual soldier skills up to date, such as weapon handling, fieldcraft and first aid
+* Took part in training weekends and exercises
 
 __Courses__
 

@@ -23,6 +23,6 @@ __Verantwoordelijkheden__
 * Technische schuld beheerd en de prestaties van datasystemen verbeterd
 * Junior engineers begeleid in best practices voor data engineering
 
-__Toegepaste Technologieën__
+__Toegepaste technologieën__
 
-Azure Synapse, Azure DevOps, SQL, Python, Data Warehousing, Agile/Scrum-methodologieën
+Azure Synapse, Azure DevOps, SQL, Python, datawarehousing, Agile/Scrum

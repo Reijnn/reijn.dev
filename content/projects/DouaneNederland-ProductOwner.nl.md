@@ -22,6 +22,6 @@ __Verantwoordelijkheden__
 * De ontwikkeling en oplevering van nieuwe features begeleid
 * Behoeften uit de organisatie geanalyseerd en vertaald naar uitvoerbare productvereisten
 
-__Toegepaste Technologieën__
+__Toegepaste technologieën__
 
-Agile/Scrum-methodologieën, Business Analysis, Product Management, Stakeholder Management, Azure-ecosysteem
+Agile/Scrum, business-analyse, productmanagement, stakeholdermanagement, Azure-ecosysteem

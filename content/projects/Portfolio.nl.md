@@ -9,15 +9,15 @@ tags:
   - Development
 ---
 
-Ik heb een persoonlijke portfoliowebsite gemaakt om mijn professionele werk en projecten te presenteren. Deze site is een centraal platform voor mijn professionele aanwezigheid, met projectcasestudies, technische blogartikelen en contactmogelijkheden. De site is gebouwd met Hugo voor ultrasnelle prestaties en wordt geïmplementeerd met geautomatiseerde CI/CD-pipelines.
+Ik heb een persoonlijke portfoliowebsite gemaakt om mijn professionele werk en projecten te presenteren. Deze site is een centraal platform voor mijn professionele aanwezigheid, met projectcasestudies, technische blogartikelen en contactmogelijkheden. De site is gebouwd met Hugo, zodat hij snel laadt, en wordt automatisch uitgerold met CI/CD-pipelines.
 
 __Verantwoordelijkheden__
 
-* Ontwerp en ontwikkeling van responsive website-architectuur
-* Creëren van contentmanagementsysteem voor portfolio-items
-* Implementeren van geautomatiseerde deployment-pipeline
-* Optimalisatie van siteprestaties en SEO
+* Een responsive website ontwerpen en bouwen
+* Contentbeheer voor portfolio-items opzetten
+* Een geautomatiseerde deployment-pipeline inrichten
+* Siteprestaties en SEO optimaliseren
 
 __Toegepaste technologieën__
 
-JavaScript, Firebase, SCSS, Hugo, Markdown, Git, Github Actions
+JavaScript, Firebase, SCSS, Hugo, Markdown, Git, GitHub Actions

@@ -17,10 +17,10 @@ __Eenheid__: 20 Infanteriebataljon Bewaken & Beveiligen KNR, Bergen
 
 __Verantwoordelijkheden__
 
-* De groepscommandant ondersteunen bij het voorbereiden en uitvoeren van opleidingen en oefeningen
-* De groep leiden bij afwezigheid van de groepscommandant
-* Militairen in de groep instrueren en coachen
-* Zorgen voor de uitrusting en inzetbaarheid van de groep
+* De groepscommandant ondersteund bij het voorbereiden en uitvoeren van opleidingen en oefeningen
+* De groep geleid bij afwezigheid van de groepscommandant
+* Militairen in de groep geïnstrueerd en gecoacht
+* Gezorgd voor de uitrusting en inzetbaarheid van de groep
 
 __Opleidingen__
 
