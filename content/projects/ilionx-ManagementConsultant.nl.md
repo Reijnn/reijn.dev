@@ -15,6 +15,6 @@ __Afdeling__: Digitale Strategie, Amsterdam
 
 __Opdrachten__
 
-* [Scrum Master - Koninklijke Landmacht](/nl/projects/koninklijkelandmacht-scrummaster/), vanaf januari 2027
+* [Scrum Master - Koninklijke Landmacht](/nl/projects/koninklijkelandmacht-scrummaster/) (COMMIT, Utrecht), vanaf januari 2027
 * [Technisch Business Analist - Douane Nederland](/nl/projects/douanenederland-businessanalyst/), februari 2026 tot december 2026
 * [Product Owner - Douane Nederland](/nl/projects/douanenederland-productowner/), februari 2024 tot februari 2026
